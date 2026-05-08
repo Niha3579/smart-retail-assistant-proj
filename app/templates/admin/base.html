@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}Smart Retail Assistant{% endblock %} — Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="admin-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="brand">Smart Retail</div>
+      <div class="brand-sub">Assistant · Admin</div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section-label">Overview</div>
+      <a href="{{ url_for('admin.dashboard') }}" class="{{ 'active' if active_page == 'dashboard' }}">
+        <i class="bi bi-grid-1x2"></i><span>Dashboard</span>
+      </a>
+      <div class="nav-section-label">Catalog</div>
+      <a href="{{ url_for('admin.products') }}" class="{{ 'active' if active_page == 'products' }}">
+        <i class="bi bi-box-seam"></i><span>Products</span>
+      </a>
+      <a href="{{ url_for('admin.orders') }}" class="{{ 'active' if active_page == 'orders' }}">
+        <i class="bi bi-bag-check"></i><span>Orders</span>
+      </a>
+      <a href="{{ url_for('admin.sales') }}" class="{{ 'active' if active_page == 'sales' }}">
+        <i class="bi bi-cloud-upload"></i><span>Sales / Ingestion</span>
+      </a>
+      <div class="nav-section-label">Intelligence</div>
+      <a href="{{ url_for('admin.predictions') }}" class="{{ 'active' if active_page == 'predictions' }}">
+        <i class="bi bi-graph-up-arrow"></i><span>Predictions</span>
+      </a>
+      <a href="{{ url_for('admin.analytics') }}" class="{{ 'active' if active_page == 'analytics' }}">
+        <i class="bi bi-bar-chart-line"></i><span>Analytics</span>
+      </a>
+      <a href="{{ url_for('admin.assistant') }}" class="{{ 'active' if active_page == 'assistant' }}">
+        <i class="bi bi-robot"></i><span>AI Assistant</span>
+      </a>
+      <a href="{{ url_for('admin.anomalies') }}" class="{{ 'active' if active_page == 'anomalies' }}">
+        <i class="bi bi-exclamation-triangle"></i><span>Anomalies</span>
+      </a>
+      <div class="nav-section-label">System</div>
+      <a href="{{ url_for('admin.settings') }}" class="{{ 'active' if active_page == 'settings' }}">
+        <i class="bi bi-gear"></i><span>Settings</span>
+      </a>
+      <a href="{{ url_for('user.home') }}">
+        <i class="bi bi-shop"></i><span>User Portal</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="main-content">
+    <!-- NAVBAR -->
+    <header class="admin-navbar">
+      <div class="search-bar">
+        <i class="bi bi-search search-icon"></i>
+        <input type="text" placeholder="Search products, orders, insights…" id="globalSearch">
+      </div>
+      <div class="navbar-actions">
+        <div class="health-badge" id="healthBadge">
+          <span class="dot"></span><span>System Healthy</span>
+        </div>
+        <button class="notif-btn" data-bs-toggle="tooltip" title="Anomaly Alerts">
+          <i class="bi bi-bell"></i>
+          <span class="notif-badge">{{ anomaly_count if anomaly_count else '!' }}</span>
+        </button>
+        <div class="dropdown">
+          <button class="avatar-btn dropdown-toggle" data-bs-toggle="dropdown">
+            <i class="bi bi-person"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="{{ url_for('admin.settings') }}">Settings</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="{{ url_for('user.logout') }}">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- PAGE -->
+    <main class="page-content">
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% for cat, msg in messages %}
+          <div class="alert lux-alert alert-{{ cat }} alert-dismissible fade show" role="alert">
+            {{ msg }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          </div>
+        {% endfor %}
+      {% endwith %}
+
+      <nav class="breadcrumb-bar">
+        <a href="{{ url_for('admin.dashboard') }}">Admin</a>
+        <span class="sep">/</span>
+        <span>{% block breadcrumb %}Page{% endblock %}</span>
+      </nav>
+
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script>
+// System health check
+async function checkHealth() {
+  try {
+    const r = await fetch('/api/system-health');
+    const d = await r.json();
+    const badge = document.getElementById('healthBadge');
+    if (d.status === 'healthy') {
+      badge.innerHTML = '<span class="dot"></span><span>Healthy · CPU ' + (d.cpu||0).toFixed(0) + '%</span>';
+      badge.style.color = 'var(--success)';
+    } else {
+      badge.innerHTML = '<span class="dot" style="background:var(--danger)"></span><span>Issue Detected</span>';
+    }
+  } catch(e) {}
+}
+checkHealth();
+setInterval(checkHealth, 30000);
+
+// Tooltip init
+document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => new bootstrap.Tooltip(el));
+</script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

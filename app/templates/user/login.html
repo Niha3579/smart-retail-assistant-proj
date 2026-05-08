@@ -1,0 +1,36 @@
+{% extends "user/base.html" %}
+{% block title %}Login — Smart Retail{% endblock %}
+
+{% block content %}
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="auth-logo">Smart Retail</div>
+    <div class="auth-tagline">Welcome back — sign in to your account</div>
+
+    <form method="POST">
+      <div class="mb-3">
+        <label class="lux-label">Email Address</label>
+        <input type="email" name="email" class="lux-input" required placeholder="you@example.com" autofocus>
+      </div>
+      <div class="mb-4">
+        <label class="lux-label">Password</label>
+        <input type="password" name="password" class="lux-input" required placeholder="••••••••">
+      </div>
+      <button type="submit" class="btn-luxury" style="width:100%;padding:13px;font-size:15px;justify-content:center">
+        Sign In
+      </button>
+    </form>
+
+    <div class="auth-divider">or</div>
+
+    <div style="text-align:center;font-size:13.5px;color:var(--secondary-text)">
+      Don't have an account?
+      <a href="{{ url_for('user.register') }}" style="color:var(--accent);font-weight:600;text-decoration:none">Register →</a>
+    </div>
+
+    <div style="margin-top:20px;text-align:center">
+      <a href="{{ url_for('admin.dashboard') }}" style="font-size:12px;color:var(--secondary-text);text-decoration:none">Admin Portal →</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

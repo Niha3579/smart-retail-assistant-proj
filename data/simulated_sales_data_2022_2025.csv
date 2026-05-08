@@ -1,0 +1,1201 @@
+transaction_id,sale_date,product_id,product_name,category,quantity,unit_price,total_amount,payment_method,customer_region
+TXN-10612,2022-01-03 08:49:22,P100017,Levi's Jeans,Fashion,4,2131.42,8525.68,Credit Card,West
+TXN-11104,2022-01-05 22:49:51,P2007,Premium Sunglasses v59,Accessories,2,10099.76,20199.52,Debit Card,South
+TXN-10399,2022-01-06 11:50:55,P20020,Premium Shirt v42,Fashion,4,10216.92,40867.68,Net Banking,North
+TXN-10507,2022-01-06 21:22:09,P2007,Premium Sunglasses v59,Accessories,4,10099.76,40399.04,UPI,East
+TXN-10233,2022-01-08 15:28:04,P20012,Premium Smartphone v3,Electronics,3,23016.96,69050.88,UPI,Central
+TXN-10580,2022-01-14 02:36:49,P2007,Premium Sunglasses v59,Accessories,5,10099.76,50498.8,UPI,East
+TXN-10843,2022-01-17 13:29:27,P20011,Premium Travel Bag v3,Accessories,4,8918.94,35675.76,Net Banking,Central
+TXN-10050,2022-01-18 04:25:50,P20018,Premium Smartwatch v14,Electronics,1,4781.5,4781.5,UPI,Central
+TXN-10609,2022-01-18 09:38:46,P100032,Nike Air Max,Footwear,5,369.3,1846.5,Debit Card,Central
+TXN-10450,2022-01-18 14:22:21,P20011,Premium Travel Bag v3,Accessories,1,8918.94,8918.94,Credit Card,West
+TXN-10171,2022-01-18 23:33:08,P100032,Nike Air Max,Footwear,1,369.3,369.3,Net Banking,Central
+TXN-10213,2022-01-20 16:08:22,P100027,Boat Earbuds,Electronics,5,16488.24,82441.2,UPI,East
+TXN-10724,2022-01-20 16:57:11,P100000,iPhone 13,Electronics,4,28109.96,112439.84,UPI,North
+TXN-10479,2022-01-20 17:40:22,P20016,Premium Jacket v77,Fashion,3,17755.36,53266.08,UPI,Central
+TXN-10484,2022-01-22 05:37:42,P20017,Premium Jeans v100,Fashion,3,53091.7,159275.1,Credit Card,South
+TXN-10025,2022-01-22 14:44:47,P20023,Premium Wallet v49,Accessories,5,2613.16,13065.8,Net Banking,North
+TXN-10995,2022-01-24 02:54:50,P100000,iPhone 13,Electronics,2,28109.96,56219.92,Credit Card,East
+TXN-11116,2022-01-25 11:56:52,P100000,iPhone 13,Electronics,5,28109.96,140549.8,UPI,North
+TXN-10521,2022-01-25 19:05:32,P100026,HP Pavilion,Electronics,1,20719.78,20719.78,Credit Card,South
+TXN-10376,2022-01-26 03:14:35,P100000,iPhone 13,Electronics,5,28109.96,140549.8,Debit Card,North
+TXN-10302,2022-01-27 15:56:29,P100006,Fossil Watch,Accessories,1,1568.27,1568.27,Net Banking,West
+TXN-11076,2022-01-28 21:40:38,P2009,Premium Running Shoes v67,Footwear,5,3445.84,17229.2,UPI,North
+TXN-10464,2022-01-29 17:30:15,P100017,Levi's Jeans,Fashion,2,2131.42,4262.84,Debit Card,South
+TXN-10369,2022-02-04 23:24:39,P2006,Premium Boots v22,Footwear,1,55880.0,55880.0,Debit Card,Central
+TXN-10872,2022-02-06 23:59:45,P100043,H&M Sweatshirt,Fashion,4,1639.44,6557.76,Net Banking,East
+TXN-10009,2022-02-08 01:06:10,P100127,Dell Laptop,Electronics,5,46702.04,233510.2,Net Banking,South
+TXN-10899,2022-02-11 13:07:55,P100007,Reebok Shoes,Footwear,4,1715.7,6862.8,Credit Card,Central
+TXN-10801,2022-02-11 23:42:44,P20017,Premium Jeans v100,Fashion,4,53091.7,212366.8,UPI,North
+TXN-11022,2022-02-12 17:39:31,P20013,Premium Boots v82,Footwear,1,28106.26,28106.26,Net Banking,West
+TXN-10907,2022-02-12 21:46:30,P100006,Fossil Watch,Accessories,5,1568.27,7841.35,UPI,South
+TXN-10435,2022-02-13 22:27:00,P100020,American Tourister Bag,Accessories,5,596.64,2983.2,Debit Card,North
+TXN-10695,2022-02-15 17:28:20,P20016,Premium Jacket v77,Fashion,3,17755.36,53266.08,Debit Card,South
+TXN-10501,2022-02-16 10:10:26,P20016,Premium Jacket v77,Fashion,5,17755.36,88776.8,Net Banking,South
+TXN-10062,2022-02-17 20:57:55,P100026,HP Pavilion,Electronics,2,20719.78,41439.56,Net Banking,South
+TXN-10228,2022-02-18 04:22:47,P20020,Premium Shirt v42,Fashion,1,10216.92,10216.92,Debit Card,Central
+TXN-10653,2022-02-18 06:51:33,P20019,Premium Wallet v96,Accessories,3,22615.67,67847.01,Debit Card,South
+TXN-10442,2022-02-18 23:03:57,P100027,Boat Earbuds,Electronics,5,16488.24,82441.2,UPI,West
+TXN-10595,2022-02-22 14:23:12,P100034,Puma Jacket,Fashion,2,2772.0,5544.0,UPI,Central
+TXN-10170,2022-02-25 03:49:10,P100027,Boat Earbuds,Electronics,5,16488.24,82441.2,Net Banking,East
+TXN-10934,2022-02-26 17:13:24,P2003,Premium Running Shoes v27,Footwear,1,65156.0,65156.0,UPI,Central
+TXN-10538,2022-02-27 03:18:57,P100002,RayBan Sunglasses,Accessories,3,548.1,1644.3,Credit Card,East
+TXN-10970,2022-02-27 12:43:54,P20020,Premium Shirt v42,Fashion,5,10216.92,51084.6,Net Banking,North
+TXN-11125,2022-02-28 17:11:58,P20016,Premium Jacket v77,Fashion,2,17755.36,35510.72,Debit Card,Central
+TXN-10927,2022-03-02 15:38:33,P100007,Reebok Shoes,Footwear,5,1715.7,8578.5,Net Banking,South
+TXN-10972,2022-03-02 19:53:44,P20016,Premium Jacket v77,Fashion,5,17755.36,88776.8,Net Banking,Central
+TXN-10842,2022-03-03 00:48:21,P20020,Premium Shirt v42,Fashion,5,10216.92,51084.6,Debit Card,North
+TXN-10388,2022-03-04 08:08:54,P100032,Nike Air Max,Footwear,3,369.3,1107.9,Debit Card,South
+TXN-10627,2022-03-05 21:57:00,P20022,Premium Sweatshirt v3,Fashion,3,36897.57,110692.71,Credit Card,Central
+TXN-10679,2022-03-09 04:30:16,P100017,Levi's Jeans,Fashion,5,2131.42,10657.1,Credit Card,East
+TXN-10792,2022-03-11 12:11:44,P2007,Premium Sunglasses v59,Accessories,3,10099.76,30299.28,UPI,Central
+TXN-10038,2022-03-12 07:18:13,P20016,Premium Jacket v77,Fashion,5,17755.36,88776.8,Credit Card,North
+TXN-11193,2022-03-15 18:46:38,P2004,Premium Travel Bag v87,Accessories,2,32520.95,65041.9,UPI,West
+TXN-10950,2022-03-15 22:54:01,P100020,American Tourister Bag,Accessories,2,596.64,1193.28,Net Banking,Central
+TXN-11003,2022-03-19 07:09:05,P100027,Boat Earbuds,Electronics,3,16488.24,49464.72,UPI,West
+TXN-10488,2022-03-20 08:18:42,P100020,American Tourister Bag,Accessories,4,596.64,2386.56,Credit Card,East
+TXN-10370,2022-03-25 05:57:51,P100017,Levi's Jeans,Fashion,2,2131.42,4262.84,Debit Card,Central
+TXN-10083,2022-03-28 02:18:41,P20020,Premium Shirt v42,Fashion,1,10216.92,10216.92,Debit Card,North
+TXN-10466,2022-03-28 03:18:49,P20020,Premium Shirt v42,Fashion,4,10216.92,40867.68,Net Banking,South
+TXN-11176,2022-03-28 09:32:53,P20021,Premium Travel Bag v85,Accessories,1,5197.41,5197.41,Debit Card,South
+TXN-10470,2022-03-29 20:49:36,P20015,Premium Travel Bag v98,Accessories,4,25338.4,101353.6,UPI,East
+TXN-10187,2022-04-03 11:42:07,P2002,Premium Headphones v82,Electronics,2,23300.55,46601.1,UPI,West
+TXN-10841,2022-04-03 14:33:24,P20023,Premium Wallet v49,Accessories,5,2613.16,13065.8,UPI,South
+TXN-10556,2022-04-04 13:37:52,P20019,Premium Wallet v96,Accessories,5,22615.67,113078.35,Credit Card,North
+TXN-10002,2022-04-04 14:06:42,P100036,Samsung Galaxy S21,Electronics,5,16251.85,81259.25,Debit Card,West
+TXN-11015,2022-04-05 05:14:26,P100020,American Tourister Bag,Accessories,3,596.64,1789.92,UPI,North
+TXN-11140,2022-04-05 19:11:07,P20015,Premium Travel Bag v98,Accessories,5,25338.4,126692.0,Credit Card,West
+TXN-10622,2022-04-06 11:42:43,P2008,Premium Headphones v48,Electronics,1,8780.67,8780.67,UPI,West
+TXN-10459,2022-04-06 19:16:21,P2003,Premium Running Shoes v27,Footwear,1,65156.0,65156.0,Net Banking,South
+TXN-10382,2022-04-10 20:19:14,P100012,OnePlus 11,Electronics,3,11066.5,33199.5,UPI,West
+TXN-10586,2022-04-12 11:44:36,P100002,RayBan Sunglasses,Accessories,2,548.1,1096.2,UPI,Central
+TXN-10891,2022-04-13 03:19:42,P20019,Premium Wallet v96,Accessories,5,22615.67,113078.35,Debit Card,South
+TXN-10496,2022-04-13 23:19:39,P100004,Nike T-shirt,Fashion,4,822.15,3288.6,Credit Card,North
+TXN-10241,2022-04-14 16:26:06,P100034,Puma Jacket,Fashion,2,2772.0,5544.0,Net Banking,Central
+TXN-10080,2022-04-14 22:53:51,P100010,Adidas Hoodie,Fashion,1,1733.82,1733.82,UPI,Central
+TXN-10625,2022-04-16 07:13:04,P20010,Premium Travel Bag v67,Accessories,1,9009.6,9009.6,Debit Card,Central
+TXN-10482,2022-04-16 09:51:19,P100034,Puma Jacket,Fashion,1,2772.0,2772.0,Debit Card,South
+TXN-10684,2022-04-16 15:50:02,P100010,Adidas Hoodie,Fashion,3,1733.82,5201.46,Net Banking,East
+TXN-11115,2022-04-19 18:06:09,P100037,Adidas Ultraboost,Footwear,2,5873.12,11746.24,Credit Card,Central
+TXN-10289,2022-04-20 05:35:03,P100006,Fossil Watch,Accessories,1,1568.27,1568.27,Net Banking,South
+TXN-10490,2022-04-20 19:50:38,P100007,Reebok Shoes,Footwear,5,1715.7,8578.5,Net Banking,South
+TXN-10660,2022-04-21 05:55:54,P20013,Premium Boots v82,Footwear,3,28106.26,84318.78,Net Banking,West
+TXN-10642,2022-04-21 20:24:26,P100007,Reebok Shoes,Footwear,1,1715.7,1715.7,UPI,West
+TXN-10310,2022-04-24 21:50:01,P20018,Premium Smartwatch v14,Electronics,5,4781.5,23907.5,Credit Card,North
+TXN-10607,2022-04-25 12:28:08,P2005,Premium Travel Bag v36,Accessories,2,3262.44,6524.88,Debit Card,West
+TXN-10832,2022-04-27 09:52:01,P100020,American Tourister Bag,Accessories,1,596.64,596.64,Debit Card,West
+TXN-10645,2022-04-27 10:57:30,P100001,Zara Shirt,Fashion,4,1177.2,4708.8,Credit Card,East
+TXN-11061,2022-04-29 14:41:11,P100020,American Tourister Bag,Accessories,5,596.64,2983.2,Net Banking,North
+TXN-10764,2022-04-29 16:24:12,P20021,Premium Travel Bag v85,Accessories,4,5197.41,20789.64,Credit Card,East
+TXN-11100,2022-04-29 16:25:02,P100007,Reebok Shoes,Footwear,4,1715.7,6862.8,Credit Card,Central
+TXN-10735,2022-04-30 06:24:15,P100016,Sony Headphones,Electronics,5,21524.32,107621.6,Debit Card,South
+TXN-10315,2022-05-02 08:44:54,P100034,Puma Jacket,Fashion,1,2772.0,2772.0,UPI,North
+TXN-10010,2022-05-02 21:42:06,P2009,Premium Running Shoes v67,Footwear,2,3445.84,6891.68,Net Banking,West
+TXN-10578,2022-05-03 21:38:50,P20018,Premium Smartwatch v14,Electronics,4,4781.5,19126.0,Credit Card,South
+TXN-10238,2022-05-07 12:12:19,P100020,American Tourister Bag,Accessories,2,596.64,1193.28,Debit Card,East
+TXN-10495,2022-05-08 22:18:24,P100020,American Tourister Bag,Accessories,1,596.64,596.64,Debit Card,East
+TXN-10975,2022-05-10 09:14:17,P2008,Premium Headphones v48,Electronics,2,8780.67,17561.34,Credit Card,West
+TXN-11117,2022-05-11 23:52:11,P100000,iPhone 13,Electronics,2,28109.96,56219.92,UPI,East
+TXN-10554,2022-05-12 11:32:06,P20016,Premium Jacket v77,Fashion,1,17755.36,17755.36,Debit Card,North
+TXN-10858,2022-05-15 08:48:40,P2005,Premium Travel Bag v36,Accessories,4,3262.44,13049.76,UPI,East
+TXN-10217,2022-05-18 12:40:26,P100009,Wildcraft Backpack,Accessories,3,1136.1,3408.3,UPI,West
+TXN-11056,2022-05-20 01:33:43,P100020,American Tourister Bag,Accessories,2,596.64,1193.28,Net Banking,West
+TXN-10834,2022-05-20 06:46:33,P100027,Boat Earbuds,Electronics,1,16488.24,16488.24,Credit Card,North
+TXN-10954,2022-05-20 13:17:41,P100027,Boat Earbuds,Electronics,4,16488.24,65952.96,UPI,South
+TXN-10288,2022-05-20 14:40:14,P20013,Premium Boots v82,Footwear,2,28106.26,56212.52,Net Banking,South
+TXN-10716,2022-05-24 04:04:37,P100007,Reebok Shoes,Footwear,3,1715.7,5147.1,UPI,East
+TXN-10347,2022-05-24 08:34:28,P2005,Premium Travel Bag v36,Accessories,5,3262.44,16312.2,Debit Card,South
+TXN-10093,2022-05-28 01:06:37,P100020,American Tourister Bag,Accessories,3,596.64,1789.92,UPI,Central
+TXN-10675,2022-05-28 07:16:50,P20012,Premium Smartphone v3,Electronics,4,23016.96,92067.84,UPI,South
+TXN-10425,2022-05-28 10:45:43,P100012,OnePlus 11,Electronics,1,11066.5,11066.5,UPI,North
+TXN-10303,2022-05-29 09:39:11,P2003,Premium Running Shoes v27,Footwear,5,65156.0,325780.0,Credit Card,West
+TXN-10309,2022-05-29 10:57:28,P100032,Nike Air Max,Footwear,4,369.3,1477.2,Debit Card,East
+TXN-11198,2022-05-29 19:22:21,P20014,Premium Travel Bag v68,Accessories,3,5338.74,16016.22,Net Banking,West
+TXN-11051,2022-05-30 00:03:45,P100004,Nike T-shirt,Fashion,5,822.15,4110.75,UPI,East
+TXN-10712,2022-05-31 17:30:35,P20015,Premium Travel Bag v98,Accessories,5,25338.4,126692.0,Credit Card,East
+TXN-10328,2022-06-01 00:35:25,P100026,HP Pavilion,Electronics,3,20719.78,62159.34,UPI,West
+TXN-10060,2022-06-01 20:55:45,P100009,Wildcraft Backpack,Accessories,5,1136.1,5680.5,UPI,South
+TXN-11062,2022-06-02 06:31:12,P100026,HP Pavilion,Electronics,4,20719.78,82879.12,Net Banking,North
+TXN-10036,2022-06-02 22:02:19,P100001,Zara Shirt,Fashion,5,1177.2,5886.0,UPI,West
+TXN-10582,2022-06-03 04:17:30,P100012,OnePlus 11,Electronics,3,11066.5,33199.5,Debit Card,East
+TXN-10147,2022-06-03 18:31:36,P20015,Premium Travel Bag v98,Accessories,2,25338.4,50676.8,Net Banking,West
+TXN-10326,2022-06-05 10:15:50,P20015,Premium Travel Bag v98,Accessories,4,25338.4,101353.6,Debit Card,West
+TXN-10108,2022-06-06 08:04:29,P20017,Premium Jeans v100,Fashion,3,53091.7,159275.1,Net Banking,East
+TXN-10460,2022-06-08 07:03:05,P20016,Premium Jacket v77,Fashion,1,17755.36,17755.36,Net Banking,North
+TXN-10297,2022-06-10 00:48:47,P20017,Premium Jeans v100,Fashion,3,53091.7,159275.1,Net Banking,West
+TXN-10334,2022-06-10 06:16:24,P20022,Premium Sweatshirt v3,Fashion,4,36897.57,147590.28,Debit Card,North
+TXN-10352,2022-06-10 07:07:27,P100012,OnePlus 11,Electronics,5,11066.5,55332.5,UPI,West
+TXN-10052,2022-06-11 06:13:19,P100004,Nike T-shirt,Fashion,2,822.15,1644.3,Credit Card,Central
+TXN-10826,2022-06-11 13:10:52,P2000,Premium Sneakers v11,Footwear,4,59534.85,238139.4,Net Banking,North
+TXN-10047,2022-06-11 13:48:15,P2006,Premium Boots v22,Footwear,4,55880.0,223520.0,UPI,West
+TXN-10664,2022-06-12 14:45:39,P100000,iPhone 13,Electronics,4,28109.96,112439.84,Net Banking,East
+TXN-10987,2022-06-15 02:23:23,P20019,Premium Wallet v96,Accessories,5,22615.67,113078.35,Debit Card,West
+TXN-11195,2022-06-15 08:55:13,P20010,Premium Travel Bag v67,Accessories,4,9009.6,36038.4,UPI,West
+TXN-10819,2022-06-15 12:16:11,P100004,Nike T-shirt,Fashion,4,822.15,3288.6,Net Banking,South
+TXN-11186,2022-06-15 17:25:10,P20018,Premium Smartwatch v14,Electronics,4,4781.5,19126.0,Credit Card,Central
+TXN-10900,2022-06-18 08:16:43,P100010,Adidas Hoodie,Fashion,4,1733.82,6935.28,Debit Card,North
+TXN-10476,2022-06-18 10:23:19,P2005,Premium Travel Bag v36,Accessories,1,3262.44,3262.44,UPI,North
+TXN-10897,2022-06-21 01:27:53,P2007,Premium Sunglasses v59,Accessories,5,10099.76,50498.8,Debit Card,Central
+TXN-10188,2022-06-22 10:43:32,P100027,Boat Earbuds,Electronics,5,16488.24,82441.2,Debit Card,South
+TXN-10860,2022-06-23 22:45:55,P100034,Puma Jacket,Fashion,4,2772.0,11088.0,UPI,West
+TXN-10337,2022-06-25 10:26:43,P20015,Premium Travel Bag v98,Accessories,3,25338.4,76015.2,Credit Card,Central
+TXN-10089,2022-06-26 02:35:04,P100036,Samsung Galaxy S21,Electronics,1,16251.85,16251.85,Credit Card,North
+TXN-10914,2022-06-27 15:11:16,P100007,Reebok Shoes,Footwear,3,1715.7,5147.1,UPI,East
+TXN-10332,2022-06-27 15:31:28,P20023,Premium Wallet v49,Accessories,5,2613.16,13065.8,Debit Card,North
+TXN-10497,2022-06-28 03:44:41,P20021,Premium Travel Bag v85,Accessories,4,5197.41,20789.64,Debit Card,Central
+TXN-10389,2022-06-28 09:26:16,P100007,Reebok Shoes,Footwear,1,1715.7,1715.7,UPI,East
+TXN-10862,2022-06-29 03:14:14,P2005,Premium Travel Bag v36,Accessories,4,3262.44,13049.76,Credit Card,West
+TXN-10405,2022-06-29 21:43:45,P100027,Boat Earbuds,Electronics,3,16488.24,49464.72,UPI,East
+TXN-10846,2022-06-30 04:28:44,P2002,Premium Headphones v82,Electronics,3,23300.55,69901.65,Net Banking,North
+TXN-10917,2022-07-01 00:50:34,P2003,Premium Running Shoes v27,Footwear,1,65156.0,65156.0,Credit Card,Central
+TXN-11132,2022-07-01 18:31:19,P100026,HP Pavilion,Electronics,5,20719.78,103598.9,UPI,North
+TXN-10739,2022-07-02 20:26:37,P2007,Premium Sunglasses v59,Accessories,2,10099.76,20199.52,UPI,East
+TXN-10182,2022-07-03 07:16:41,P20019,Premium Wallet v96,Accessories,3,22615.67,67847.01,Debit Card,North
+TXN-10420,2022-07-04 00:10:36,P100037,Adidas Ultraboost,Footwear,1,5873.12,5873.12,Net Banking,South
+TXN-10504,2022-07-06 13:49:33,P100000,iPhone 13,Electronics,1,28109.96,28109.96,Credit Card,East
+TXN-11169,2022-07-07 08:24:18,P100020,American Tourister Bag,Accessories,1,596.64,596.64,Net Banking,Central
+TXN-10569,2022-07-08 10:29:12,P100016,Sony Headphones,Electronics,5,21524.32,107621.6,Credit Card,North
+TXN-10026,2022-07-09 13:54:24,P20019,Premium Wallet v96,Accessories,4,22615.67,90462.68,Net Banking,Central
+TXN-11152,2022-07-10 16:45:17,P2007,Premium Sunglasses v59,Accessories,5,10099.76,50498.8,Credit Card,West
+TXN-10635,2022-07-10 20:53:05,P20016,Premium Jacket v77,Fashion,5,17755.36,88776.8,Credit Card,South
+TXN-11153,2022-07-14 01:20:42,P100032,Nike Air Max,Footwear,4,369.3,1477.2,Credit Card,Central
+TXN-10833,2022-07-14 01:59:18,P20019,Premium Wallet v96,Accessories,5,22615.67,113078.35,Debit Card,West
+TXN-10589,2022-07-14 06:39:37,P20022,Premium Sweatshirt v3,Fashion,1,36897.57,36897.57,Debit Card,North
+TXN-10341,2022-07-15 05:21:06,P100026,HP Pavilion,Electronics,5,20719.78,103598.9,Debit Card,South
+TXN-10948,2022-07-17 13:02:18,P100000,iPhone 13,Electronics,1,28109.96,28109.96,UPI,Central
+TXN-10342,2022-07-17 15:45:03,P20013,Premium Boots v82,Footwear,5,28106.26,140531.3,Net Banking,Central
+TXN-10251,2022-07-17 20:34:12,P20014,Premium Travel Bag v68,Accessories,2,5338.74,10677.48,Credit Card,South
+TXN-10237,2022-07-19 00:30:31,P20015,Premium Travel Bag v98,Accessories,4,25338.4,101353.6,UPI,Central
+TXN-10368,2022-07-19 03:23:51,P20018,Premium Smartwatch v14,Electronics,1,4781.5,4781.5,Credit Card,North
+TXN-10869,2022-07-19 03:52:11,P2006,Premium Boots v22,Footwear,2,55880.0,111760.0,UPI,South
+TXN-10292,2022-07-20 08:20:24,P100026,HP Pavilion,Electronics,5,20719.78,103598.9,Net Banking,Central
+TXN-10212,2022-07-21 21:03:01,P100010,Adidas Hoodie,Fashion,5,1733.82,8669.1,UPI,West
+TXN-10500,2022-07-23 16:52:13,P20016,Premium Jacket v77,Fashion,3,17755.36,53266.08,Credit Card,South
+TXN-11128,2022-07-23 19:21:53,P100032,Nike Air Max,Footwear,4,369.3,1477.2,Net Banking,East
+TXN-11135,2022-07-25 09:01:16,P100009,Wildcraft Backpack,Accessories,5,1136.1,5680.5,Net Banking,West
+TXN-10812,2022-07-29 01:49:47,P100003,Puma Sneakers,Footwear,2,2988.4,5976.8,UPI,North
+TXN-11019,2022-08-02 02:48:41,P20021,Premium Travel Bag v85,Accessories,2,5197.41,10394.82,UPI,South
+TXN-10049,2022-08-02 06:31:48,P100043,H&M Sweatshirt,Fashion,1,1639.44,1639.44,UPI,East
+TXN-10499,2022-08-03 21:34:13,P20011,Premium Travel Bag v3,Accessories,2,8918.94,17837.88,Debit Card,South
+TXN-10649,2022-08-03 21:38:22,P100026,HP Pavilion,Electronics,2,20719.78,41439.56,UPI,North
+TXN-10125,2022-08-05 14:33:29,P20021,Premium Travel Bag v85,Accessories,2,5197.41,10394.82,Credit Card,West
+TXN-10913,2022-08-05 20:24:00,P2004,Premium Travel Bag v87,Accessories,5,32520.95,162604.75,Debit Card,East
+TXN-10702,2022-08-06 19:21:55,P20016,Premium Jacket v77,Fashion,3,17755.36,53266.08,Credit Card,Central
+TXN-10690,2022-08-07 03:09:37,P100012,OnePlus 11,Electronics,1,11066.5,11066.5,UPI,West
+TXN-10520,2022-08-08 20:20:14,P20011,Premium Travel Bag v3,Accessories,3,8918.94,26756.82,Debit Card,East
+TXN-11025,2022-08-11 08:22:30,P100127,Dell Laptop,Electronics,1,46702.04,46702.04,UPI,West
+TXN-10035,2022-08-12 12:00:15,P2000,Premium Sneakers v11,Footwear,1,59534.85,59534.85,Debit Card,West
+TXN-10088,2022-08-14 00:44:49,P100002,RayBan Sunglasses,Accessories,5,548.1,2740.5,Credit Card,South
+TXN-10011,2022-08-16 07:54:12,P2003,Premium Running Shoes v27,Footwear,3,65156.0,195468.0,Debit Card,Central
+TXN-10616,2022-08-16 15:58:29,P20013,Premium Boots v82,Footwear,5,28106.26,140531.3,UPI,North
+TXN-11192,2022-08-18 00:58:17,P2002,Premium Headphones v82,Electronics,1,23300.55,23300.55,Debit Card,North
+TXN-10094,2022-08-20 04:45:09,P20019,Premium Wallet v96,Accessories,1,22615.67,22615.67,UPI,South
+TXN-10078,2022-08-22 01:10:23,P100000,iPhone 13,Electronics,5,28109.96,140549.8,Debit Card,Central
+TXN-11073,2022-08-22 20:57:42,P20021,Premium Travel Bag v85,Accessories,5,5197.41,25987.05,Net Banking,West
+TXN-10359,2022-08-24 01:31:52,P100127,Dell Laptop,Electronics,3,46702.04,140106.12,Credit Card,North
+TXN-10256,2022-08-24 06:05:03,P20016,Premium Jacket v77,Fashion,4,17755.36,71021.44,Credit Card,West
+TXN-11081,2022-08-24 14:13:07,P2002,Premium Headphones v82,Electronics,3,23300.55,69901.65,UPI,South
+TXN-11148,2022-08-25 01:14:18,P2004,Premium Travel Bag v87,Accessories,3,32520.95,97562.85,UPI,North
+TXN-11093,2022-08-26 18:51:07,P20016,Premium Jacket v77,Fashion,5,17755.36,88776.8,Credit Card,West
+TXN-10121,2022-08-28 02:06:42,P20016,Premium Jacket v77,Fashion,2,17755.36,35510.72,UPI,Central
+TXN-11000,2022-08-29 22:06:34,P100009,Wildcraft Backpack,Accessories,3,1136.1,3408.3,Net Banking,Central
+TXN-10511,2022-08-30 05:42:08,P100003,Puma Sneakers,Footwear,2,2988.4,5976.8,Debit Card,South
+TXN-11031,2022-08-30 20:22:40,P100032,Nike Air Max,Footwear,4,369.3,1477.2,UPI,Central
+TXN-10165,2022-08-31 16:58:30,P100009,Wildcraft Backpack,Accessories,5,1136.1,5680.5,Credit Card,East
+TXN-10299,2022-09-02 02:25:45,P20015,Premium Travel Bag v98,Accessories,3,25338.4,76015.2,Credit Card,Central
+TXN-10787,2022-09-03 02:05:23,P20021,Premium Travel Bag v85,Accessories,2,5197.41,10394.82,Net Banking,South
+TXN-11108,2022-09-04 19:53:44,P100026,HP Pavilion,Electronics,5,20719.78,103598.9,Debit Card,South
+TXN-11196,2022-09-06 18:33:07,P100003,Puma Sneakers,Footwear,4,2988.4,11953.6,UPI,North
+TXN-10462,2022-09-09 14:07:10,P2005,Premium Travel Bag v36,Accessories,2,3262.44,6524.88,Net Banking,East
+TXN-10711,2022-09-10 15:10:53,P20019,Premium Wallet v96,Accessories,1,22615.67,22615.67,Credit Card,North
+TXN-10798,2022-09-11 00:04:47,P20014,Premium Travel Bag v68,Accessories,1,5338.74,5338.74,Net Banking,South
+TXN-10381,2022-09-11 07:14:28,P100007,Reebok Shoes,Footwear,3,1715.7,5147.1,Net Banking,North
+TXN-10802,2022-09-12 09:03:05,P100043,H&M Sweatshirt,Fashion,1,1639.44,1639.44,UPI,North
+TXN-10422,2022-09-12 10:28:06,P2007,Premium Sunglasses v59,Accessories,1,10099.76,10099.76,UPI,Central
+TXN-10943,2022-09-12 23:50:18,P20022,Premium Sweatshirt v3,Fashion,3,36897.57,110692.71,Debit Card,East
+TXN-11178,2022-09-15 12:02:34,P20022,Premium Sweatshirt v3,Fashion,3,36897.57,110692.71,Credit Card,South
+TXN-11012,2022-09-15 22:49:54,P100001,Zara Shirt,Fashion,4,1177.2,4708.8,Credit Card,West
+TXN-10626,2022-09-17 23:43:53,P20017,Premium Jeans v100,Fashion,4,53091.7,212366.8,Debit Card,West
+TXN-10699,2022-09-19 13:03:05,P20022,Premium Sweatshirt v3,Fashion,2,36897.57,73795.14,Debit Card,South
+TXN-11004,2022-09-22 13:05:03,P20012,Premium Smartphone v3,Electronics,2,23016.96,46033.92,Credit Card,East
+TXN-10555,2022-09-22 19:36:18,P100010,Adidas Hoodie,Fashion,1,1733.82,1733.82,Net Banking,West
+TXN-10981,2022-09-23 21:59:29,P100127,Dell Laptop,Electronics,3,46702.04,140106.12,Credit Card,South
+TXN-10280,2022-09-24 17:13:57,P20014,Premium Travel Bag v68,Accessories,1,5338.74,5338.74,Credit Card,Central
+TXN-10004,2022-09-25 02:50:32,P20018,Premium Smartwatch v14,Electronics,1,4781.5,4781.5,Debit Card,North
+TXN-10600,2022-09-30 00:14:45,P100026,HP Pavilion,Electronics,4,20719.78,82879.12,Credit Card,Central
+TXN-10517,2022-10-02 05:41:40,P2003,Premium Running Shoes v27,Footwear,5,65156.0,325780.0,Credit Card,Central
+TXN-10019,2022-10-02 22:34:32,P100017,Levi's Jeans,Fashion,4,2131.42,8525.68,Debit Card,East
+TXN-11156,2022-10-06 01:38:38,P2008,Premium Headphones v48,Electronics,4,8780.67,35122.68,Credit Card,South
+TXN-10139,2022-10-10 00:19:33,P100017,Levi's Jeans,Fashion,1,2131.42,2131.42,Debit Card,North
+TXN-10698,2022-10-10 06:33:59,P20017,Premium Jeans v100,Fashion,2,53091.7,106183.4,UPI,North
+TXN-11167,2022-10-11 04:03:29,P20023,Premium Wallet v49,Accessories,5,2613.16,13065.8,Credit Card,North
+TXN-10810,2022-10-11 17:57:34,P100036,Samsung Galaxy S21,Electronics,1,16251.85,16251.85,Credit Card,North
+TXN-10558,2022-10-12 06:42:59,P20010,Premium Travel Bag v67,Accessories,1,9009.6,9009.6,Credit Card,East
+TXN-10926,2022-10-14 14:00:59,P100037,Adidas Ultraboost,Footwear,5,5873.12,29365.6,Net Banking,East
+TXN-10584,2022-10-18 15:58:13,P20010,Premium Travel Bag v67,Accessories,4,9009.6,36038.4,Debit Card,South
+TXN-10940,2022-10-18 17:44:36,P20014,Premium Travel Bag v68,Accessories,5,5338.74,26693.7,Net Banking,South
+TXN-10127,2022-10-20 11:23:37,P100010,Adidas Hoodie,Fashion,4,1733.82,6935.28,Net Banking,West
+TXN-10850,2022-10-21 12:31:39,P20020,Premium Shirt v42,Fashion,2,10216.92,20433.84,Credit Card,South
+TXN-10404,2022-10-21 18:54:26,P100032,Nike Air Max,Footwear,3,369.3,1107.9,Credit Card,South
+TXN-10744,2022-10-21 22:46:38,P20012,Premium Smartphone v3,Electronics,3,23016.96,69050.88,Credit Card,South
+TXN-11102,2022-10-23 11:42:30,P20018,Premium Smartwatch v14,Electronics,1,4781.5,4781.5,Credit Card,South
+TXN-10224,2022-10-24 04:52:33,P20019,Premium Wallet v96,Accessories,3,22615.67,67847.01,Debit Card,Central
+TXN-10898,2022-10-24 17:56:29,P100001,Zara Shirt,Fashion,1,1177.2,1177.2,Credit Card,Central
+TXN-10957,2022-10-24 20:24:32,P100010,Adidas Hoodie,Fashion,4,1733.82,6935.28,Debit Card,Central
+TXN-11199,2022-10-25 01:06:26,P100032,Nike Air Max,Footwear,3,369.3,1107.9,Credit Card,West
+TXN-10576,2022-10-28 04:01:41,P100027,Boat Earbuds,Electronics,3,16488.24,49464.72,Debit Card,Central
+TXN-10648,2022-10-29 16:22:17,P100004,Nike T-shirt,Fashion,1,822.15,822.15,Credit Card,East
+TXN-11087,2022-10-30 19:05:19,P100020,American Tourister Bag,Accessories,5,596.64,2983.2,Credit Card,South
+TXN-10134,2022-11-02 13:05:25,P100017,Levi's Jeans,Fashion,4,2131.42,8525.68,UPI,East
+TXN-10528,2022-11-03 14:27:37,P100006,Fossil Watch,Accessories,3,1568.27,4704.81,Credit Card,South
+TXN-11175,2022-11-05 08:12:20,P20017,Premium Jeans v100,Fashion,3,53091.7,159275.1,UPI,East
+TXN-10697,2022-11-06 17:35:41,P100020,American Tourister Bag,Accessories,3,596.64,1789.92,Net Banking,South
+TXN-10991,2022-11-06 20:39:12,P100007,Reebok Shoes,Footwear,2,1715.7,3431.4,Credit Card,West
+TXN-11039,2022-11-06 20:43:40,P20022,Premium Sweatshirt v3,Fashion,5,36897.57,184487.85,Net Banking,East
+TXN-10158,2022-11-08 15:44:22,P100127,Dell Laptop,Electronics,5,46702.04,233510.2,Debit Card,East
+TXN-10306,2022-11-08 17:39:22,P2008,Premium Headphones v48,Electronics,2,8780.67,17561.34,UPI,North
+TXN-11001,2022-11-09 05:29:56,P20019,Premium Wallet v96,Accessories,2,22615.67,45231.34,Debit Card,North
+TXN-10770,2022-11-11 10:20:00,P20013,Premium Boots v82,Footwear,2,28106.26,56212.52,Net Banking,Central
+TXN-11083,2022-11-13 18:19:59,P100027,Boat Earbuds,Electronics,4,16488.24,65952.96,Net Banking,North
+TXN-10324,2022-11-18 19:23:42,P20019,Premium Wallet v96,Accessories,1,22615.67,22615.67,Net Banking,Central
+TXN-10685,2022-11-19 11:33:04,P20020,Premium Shirt v42,Fashion,2,10216.92,20433.84,Net Banking,South
+TXN-10236,2022-11-19 15:33:18,P100036,Samsung Galaxy S21,Electronics,3,16251.85,48755.55,Debit Card,East
+TXN-10508,2022-11-19 17:38:48,P100037,Adidas Ultraboost,Footwear,2,5873.12,11746.24,Credit Card,North
+TXN-10042,2022-11-21 06:11:28,P100016,Sony Headphones,Electronics,4,21524.32,86097.28,Debit Card,Central
+TXN-11069,2022-11-23 01:41:04,P20020,Premium Shirt v42,Fashion,1,10216.92,10216.92,Credit Card,West
+TXN-11137,2022-11-24 03:41:18,P20012,Premium Smartphone v3,Electronics,4,23016.96,92067.84,Debit Card,Central
+TXN-10976,2022-11-25 04:59:35,P2006,Premium Boots v22,Footwear,4,55880.0,223520.0,Debit Card,South
+TXN-10890,2022-11-26 02:56:28,P100032,Nike Air Max,Footwear,1,369.3,369.3,Net Banking,East
+TXN-10104,2022-11-26 05:45:38,P100017,Levi's Jeans,Fashion,5,2131.42,10657.1,Credit Card,South
+TXN-10944,2022-11-26 23:47:36,P100006,Fossil Watch,Accessories,1,1568.27,1568.27,Credit Card,East
+TXN-10122,2022-11-27 00:30:49,P20013,Premium Boots v82,Footwear,2,28106.26,56212.52,Net Banking,West
+TXN-11124,2022-11-27 11:09:01,P100000,iPhone 13,Electronics,2,28109.96,56219.92,Debit Card,West
+TXN-11085,2022-11-28 22:29:31,P2000,Premium Sneakers v11,Footwear,1,59534.85,59534.85,UPI,North
+TXN-10551,2022-12-01 17:11:33,P2002,Premium Headphones v82,Electronics,2,23300.55,46601.1,Credit Card,Central
+TXN-10018,2022-12-05 17:11:50,P2001,Premium Jeans v4,Fashion,2,9515.2,19030.4,UPI,Central
+TXN-10657,2022-12-07 03:38:51,P100000,iPhone 13,Electronics,3,28109.96,84329.88,Credit Card,East
+TXN-10162,2022-12-09 18:03:18,P100000,iPhone 13,Electronics,4,28109.96,112439.84,Debit Card,East
+TXN-10644,2022-12-09 19:08:25,P2008,Premium Headphones v48,Electronics,3,8780.67,26342.01,UPI,South
+TXN-11154,2022-12-09 21:05:15,P100003,Puma Sneakers,Footwear,5,2988.4,14942.0,Credit Card,North
+TXN-11030,2022-12-12 17:46:15,P2006,Premium Boots v22,Footwear,3,55880.0,167640.0,Debit Card,East
+TXN-11059,2022-12-12 20:47:37,P100001,Zara Shirt,Fashion,3,1177.2,3531.6,UPI,North
+TXN-10430,2022-12-13 02:28:18,P100017,Levi's Jeans,Fashion,2,2131.42,4262.84,UPI,West
+TXN-10329,2022-12-15 00:07:36,P100007,Reebok Shoes,Footwear,5,1715.7,8578.5,UPI,North
+TXN-11046,2022-12-16 01:04:02,P100027,Boat Earbuds,Electronics,2,16488.24,32976.48,Credit Card,East
+TXN-10936,2022-12-16 17:53:14,P100026,HP Pavilion,Electronics,5,20719.78,103598.9,Net Banking,West
+TXN-10167,2022-12-18 06:26:04,P100010,Adidas Hoodie,Fashion,2,1733.82,3467.64,Net Banking,South
+TXN-10432,2022-12-18 21:47:51,P100007,Reebok Shoes,Footwear,1,1715.7,1715.7,Debit Card,East
+TXN-10259,2022-12-20 03:52:45,P2001,Premium Jeans v4,Fashion,5,9515.2,47576.0,UPI,South
+TXN-10481,2022-12-20 13:28:17,P20021,Premium Travel Bag v85,Accessories,4,5197.41,20789.64,UPI,North
+TXN-10156,2022-12-20 23:53:15,P20012,Premium Smartphone v3,Electronics,1,23016.96,23016.96,UPI,Central
+TXN-11014,2022-12-21 06:27:04,P100037,Adidas Ultraboost,Footwear,5,5873.12,29365.6,Credit Card,East
+TXN-10960,2022-12-21 14:16:04,P20022,Premium Sweatshirt v3,Fashion,4,36897.57,147590.28,Credit Card,Central
+TXN-10945,2022-12-22 13:49:39,P20021,Premium Travel Bag v85,Accessories,2,5197.41,10394.82,Net Banking,Central
+TXN-10262,2022-12-22 14:37:01,P2003,Premium Running Shoes v27,Footwear,2,65156.0,130312.0,Debit Card,Central
+TXN-10330,2022-12-23 21:22:30,P100034,Puma Jacket,Fashion,5,2772.0,13860.0,Credit Card,East
+TXN-10054,2022-12-28 08:50:57,P2007,Premium Sunglasses v59,Accessories,3,10099.76,30299.28,Debit Card,South
+TXN-10856,2022-12-29 01:19:57,P20015,Premium Travel Bag v98,Accessories,2,25338.4,50676.8,Net Banking,West
+TXN-11079,2022-12-30 16:23:19,P20021,Premium Travel Bag v85,Accessories,4,5197.41,20789.64,Net Banking,North
+TXN-10413,2023-01-01 00:17:07,P2003,Premium Running Shoes v27,Footwear,5,65156.0,325780.0,Debit Card,East
+TXN-11047,2023-01-01 05:17:05,P20014,Premium Travel Bag v68,Accessories,2,5338.74,10677.48,Credit Card,West
+TXN-10996,2023-01-03 02:34:33,P20020,Premium Shirt v42,Fashion,5,10216.92,51084.6,UPI,Central
+TXN-10503,2023-01-03 12:30:42,P100036,Samsung Galaxy S21,Electronics,5,16251.85,81259.25,Net Banking,West
+TXN-10783,2023-01-04 21:37:03,P2005,Premium Travel Bag v36,Accessories,2,3262.44,6524.88,UPI,South
+TXN-10694,2023-01-06 08:43:38,P20023,Premium Wallet v49,Accessories,2,2613.16,5226.32,UPI,North
+TXN-10239,2023-01-06 16:03:45,P100036,Samsung Galaxy S21,Electronics,1,16251.85,16251.85,Debit Card,South
+TXN-10629,2023-01-07 20:32:14,P20023,Premium Wallet v49,Accessories,3,2613.16,7839.48,Debit Card,East
+TXN-10168,2023-01-08 02:59:55,P100027,Boat Earbuds,Electronics,2,16488.24,32976.48,Debit Card,South
+TXN-11165,2023-01-08 16:03:09,P100026,HP Pavilion,Electronics,5,20719.78,103598.9,Debit Card,North
+TXN-11068,2023-01-10 00:16:46,P2000,Premium Sneakers v11,Footwear,4,59534.85,238139.4,UPI,Central
+TXN-10333,2023-01-10 20:13:11,P100043,H&M Sweatshirt,Fashion,4,1639.44,6557.76,Debit Card,South
+TXN-10270,2023-01-12 04:57:15,P20014,Premium Travel Bag v68,Accessories,3,5338.74,16016.22,Debit Card,Central
+TXN-10930,2023-01-12 10:04:33,P100004,Nike T-shirt,Fashion,4,822.15,3288.6,UPI,West
+TXN-10681,2023-01-15 01:32:21,P2002,Premium Headphones v82,Electronics,1,23300.55,23300.55,UPI,Central
+TXN-10742,2023-01-15 16:33:19,P20022,Premium Sweatshirt v3,Fashion,5,36897.57,184487.85,UPI,West
+TXN-11146,2023-01-16 16:06:43,P20011,Premium Travel Bag v3,Accessories,4,8918.94,35675.76,Credit Card,Central
+TXN-11139,2023-01-19 09:54:46,P100032,Nike Air Max,Footwear,3,369.3,1107.9,UPI,West
+TXN-10397,2023-01-19 14:13:12,P100037,Adidas Ultraboost,Footwear,2,5873.12,11746.24,Credit Card,North
+TXN-10281,2023-01-22 07:49:00,P2002,Premium Headphones v82,Electronics,2,23300.55,46601.1,Net Banking,West
+TXN-10474,2023-01-22 10:26:18,P100012,OnePlus 11,Electronics,5,11066.5,55332.5,Net Banking,South
+TXN-11055,2023-01-25 04:04:38,P100016,Sony Headphones,Electronics,4,21524.32,86097.28,UPI,South
+TXN-10610,2023-01-25 20:11:13,P100000,iPhone 13,Electronics,5,28109.96,140549.8,Debit Card,North
+TXN-10357,2023-01-27 07:15:29,P2003,Premium Running Shoes v27,Footwear,2,65156.0,130312.0,UPI,East
+TXN-10193,2023-01-27 17:26:20,P100034,Puma Jacket,Fashion,3,2772.0,8316.0,Debit Card,East
+TXN-10172,2023-01-31 11:40:37,P100020,American Tourister Bag,Accessories,5,596.64,2983.2,Net Banking,Central
+TXN-10144,2023-01-31 12:15:30,P20021,Premium Travel Bag v85,Accessories,4,5197.41,20789.64,Net Banking,North
+TXN-10295,2023-02-06 06:56:34,P100009,Wildcraft Backpack,Accessories,3,1136.1,3408.3,Debit Card,East
+TXN-10101,2023-02-06 16:58:37,P2001,Premium Jeans v4,Fashion,3,9515.2,28545.6,Debit Card,South
+TXN-10379,2023-02-07 18:16:26,P100034,Puma Jacket,Fashion,1,2772.0,2772.0,Net Banking,North
+TXN-11129,2023-02-08 00:54:24,P20012,Premium Smartphone v3,Electronics,2,23016.96,46033.92,Net Banking,South
+TXN-10351,2023-02-08 06:23:28,P20014,Premium Travel Bag v68,Accessories,3,5338.74,16016.22,Debit Card,South
+TXN-10668,2023-02-10 18:53:09,P100020,American Tourister Bag,Accessories,3,596.64,1789.92,UPI,North
+TXN-10838,2023-02-10 19:08:18,P20017,Premium Jeans v100,Fashion,3,53091.7,159275.1,Net Banking,South
+TXN-10983,2023-02-10 21:58:01,P100034,Puma Jacket,Fashion,5,2772.0,13860.0,UPI,West
+TXN-10646,2023-02-14 16:53:13,P100001,Zara Shirt,Fashion,4,1177.2,4708.8,Credit Card,West
+TXN-10181,2023-02-17 05:04:37,P100034,Puma Jacket,Fashion,5,2772.0,13860.0,Credit Card,North
+TXN-10412,2023-02-19 17:52:40,P100043,H&M Sweatshirt,Fashion,1,1639.44,1639.44,Credit Card,North
+TXN-10402,2023-02-20 03:32:37,P20011,Premium Travel Bag v3,Accessories,2,8918.94,17837.88,UPI,West
+TXN-10120,2023-02-20 21:53:01,P100037,Adidas Ultraboost,Footwear,2,5873.12,11746.24,Credit Card,South
+TXN-10206,2023-02-21 20:14:01,P20021,Premium Travel Bag v85,Accessories,4,5197.41,20789.64,Net Banking,West
+TXN-10766,2023-02-22 06:05:29,P2003,Premium Running Shoes v27,Footwear,4,65156.0,260624.0,Debit Card,North
+TXN-10410,2023-02-24 01:05:18,P20017,Premium Jeans v100,Fashion,4,53091.7,212366.8,UPI,North
+TXN-10160,2023-02-24 16:43:16,P100032,Nike Air Max,Footwear,3,369.3,1107.9,UPI,North
+TXN-10308,2023-02-26 23:36:57,P2000,Premium Sneakers v11,Footwear,2,59534.85,119069.7,UPI,North
+TXN-10754,2023-02-27 13:57:43,P100007,Reebok Shoes,Footwear,3,1715.7,5147.1,Net Banking,Central
+TXN-10541,2023-03-01 07:05:48,P20023,Premium Wallet v49,Accessories,5,2613.16,13065.8,Debit Card,Central
+TXN-10678,2023-03-01 11:46:30,P20015,Premium Travel Bag v98,Accessories,2,25338.4,50676.8,Net Banking,North
+TXN-10145,2023-03-01 17:37:30,P20013,Premium Boots v82,Footwear,5,28106.26,140531.3,Net Banking,East
+TXN-11098,2023-03-02 00:41:50,P100009,Wildcraft Backpack,Accessories,4,1136.1,4544.4,Debit Card,East
+TXN-10260,2023-03-02 23:42:58,P100036,Samsung Galaxy S21,Electronics,4,16251.85,65007.4,Net Banking,West
+TXN-10786,2023-03-04 23:46:00,P20022,Premium Sweatshirt v3,Fashion,1,36897.57,36897.57,Net Banking,South
+TXN-10937,2023-03-10 07:26:00,P2006,Premium Boots v22,Footwear,5,55880.0,279400.0,UPI,South
+TXN-10186,2023-03-11 12:22:19,P2004,Premium Travel Bag v87,Accessories,2,32520.95,65041.9,Net Banking,South
+TXN-11036,2023-03-14 05:54:15,P20015,Premium Travel Bag v98,Accessories,5,25338.4,126692.0,Debit Card,East
+TXN-10591,2023-03-18 16:04:15,P20011,Premium Travel Bag v3,Accessories,1,8918.94,8918.94,Debit Card,North
+TXN-10269,2023-03-18 21:51:46,P100032,Nike Air Max,Footwear,5,369.3,1846.5,UPI,South
+TXN-10353,2023-03-20 22:34:59,P20017,Premium Jeans v100,Fashion,2,53091.7,106183.4,Net Banking,Central
+TXN-10177,2023-03-23 21:30:34,P100002,RayBan Sunglasses,Accessories,1,548.1,548.1,Debit Card,West
+TXN-10159,2023-03-23 23:32:18,P20015,Premium Travel Bag v98,Accessories,5,25338.4,126692.0,Credit Card,East
+TXN-10111,2023-03-24 17:55:19,P20016,Premium Jacket v77,Fashion,5,17755.36,88776.8,Debit Card,West
+TXN-10759,2023-03-26 04:40:49,P2002,Premium Headphones v82,Electronics,1,23300.55,23300.55,UPI,Central
+TXN-10196,2023-03-26 12:11:56,P2006,Premium Boots v22,Footwear,2,55880.0,111760.0,Credit Card,South
+TXN-10222,2023-03-26 20:13:15,P100000,iPhone 13,Electronics,5,28109.96,140549.8,Debit Card,East
+TXN-10512,2023-03-27 11:22:50,P100032,Nike Air Max,Footwear,2,369.3,738.6,Debit Card,Central
+TXN-10458,2023-03-27 13:05:53,P20010,Premium Travel Bag v67,Accessories,4,9009.6,36038.4,UPI,East
+TXN-10267,2023-03-27 13:28:11,P100020,American Tourister Bag,Accessories,3,596.64,1789.92,Net Banking,South
+TXN-10161,2023-03-27 23:59:07,P100002,RayBan Sunglasses,Accessories,5,548.1,2740.5,Credit Card,West
+TXN-10264,2023-03-28 23:25:05,P100037,Adidas Ultraboost,Footwear,2,5873.12,11746.24,UPI,East
+TXN-10283,2023-03-30 00:37:43,P2005,Premium Travel Bag v36,Accessories,2,3262.44,6524.88,Net Banking,West
+TXN-10865,2023-04-03 15:40:59,P20021,Premium Travel Bag v85,Accessories,3,5197.41,15592.23,UPI,West
+TXN-10325,2023-04-03 20:04:11,P2000,Premium Sneakers v11,Footwear,3,59534.85,178604.55,Debit Card,South
+TXN-10056,2023-04-04 06:37:01,P20013,Premium Boots v82,Footwear,5,28106.26,140531.3,Credit Card,North
+TXN-10445,2023-04-04 16:37:38,P20022,Premium Sweatshirt v3,Fashion,5,36897.57,184487.85,UPI,West
+TXN-10313,2023-04-08 05:19:27,P100003,Puma Sneakers,Footwear,2,2988.4,5976.8,UPI,South
+TXN-10718,2023-04-12 14:51:29,P100026,HP Pavilion,Electronics,3,20719.78,62159.34,Debit Card,Central
+TXN-10098,2023-04-13 08:02:06,P20023,Premium Wallet v49,Accessories,5,2613.16,13065.8,Credit Card,East
+TXN-10340,2023-04-16 10:53:18,P20011,Premium Travel Bag v3,Accessories,3,8918.94,26756.82,Debit Card,South
+TXN-10129,2023-04-16 12:45:43,P20018,Premium Smartwatch v14,Electronics,2,4781.5,9563.0,UPI,Central
+TXN-10051,2023-04-17 17:01:39,P100006,Fossil Watch,Accessories,3,1568.27,4704.81,Net Banking,Central
+TXN-10677,2023-04-18 19:13:55,P20023,Premium Wallet v49,Accessories,5,2613.16,13065.8,Credit Card,South
+TXN-10271,2023-04-19 08:36:44,P20020,Premium Shirt v42,Fashion,3,10216.92,30650.76,UPI,East
+TXN-10623,2023-04-21 15:53:43,P20012,Premium Smartphone v3,Electronics,3,23016.96,69050.88,Net Banking,North
+TXN-11023,2023-04-22 21:45:25,P2007,Premium Sunglasses v59,Accessories,5,10099.76,50498.8,Credit Card,East
+TXN-10705,2023-04-23 02:54:34,P100010,Adidas Hoodie,Fashion,2,1733.82,3467.64,UPI,North
+TXN-10921,2023-04-23 16:19:06,P20019,Premium Wallet v96,Accessories,5,22615.67,113078.35,Net Banking,East
+TXN-10772,2023-04-24 00:05:17,P20012,Premium Smartphone v3,Electronics,4,23016.96,92067.84,Credit Card,South
+TXN-10358,2023-04-25 02:19:19,P100017,Levi's Jeans,Fashion,1,2131.42,2131.42,Debit Card,South
+TXN-10767,2023-04-25 11:17:57,P100017,Levi's Jeans,Fashion,2,2131.42,4262.84,Debit Card,West
+TXN-10398,2023-04-25 22:26:13,P20020,Premium Shirt v42,Fashion,1,10216.92,10216.92,Debit Card,North
+TXN-11016,2023-04-26 13:58:53,P100026,HP Pavilion,Electronics,5,20719.78,103598.9,Net Banking,West
+TXN-10487,2023-04-26 17:40:37,P100002,RayBan Sunglasses,Accessories,2,548.1,1096.2,Debit Card,West
+TXN-10207,2023-04-26 18:06:11,P100017,Levi's Jeans,Fashion,3,2131.42,6394.26,Debit Card,West
+TXN-10575,2023-04-27 16:34:06,P20019,Premium Wallet v96,Accessories,3,22615.67,67847.01,Net Banking,South
+TXN-10663,2023-04-27 22:39:49,P20010,Premium Travel Bag v67,Accessories,5,9009.6,45048.0,UPI,East
+TXN-10336,2023-04-27 22:56:47,P2006,Premium Boots v22,Footwear,3,55880.0,167640.0,Debit Card,East
+TXN-10971,2023-04-28 21:33:35,P20020,Premium Shirt v42,Fashion,2,10216.92,20433.84,Credit Card,Central
+TXN-10588,2023-04-29 06:34:57,P100012,OnePlus 11,Electronics,4,11066.5,44266.0,UPI,East
+TXN-10372,2023-05-02 11:04:03,P100026,HP Pavilion,Electronics,5,20719.78,103598.9,Credit Card,North
+TXN-10103,2023-05-02 14:24:22,P100020,American Tourister Bag,Accessories,2,596.64,1193.28,UPI,West
+TXN-11185,2023-05-03 03:03:45,P20019,Premium Wallet v96,Accessories,1,22615.67,22615.67,Net Banking,Central
+TXN-10066,2023-05-04 23:22:21,P100012,OnePlus 11,Electronics,3,11066.5,33199.5,Debit Card,South
+TXN-10063,2023-05-05 02:55:27,P100032,Nike Air Max,Footwear,1,369.3,369.3,Credit Card,East
+TXN-11007,2023-05-06 06:57:12,P100006,Fossil Watch,Accessories,3,1568.27,4704.81,Net Banking,East
+TXN-10044,2023-05-06 11:05:57,P100010,Adidas Hoodie,Fashion,3,1733.82,5201.46,Credit Card,West
+TXN-10276,2023-05-06 20:37:13,P20016,Premium Jacket v77,Fashion,3,17755.36,53266.08,Debit Card,North
+TXN-10618,2023-05-08 02:43:18,P20019,Premium Wallet v96,Accessories,4,22615.67,90462.68,UPI,Central
+TXN-11011,2023-05-08 03:05:51,P20010,Premium Travel Bag v67,Accessories,5,9009.6,45048.0,Credit Card,North
+TXN-10136,2023-05-08 06:20:45,P100032,Nike Air Max,Footwear,4,369.3,1477.2,Net Banking,Central
+TXN-10140,2023-05-08 15:19:44,P20014,Premium Travel Bag v68,Accessories,1,5338.74,5338.74,UPI,East
+TXN-10427,2023-05-08 16:09:08,P2004,Premium Travel Bag v87,Accessories,1,32520.95,32520.95,UPI,West
+TXN-10572,2023-05-09 00:21:23,P100017,Levi's Jeans,Fashion,2,2131.42,4262.84,Credit Card,East
+TXN-10424,2023-05-09 23:08:35,P2001,Premium Jeans v4,Fashion,1,9515.2,9515.2,UPI,South
+TXN-10069,2023-05-12 06:05:57,P2006,Premium Boots v22,Footwear,1,55880.0,55880.0,Credit Card,North
+TXN-10873,2023-05-12 23:46:10,P20016,Premium Jacket v77,Fashion,5,17755.36,88776.8,Net Banking,West
+TXN-10553,2023-05-16 10:46:13,P100002,RayBan Sunglasses,Accessories,1,548.1,548.1,Net Banking,North
+TXN-10864,2023-05-22 17:07:10,P2002,Premium Headphones v82,Electronics,3,23300.55,69901.65,Debit Card,Central
+TXN-10192,2023-05-28 00:57:27,P20017,Premium Jeans v100,Fashion,3,53091.7,159275.1,Net Banking,Central
+TXN-11109,2023-05-28 15:46:16,P100009,Wildcraft Backpack,Accessories,4,1136.1,4544.4,Credit Card,East
+TXN-10505,2023-05-28 18:57:10,P100032,Nike Air Max,Footwear,1,369.3,369.3,UPI,North
+TXN-10257,2023-05-28 22:20:40,P2007,Premium Sunglasses v59,Accessories,4,10099.76,40399.04,Net Banking,Central
+TXN-10540,2023-05-29 05:30:37,P2000,Premium Sneakers v11,Footwear,1,59534.85,59534.85,Credit Card,Central
+TXN-10248,2023-05-29 20:30:32,P100001,Zara Shirt,Fashion,2,1177.2,2354.4,UPI,South
+TXN-10149,2023-05-29 22:51:13,P100000,iPhone 13,Electronics,3,28109.96,84329.88,Credit Card,West
+TXN-10461,2023-05-30 11:20:32,P100032,Nike Air Max,Footwear,2,369.3,738.6,Net Banking,South
+TXN-10998,2023-06-05 12:36:00,P100032,Nike Air Max,Footwear,2,369.3,738.6,Net Banking,East
+TXN-10524,2023-06-06 02:39:07,P100043,H&M Sweatshirt,Fashion,4,1639.44,6557.76,Credit Card,Central
+TXN-10574,2023-06-06 14:30:51,P20010,Premium Travel Bag v67,Accessories,3,9009.6,27028.8,Net Banking,South
+TXN-10732,2023-06-07 10:29:15,P100012,OnePlus 11,Electronics,2,11066.5,22133.0,Debit Card,Central
+TXN-10844,2023-06-10 18:27:17,P100027,Boat Earbuds,Electronics,5,16488.24,82441.2,Credit Card,North
+TXN-10354,2023-06-11 09:41:58,P100032,Nike Air Max,Footwear,3,369.3,1107.9,Credit Card,East
+TXN-10364,2023-06-14 07:50:01,P100032,Nike Air Max,Footwear,5,369.3,1846.5,UPI,North
+TXN-10905,2023-06-18 19:06:33,P100003,Puma Sneakers,Footwear,4,2988.4,11953.6,Debit Card,East
+TXN-10793,2023-06-20 21:26:28,P20023,Premium Wallet v49,Accessories,3,2613.16,7839.48,Debit Card,North
+TXN-10346,2023-06-21 04:21:24,P2008,Premium Headphones v48,Electronics,1,8780.67,8780.67,Credit Card,South
+TXN-10130,2023-06-21 10:58:24,P100017,Levi's Jeans,Fashion,5,2131.42,10657.1,UPI,West
+TXN-10789,2023-06-21 12:11:58,P100127,Dell Laptop,Electronics,1,46702.04,46702.04,UPI,West
+TXN-10806,2023-06-22 16:55:01,P100001,Zara Shirt,Fashion,2,1177.2,2354.4,UPI,South
+TXN-10097,2023-06-26 13:32:23,P20017,Premium Jeans v100,Fashion,2,53091.7,106183.4,Debit Card,East
+TXN-10218,2023-06-28 09:59:46,P100002,RayBan Sunglasses,Accessories,3,548.1,1644.3,UPI,North
+TXN-10210,2023-06-29 09:38:16,P20012,Premium Smartphone v3,Electronics,1,23016.96,23016.96,Debit Card,South
+TXN-10916,2023-06-30 23:28:42,P20013,Premium Boots v82,Footwear,1,28106.26,28106.26,UPI,East
+TXN-10884,2023-07-06 02:58:20,P100034,Puma Jacket,Fashion,2,2772.0,5544.0,Credit Card,West
+TXN-10081,2023-07-07 13:24:09,P100007,Reebok Shoes,Footwear,1,1715.7,1715.7,UPI,West
+TXN-10396,2023-07-08 03:36:03,P20017,Premium Jeans v100,Fashion,5,53091.7,265458.5,UPI,West
+TXN-10780,2023-07-11 15:46:37,P100017,Levi's Jeans,Fashion,2,2131.42,4262.84,Credit Card,West
+TXN-10205,2023-07-12 13:38:05,P2002,Premium Headphones v82,Electronics,3,23300.55,69901.65,UPI,South
+TXN-10305,2023-07-12 18:57:40,P100009,Wildcraft Backpack,Accessories,1,1136.1,1136.1,Debit Card,East
+TXN-10085,2023-07-12 23:02:52,P2002,Premium Headphones v82,Electronics,1,23300.55,23300.55,Debit Card,North
+TXN-10959,2023-07-14 19:43:26,P20010,Premium Travel Bag v67,Accessories,4,9009.6,36038.4,Credit Card,East
+TXN-10124,2023-07-19 11:29:11,P100017,Levi's Jeans,Fashion,4,2131.42,8525.68,Credit Card,Central
+TXN-11179,2023-07-20 10:08:02,P100009,Wildcraft Backpack,Accessories,1,1136.1,1136.1,Net Banking,East
+TXN-11144,2023-07-20 22:09:16,P20020,Premium Shirt v42,Fashion,5,10216.92,51084.6,Net Banking,North
+TXN-10571,2023-07-21 02:15:21,P100020,American Tourister Bag,Accessories,3,596.64,1789.92,UPI,Central
+TXN-10064,2023-07-21 06:37:43,P20015,Premium Travel Bag v98,Accessories,2,25338.4,50676.8,Credit Card,North
+TXN-10195,2023-07-21 09:41:21,P20021,Premium Travel Bag v85,Accessories,1,5197.41,5197.41,Net Banking,West
+TXN-10225,2023-07-23 00:05:16,P20020,Premium Shirt v42,Fashion,4,10216.92,40867.68,Credit Card,East
+TXN-10979,2023-07-24 15:32:00,P100032,Nike Air Max,Footwear,5,369.3,1846.5,UPI,South
+TXN-10061,2023-07-25 09:00:32,P100000,iPhone 13,Electronics,1,28109.96,28109.96,UPI,Central
+TXN-10599,2023-07-27 11:52:54,P20020,Premium Shirt v42,Fashion,3,10216.92,30650.76,Debit Card,South
+TXN-10730,2023-07-29 04:51:23,P20016,Premium Jacket v77,Fashion,2,17755.36,35510.72,Debit Card,Central
+TXN-10531,2023-07-30 04:54:51,P100034,Puma Jacket,Fashion,3,2772.0,8316.0,Net Banking,West
+TXN-10662,2023-07-31 17:20:01,P100020,American Tourister Bag,Accessories,3,596.64,1789.92,Credit Card,East
+TXN-10298,2023-08-02 02:39:09,P20013,Premium Boots v82,Footwear,1,28106.26,28106.26,Credit Card,North
+TXN-10990,2023-08-02 23:20:35,P100010,Adidas Hoodie,Fashion,5,1733.82,8669.1,Debit Card,Central
+TXN-10867,2023-08-08 13:57:15,P20015,Premium Travel Bag v98,Accessories,5,25338.4,126692.0,Debit Card,South
+TXN-10229,2023-08-10 02:26:57,P100000,iPhone 13,Electronics,2,28109.96,56219.92,Net Banking,South
+TXN-11024,2023-08-11 18:25:38,P20023,Premium Wallet v49,Accessories,1,2613.16,2613.16,Credit Card,West
+TXN-10989,2023-08-13 01:58:30,P100034,Puma Jacket,Fashion,3,2772.0,8316.0,Net Banking,East
+TXN-10232,2023-08-13 07:29:13,P2002,Premium Headphones v82,Electronics,3,23300.55,69901.65,UPI,North
+TXN-10483,2023-08-13 22:31:05,P20013,Premium Boots v82,Footwear,5,28106.26,140531.3,Net Banking,South
+TXN-10209,2023-08-14 06:40:21,P100036,Samsung Galaxy S21,Electronics,3,16251.85,48755.55,Credit Card,Central
+TXN-10307,2023-08-15 05:17:46,P20013,Premium Boots v82,Footwear,1,28106.26,28106.26,Credit Card,North
+TXN-10263,2023-08-16 18:19:14,P100009,Wildcraft Backpack,Accessories,3,1136.1,3408.3,UPI,South
+TXN-10533,2023-08-17 05:40:51,P2000,Premium Sneakers v11,Footwear,5,59534.85,297674.25,Debit Card,East
+TXN-10191,2023-08-17 09:03:16,P100002,RayBan Sunglasses,Accessories,3,548.1,1644.3,Net Banking,West
+TXN-10851,2023-08-17 12:13:18,P2002,Premium Headphones v82,Electronics,3,23300.55,69901.65,Debit Card,East
+TXN-10371,2023-08-18 12:58:12,P100010,Adidas Hoodie,Fashion,3,1733.82,5201.46,Credit Card,South
+TXN-10573,2023-08-25 12:57:51,P100027,Boat Earbuds,Electronics,3,16488.24,49464.72,Net Banking,South
+TXN-10753,2023-08-27 12:51:39,P100004,Nike T-shirt,Fashion,1,822.15,822.15,Credit Card,South
+TXN-10919,2023-08-27 22:50:06,P100009,Wildcraft Backpack,Accessories,1,1136.1,1136.1,Debit Card,North
+TXN-10955,2023-08-29 05:54:06,P100006,Fossil Watch,Accessories,1,1568.27,1568.27,Credit Card,Central
+TXN-10518,2023-08-29 08:09:53,P100010,Adidas Hoodie,Fashion,4,1733.82,6935.28,Credit Card,South
+TXN-10043,2023-08-29 10:53:58,P20010,Premium Travel Bag v67,Accessories,2,9009.6,18019.2,Net Banking,East
+TXN-10451,2023-09-01 04:48:17,P20020,Premium Shirt v42,Fashion,1,10216.92,10216.92,Net Banking,West
+TXN-10016,2023-09-01 05:31:10,P100127,Dell Laptop,Electronics,5,46702.04,233510.2,Credit Card,East
+TXN-10441,2023-09-01 11:02:56,P2003,Premium Running Shoes v27,Footwear,5,65156.0,325780.0,Credit Card,South
+TXN-10974,2023-09-01 15:47:32,P20022,Premium Sweatshirt v3,Fashion,1,36897.57,36897.57,Net Banking,East
+TXN-10493,2023-09-06 17:46:14,P2007,Premium Sunglasses v59,Accessories,2,10099.76,20199.52,Debit Card,South
+TXN-10630,2023-09-07 08:24:40,P20023,Premium Wallet v49,Accessories,2,2613.16,5226.32,Net Banking,South
+TXN-10756,2023-09-07 09:34:10,P100001,Zara Shirt,Fashion,5,1177.2,5886.0,Credit Card,East
+TXN-10529,2023-09-09 19:34:18,P100006,Fossil Watch,Accessories,3,1568.27,4704.81,Debit Card,North
+TXN-10613,2023-09-12 21:14:15,P100037,Adidas Ultraboost,Footwear,5,5873.12,29365.6,UPI,West
+TXN-10733,2023-09-14 04:31:11,P20023,Premium Wallet v49,Accessories,1,2613.16,2613.16,UPI,North
+TXN-11151,2023-09-14 23:10:03,P2007,Premium Sunglasses v59,Accessories,4,10099.76,40399.04,Credit Card,Central
+TXN-10710,2023-09-17 13:18:19,P20023,Premium Wallet v49,Accessories,4,2613.16,10452.64,UPI,East
+TXN-10350,2023-09-17 14:43:04,P100012,OnePlus 11,Electronics,1,11066.5,11066.5,Net Banking,South
+TXN-11141,2023-09-21 04:43:31,P20023,Premium Wallet v49,Accessories,4,2613.16,10452.64,Debit Card,Central
+TXN-10854,2023-09-22 08:45:50,P100020,American Tourister Bag,Accessories,1,596.64,596.64,Net Banking,South
+TXN-11180,2023-09-25 03:53:01,P20011,Premium Travel Bag v3,Accessories,4,8918.94,35675.76,Credit Card,West
+TXN-10814,2023-09-27 16:20:03,P2004,Premium Travel Bag v87,Accessories,2,32520.95,65041.9,UPI,South
+TXN-10393,2023-09-27 21:32:03,P100012,OnePlus 11,Electronics,1,11066.5,11066.5,UPI,Central
+TXN-10012,2023-09-29 15:06:44,P2002,Premium Headphones v82,Electronics,3,23300.55,69901.65,UPI,West
+TXN-10020,2023-09-29 21:45:51,P100032,Nike Air Max,Footwear,5,369.3,1846.5,UPI,West
+TXN-10741,2023-10-04 09:44:38,P20011,Premium Travel Bag v3,Accessories,1,8918.94,8918.94,Net Banking,South
+TXN-10868,2023-10-10 07:00:30,P2005,Premium Travel Bag v36,Accessories,5,3262.44,16312.2,Net Banking,West
+TXN-11045,2023-10-10 10:36:31,P100007,Reebok Shoes,Footwear,3,1715.7,5147.1,Credit Card,Central
+TXN-10395,2023-10-13 06:06:02,P100027,Boat Earbuds,Electronics,5,16488.24,82441.2,Debit Card,North
+TXN-11099,2023-10-14 08:58:00,P100010,Adidas Hoodie,Fashion,4,1733.82,6935.28,Credit Card,East
+TXN-10040,2023-10-15 05:25:34,P20010,Premium Travel Bag v67,Accessories,3,9009.6,27028.8,Debit Card,North
+TXN-10993,2023-10-17 20:34:50,P20019,Premium Wallet v96,Accessories,3,22615.67,67847.01,Credit Card,East
+TXN-10070,2023-10-18 22:05:35,P20021,Premium Travel Bag v85,Accessories,2,5197.41,10394.82,Debit Card,East
+TXN-10279,2023-10-22 19:44:09,P100017,Levi's Jeans,Fashion,3,2131.42,6394.26,UPI,North
+TXN-10362,2023-10-22 21:25:49,P100012,OnePlus 11,Electronics,5,11066.5,55332.5,Debit Card,West
+TXN-10112,2023-10-23 11:17:50,P2000,Premium Sneakers v11,Footwear,2,59534.85,119069.7,Debit Card,East
+TXN-10291,2023-10-25 03:36:57,P100017,Levi's Jeans,Fashion,3,2131.42,6394.26,Debit Card,South
+TXN-10543,2023-10-25 09:28:51,P100004,Nike T-shirt,Fashion,3,822.15,2466.45,Credit Card,South
+TXN-10449,2023-10-25 18:53:05,P100027,Boat Earbuds,Electronics,5,16488.24,82441.2,Net Banking,West
+TXN-10745,2023-10-27 19:09:18,P2000,Premium Sneakers v11,Footwear,1,59534.85,59534.85,Credit Card,East
+TXN-10074,2023-10-28 13:32:48,P2009,Premium Running Shoes v67,Footwear,5,3445.84,17229.2,Net Banking,South
+TXN-10475,2023-10-28 17:53:20,P100037,Adidas Ultraboost,Footwear,2,5873.12,11746.24,Credit Card,North
+TXN-10536,2023-10-29 22:13:47,P20022,Premium Sweatshirt v3,Fashion,4,36897.57,147590.28,Debit Card,East
+TXN-10839,2023-11-01 11:38:22,P100036,Samsung Galaxy S21,Electronics,5,16251.85,81259.25,Credit Card,North
+TXN-10059,2023-11-01 11:48:23,P2001,Premium Jeans v4,Fashion,4,9515.2,38060.8,Net Banking,South
+TXN-11065,2023-11-02 06:06:44,P100127,Dell Laptop,Electronics,5,46702.04,233510.2,Net Banking,South
+TXN-10828,2023-11-02 07:15:14,P20016,Premium Jacket v77,Fashion,1,17755.36,17755.36,Debit Card,South
+TXN-10033,2023-11-02 18:49:35,P20019,Premium Wallet v96,Accessories,3,22615.67,67847.01,Debit Card,South
+TXN-11168,2023-11-04 10:57:08,P100043,H&M Sweatshirt,Fashion,5,1639.44,8197.2,UPI,South
+TXN-10654,2023-11-05 09:48:03,P2009,Premium Running Shoes v67,Footwear,4,3445.84,13783.36,Net Banking,East
+TXN-10691,2023-11-05 12:55:05,P2004,Premium Travel Bag v87,Accessories,1,32520.95,32520.95,Debit Card,Central
+TXN-10895,2023-11-05 13:09:19,P2000,Premium Sneakers v11,Footwear,5,59534.85,297674.25,Credit Card,Central
+TXN-11089,2023-11-06 08:52:58,P2004,Premium Travel Bag v87,Accessories,4,32520.95,130083.8,Debit Card,North
+TXN-10416,2023-11-07 12:23:00,P2009,Premium Running Shoes v67,Footwear,2,3445.84,6891.68,Credit Card,East
+TXN-10894,2023-11-07 14:53:45,P2007,Premium Sunglasses v59,Accessories,1,10099.76,10099.76,UPI,East
+TXN-11106,2023-11-11 06:14:20,P100026,HP Pavilion,Electronics,1,20719.78,20719.78,UPI,East
+TXN-10928,2023-11-12 21:23:18,P100004,Nike T-shirt,Fashion,5,822.15,4110.75,UPI,South
+TXN-10436,2023-11-13 00:24:58,P100026,HP Pavilion,Electronics,2,20719.78,41439.56,Debit Card,West
+TXN-10719,2023-11-13 03:08:24,P2007,Premium Sunglasses v59,Accessories,2,10099.76,20199.52,Net Banking,West
+TXN-10817,2023-11-13 18:33:19,P20023,Premium Wallet v49,Accessories,2,2613.16,5226.32,Net Banking,North
+TXN-10110,2023-11-14 10:39:31,P100010,Adidas Hoodie,Fashion,5,1733.82,8669.1,UPI,North
+TXN-10634,2023-11-14 13:54:12,P100020,American Tourister Bag,Accessories,2,596.64,1193.28,Debit Card,West
+TXN-10722,2023-11-14 23:50:45,P2008,Premium Headphones v48,Electronics,4,8780.67,35122.68,UPI,East
+TXN-10304,2023-11-19 09:13:55,P2001,Premium Jeans v4,Fashion,4,9515.2,38060.8,UPI,Central
+TXN-10958,2023-11-20 15:28:40,P100012,OnePlus 11,Electronics,4,11066.5,44266.0,Credit Card,North
+TXN-10320,2023-11-22 13:13:34,P100010,Adidas Hoodie,Fashion,1,1733.82,1733.82,Net Banking,Central
+TXN-10563,2023-11-22 13:55:12,P100027,Boat Earbuds,Electronics,1,16488.24,16488.24,UPI,West
+TXN-10815,2023-11-22 20:16:10,P100010,Adidas Hoodie,Fashion,1,1733.82,1733.82,Debit Card,East
+TXN-10562,2023-11-25 04:47:24,P2006,Premium Boots v22,Footwear,4,55880.0,223520.0,Net Banking,North
+TXN-10689,2023-11-27 09:45:04,P20012,Premium Smartphone v3,Electronics,1,23016.96,23016.96,Debit Card,Central
+TXN-10855,2023-12-01 15:10:57,P100016,Sony Headphones,Electronics,2,21524.32,43048.64,Credit Card,South
+TXN-10509,2023-12-01 16:37:13,P100032,Nike Air Max,Footwear,3,369.3,1107.9,Credit Card,South
+TXN-10220,2023-12-02 01:10:08,P100043,H&M Sweatshirt,Fashion,3,1639.44,4918.32,Credit Card,Central
+TXN-11181,2023-12-03 08:11:01,P100003,Puma Sneakers,Footwear,3,2988.4,8965.2,UPI,South
+TXN-10908,2023-12-03 15:37:00,P20011,Premium Travel Bag v3,Accessories,4,8918.94,35675.76,Net Banking,Central
+TXN-10581,2023-12-06 08:26:00,P100020,American Tourister Bag,Accessories,1,596.64,596.64,Credit Card,North
+TXN-10146,2023-12-09 07:01:02,P20014,Premium Travel Bag v68,Accessories,4,5338.74,21354.96,UPI,North
+TXN-11050,2023-12-10 01:11:39,P2008,Premium Headphones v48,Electronics,2,8780.67,17561.34,Debit Card,East
+TXN-10385,2023-12-10 04:15:48,P100027,Boat Earbuds,Electronics,4,16488.24,65952.96,Debit Card,West
+TXN-10617,2023-12-12 00:26:41,P100004,Nike T-shirt,Fashion,5,822.15,4110.75,Debit Card,East
+TXN-10023,2023-12-12 01:04:11,P20010,Premium Travel Bag v67,Accessories,1,9009.6,9009.6,Credit Card,West
+TXN-10005,2023-12-15 01:07:51,P2002,Premium Headphones v82,Electronics,1,23300.55,23300.55,Debit Card,Central
+TXN-10075,2023-12-16 13:35:15,P100034,Puma Jacket,Fashion,4,2772.0,11088.0,Net Banking,Central
+TXN-10142,2023-12-17 13:45:36,P20012,Premium Smartphone v3,Electronics,5,23016.96,115084.8,Debit Card,Central
+TXN-10624,2023-12-17 18:52:21,P100032,Nike Air Max,Footwear,4,369.3,1477.2,Net Banking,North
+TXN-10977,2023-12-19 03:06:19,P20018,Premium Smartwatch v14,Electronics,5,4781.5,23907.5,UPI,Central
+TXN-10515,2023-12-19 13:57:11,P20019,Premium Wallet v96,Accessories,4,22615.67,90462.68,UPI,East
+TXN-11041,2023-12-20 10:48:33,P100032,Nike Air Max,Footwear,5,369.3,1846.5,Credit Card,South
+TXN-10185,2023-12-21 16:32:50,P100004,Nike T-shirt,Fashion,1,822.15,822.15,Debit Card,North
+TXN-11064,2023-12-21 19:27:38,P2008,Premium Headphones v48,Electronics,2,8780.67,17561.34,Net Banking,North
+TXN-10910,2023-12-23 15:45:35,P100037,Adidas Ultraboost,Footwear,4,5873.12,23492.48,Net Banking,North
+TXN-10128,2023-12-24 04:57:22,P100036,Samsung Galaxy S21,Electronics,3,16251.85,48755.55,Debit Card,North
+TXN-10734,2023-12-25 13:58:11,P100003,Puma Sneakers,Footwear,2,2988.4,5976.8,Debit Card,East
+TXN-10021,2023-12-27 06:08:38,P20022,Premium Sweatshirt v3,Fashion,3,36897.57,110692.71,Net Banking,East
+TXN-11105,2023-12-27 23:53:44,P100009,Wildcraft Backpack,Accessories,3,1136.1,3408.3,Net Banking,North
+TXN-11114,2023-12-28 15:28:23,P20016,Premium Jacket v77,Fashion,4,17755.36,71021.44,UPI,East
+TXN-10665,2024-01-01 12:44:52,P100034,Puma Jacket,Fashion,5,2772.0,13860.0,UPI,West
+TXN-10749,2024-01-02 04:07:20,P20012,Premium Smartphone v3,Electronics,1,23016.96,23016.96,Debit Card,East
+TXN-10988,2024-01-02 22:21:47,P20020,Premium Shirt v42,Fashion,1,10216.92,10216.92,Credit Card,Central
+TXN-11082,2024-01-05 07:03:12,P100001,Zara Shirt,Fashion,2,1177.2,2354.4,Net Banking,North
+TXN-10141,2024-01-05 18:27:40,P2004,Premium Travel Bag v87,Accessories,1,32520.95,32520.95,UPI,North
+TXN-10837,2024-01-08 07:27:22,P100032,Nike Air Max,Footwear,3,369.3,1107.9,Credit Card,Central
+TXN-10284,2024-01-11 19:41:36,P100027,Boat Earbuds,Electronics,5,16488.24,82441.2,Credit Card,Central
+TXN-10076,2024-01-12 13:23:50,P20020,Premium Shirt v42,Fashion,4,10216.92,40867.68,Credit Card,South
+TXN-10906,2024-01-12 15:53:04,P100127,Dell Laptop,Electronics,4,46702.04,186808.16,Debit Card,East
+TXN-10647,2024-01-12 18:13:07,P2002,Premium Headphones v82,Electronics,1,23300.55,23300.55,Credit Card,Central
+TXN-10736,2024-01-16 10:03:48,P100007,Reebok Shoes,Footwear,1,1715.7,1715.7,Debit Card,South
+TXN-10878,2024-01-16 15:38:28,P100012,OnePlus 11,Electronics,3,11066.5,33199.5,Net Banking,West
+TXN-10516,2024-01-17 18:12:18,P20019,Premium Wallet v96,Accessories,3,22615.67,67847.01,Net Banking,West
+TXN-10650,2024-01-19 12:32:55,P100016,Sony Headphones,Electronics,5,21524.32,107621.6,Net Banking,West
+TXN-10737,2024-01-21 04:45:14,P20010,Premium Travel Bag v67,Accessories,4,9009.6,36038.4,Debit Card,East
+TXN-10102,2024-01-21 19:58:06,P20010,Premium Travel Bag v67,Accessories,1,9009.6,9009.6,UPI,North
+TXN-10467,2024-01-23 02:53:56,P20016,Premium Jacket v77,Fashion,4,17755.36,71021.44,Credit Card,South
+TXN-10082,2024-01-23 02:57:26,P100036,Samsung Galaxy S21,Electronics,3,16251.85,48755.55,Net Banking,East
+TXN-10498,2024-01-23 16:30:17,P20015,Premium Travel Bag v98,Accessories,2,25338.4,50676.8,Debit Card,East
+TXN-10568,2024-01-23 23:52:41,P100027,Boat Earbuds,Electronics,4,16488.24,65952.96,UPI,East
+TXN-10560,2024-01-25 08:37:25,P100004,Nike T-shirt,Fashion,5,822.15,4110.75,Net Banking,Central
+TXN-10820,2024-01-26 06:58:43,P100004,Nike T-shirt,Fashion,5,822.15,4110.75,Net Banking,Central
+TXN-10729,2024-01-26 15:16:44,P100043,H&M Sweatshirt,Fashion,3,1639.44,4918.32,Net Banking,South
+TXN-10226,2024-01-27 17:48:09,P100037,Adidas Ultraboost,Footwear,5,5873.12,29365.6,Credit Card,North
+TXN-10672,2024-01-28 07:36:08,P100032,Nike Air Max,Footwear,2,369.3,738.6,Credit Card,South
+TXN-11057,2024-01-28 09:55:23,P2001,Premium Jeans v4,Fashion,2,9515.2,19030.4,Net Banking,East
+TXN-11028,2024-01-29 00:17:54,P20018,Premium Smartwatch v14,Electronics,2,4781.5,9563.0,UPI,East
+TXN-11138,2024-01-29 01:13:07,P100020,American Tourister Bag,Accessories,2,596.64,1193.28,Net Banking,South
+TXN-10079,2024-01-30 20:21:29,P100037,Adidas Ultraboost,Footwear,1,5873.12,5873.12,Debit Card,North
+TXN-11149,2024-01-31 07:15:34,P2002,Premium Headphones v82,Electronics,4,23300.55,93202.2,Debit Card,West
+TXN-10728,2024-02-04 05:59:45,P100037,Adidas Ultraboost,Footwear,2,5873.12,11746.24,UPI,West
+TXN-10845,2024-02-05 03:22:17,P20022,Premium Sweatshirt v3,Fashion,1,36897.57,36897.57,UPI,West
+TXN-10852,2024-02-06 22:21:52,P20020,Premium Shirt v42,Fashion,4,10216.92,40867.68,UPI,South
+TXN-10791,2024-02-08 05:39:00,P20011,Premium Travel Bag v3,Accessories,1,8918.94,8918.94,Credit Card,West
+TXN-10008,2024-02-08 08:02:56,P100037,Adidas Ultraboost,Footwear,3,5873.12,17619.36,Debit Card,West
+TXN-10355,2024-02-09 08:01:38,P2004,Premium Travel Bag v87,Accessories,5,32520.95,162604.75,UPI,South
+TXN-10765,2024-02-09 23:41:37,P100027,Boat Earbuds,Electronics,3,16488.24,49464.72,Debit Card,Central
+TXN-10519,2024-02-10 09:48:15,P2007,Premium Sunglasses v59,Accessories,1,10099.76,10099.76,Credit Card,North
+TXN-10659,2024-02-10 21:34:18,P2006,Premium Boots v22,Footwear,5,55880.0,279400.0,UPI,North
+TXN-10747,2024-02-11 00:05:30,P20018,Premium Smartwatch v14,Electronics,2,4781.5,9563.0,Net Banking,Central
+TXN-11191,2024-02-11 23:41:33,P100034,Puma Jacket,Fashion,3,2772.0,8316.0,Credit Card,East
+TXN-10444,2024-02-12 23:57:42,P100032,Nike Air Max,Footwear,2,369.3,738.6,Net Banking,North
+TXN-11107,2024-02-13 07:31:44,P100000,iPhone 13,Electronics,5,28109.96,140549.8,Net Banking,West
+TXN-10992,2024-02-13 12:49:28,P2004,Premium Travel Bag v87,Accessories,3,32520.95,97562.85,Debit Card,East
+TXN-11009,2024-02-14 11:26:57,P20018,Premium Smartwatch v14,Electronics,1,4781.5,4781.5,Credit Card,North
+TXN-11160,2024-02-15 12:37:47,P100012,OnePlus 11,Electronics,4,11066.5,44266.0,Credit Card,Central
+TXN-10154,2024-02-15 21:58:45,P2008,Premium Headphones v48,Electronics,3,8780.67,26342.01,Credit Card,North
+TXN-11158,2024-02-16 02:39:42,P20022,Premium Sweatshirt v3,Fashion,3,36897.57,110692.71,Debit Card,East
+TXN-10671,2024-02-17 09:46:35,P20018,Premium Smartwatch v14,Electronics,5,4781.5,23907.5,Debit Card,East
+TXN-10266,2024-02-17 16:34:20,P20010,Premium Travel Bag v67,Accessories,4,9009.6,36038.4,Debit Card,North
+TXN-10527,2024-02-18 09:04:54,P100037,Adidas Ultraboost,Footwear,3,5873.12,17619.36,UPI,East
+TXN-10848,2024-02-18 13:05:13,P100032,Nike Air Max,Footwear,5,369.3,1846.5,Net Banking,Central
+TXN-11021,2024-02-18 22:04:00,P20018,Premium Smartwatch v14,Electronics,3,4781.5,14344.5,Debit Card,East
+TXN-10816,2024-02-19 05:29:11,P100127,Dell Laptop,Electronics,2,46702.04,93404.08,UPI,North
+TXN-10273,2024-02-19 20:12:12,P20022,Premium Sweatshirt v3,Fashion,4,36897.57,147590.28,Debit Card,North
+TXN-10485,2024-02-20 00:44:43,P100009,Wildcraft Backpack,Accessories,5,1136.1,5680.5,Credit Card,West
+TXN-10316,2024-02-20 16:25:18,P20021,Premium Travel Bag v85,Accessories,3,5197.41,15592.23,Credit Card,West
+TXN-10301,2024-02-20 17:16:03,P100009,Wildcraft Backpack,Accessories,2,1136.1,2272.2,UPI,North
+TXN-10417,2024-02-21 06:36:28,P100004,Nike T-shirt,Fashion,4,822.15,3288.6,Net Banking,North
+TXN-11133,2024-02-21 07:21:52,P2006,Premium Boots v22,Footwear,4,55880.0,223520.0,Net Banking,South
+TXN-11122,2024-02-21 10:39:48,P2003,Premium Running Shoes v27,Footwear,1,65156.0,65156.0,Debit Card,North
+TXN-10415,2024-02-21 14:20:17,P2007,Premium Sunglasses v59,Accessories,5,10099.76,50498.8,Debit Card,South
+TXN-10811,2024-02-21 16:56:43,P100003,Puma Sneakers,Footwear,2,2988.4,5976.8,Debit Card,North
+TXN-10746,2024-02-23 03:22:35,P20017,Premium Jeans v100,Fashion,3,53091.7,159275.1,Debit Card,East
+TXN-10268,2024-02-24 03:50:23,P2002,Premium Headphones v82,Electronics,4,23300.55,93202.2,Credit Card,Central
+TXN-10602,2024-02-25 06:22:16,P20012,Premium Smartphone v3,Electronics,5,23016.96,115084.8,Debit Card,West
+TXN-10285,2024-02-27 01:12:26,P20022,Premium Sweatshirt v3,Fashion,4,36897.57,147590.28,UPI,Central
+TXN-11010,2024-02-29 23:15:13,P20010,Premium Travel Bag v67,Accessories,2,9009.6,18019.2,Debit Card,South
+TXN-10240,2024-03-03 04:33:33,P2005,Premium Travel Bag v36,Accessories,5,3262.44,16312.2,Net Banking,East
+TXN-10752,2024-03-07 10:43:58,P20012,Premium Smartphone v3,Electronics,2,23016.96,46033.92,Credit Card,West
+TXN-10374,2024-03-09 02:37:50,P20016,Premium Jacket v77,Fashion,4,17755.36,71021.44,Net Banking,North
+TXN-10030,2024-03-09 07:53:17,P100007,Reebok Shoes,Footwear,3,1715.7,5147.1,UPI,Central
+TXN-10252,2024-03-11 16:00:58,P20023,Premium Wallet v49,Accessories,3,2613.16,7839.48,UPI,Central
+TXN-10472,2024-03-12 07:11:21,P100001,Zara Shirt,Fashion,2,1177.2,2354.4,UPI,South
+TXN-10896,2024-03-12 19:28:15,P2009,Premium Running Shoes v67,Footwear,4,3445.84,13783.36,Credit Card,Central
+TXN-10633,2024-03-14 11:19:11,P20021,Premium Travel Bag v85,Accessories,5,5197.41,25987.05,Net Banking,South
+TXN-10966,2024-03-14 20:06:03,P20012,Premium Smartphone v3,Electronics,3,23016.96,69050.88,UPI,West
+TXN-10619,2024-03-16 05:52:53,P100010,Adidas Hoodie,Fashion,1,1733.82,1733.82,UPI,North
+TXN-10200,2024-03-16 19:32:53,P100012,OnePlus 11,Electronics,1,11066.5,11066.5,Credit Card,Central
+TXN-10107,2024-03-16 20:58:45,P20018,Premium Smartwatch v14,Electronics,3,4781.5,14344.5,Debit Card,Central
+TXN-11174,2024-03-20 18:58:46,P2003,Premium Running Shoes v27,Footwear,2,65156.0,130312.0,UPI,North
+TXN-10469,2024-03-21 18:26:02,P20023,Premium Wallet v49,Accessories,4,2613.16,10452.64,Debit Card,East
+TXN-10687,2024-03-23 06:17:57,P100003,Puma Sneakers,Footwear,5,2988.4,14942.0,UPI,Central
+TXN-10969,2024-03-24 15:16:41,P100002,RayBan Sunglasses,Accessories,2,548.1,1096.2,Net Banking,East
+TXN-10548,2024-03-24 15:57:16,P100016,Sony Headphones,Electronics,3,21524.32,64572.96,Debit Card,North
+TXN-10091,2024-03-26 16:57:41,P20010,Premium Travel Bag v67,Accessories,1,9009.6,9009.6,UPI,South
+TXN-10769,2024-03-27 13:41:44,P100037,Adidas Ultraboost,Footwear,5,5873.12,29365.6,Credit Card,Central
+TXN-10314,2024-03-27 13:54:53,P20016,Premium Jacket v77,Fashion,5,17755.36,88776.8,Net Banking,West
+TXN-11170,2024-03-29 03:41:57,P20013,Premium Boots v82,Footwear,2,28106.26,56212.52,Credit Card,West
+TXN-10866,2024-03-29 20:39:21,P100010,Adidas Hoodie,Fashion,1,1733.82,1733.82,UPI,North
+TXN-10203,2024-03-30 01:27:27,P2004,Premium Travel Bag v87,Accessories,2,32520.95,65041.9,UPI,West
+TXN-10758,2024-03-30 03:22:18,P100043,H&M Sweatshirt,Fashion,3,1639.44,4918.32,Net Banking,East
+TXN-11072,2024-03-30 09:41:59,P2005,Premium Travel Bag v36,Accessories,1,3262.44,3262.44,Net Banking,Central
+TXN-10985,2024-03-31 11:42:37,P100010,Adidas Hoodie,Fashion,1,1733.82,1733.82,Debit Card,West
+TXN-10037,2024-04-04 19:14:49,P100043,H&M Sweatshirt,Fashion,2,1639.44,3278.88,Net Banking,North
+TXN-10409,2024-04-04 19:17:00,P20010,Premium Travel Bag v67,Accessories,5,9009.6,45048.0,Net Banking,North
+TXN-10673,2024-04-07 10:06:19,P20018,Premium Smartwatch v14,Electronics,2,4781.5,9563.0,Debit Card,Central
+TXN-10676,2024-04-08 10:02:45,P100026,HP Pavilion,Electronics,3,20719.78,62159.34,Net Banking,West
+TXN-10194,2024-04-08 14:02:13,P2003,Premium Running Shoes v27,Footwear,2,65156.0,130312.0,UPI,Central
+TXN-10133,2024-04-10 01:10:50,P20023,Premium Wallet v49,Accessories,3,2613.16,7839.48,UPI,Central
+TXN-11042,2024-04-10 12:10:29,P20014,Premium Travel Bag v68,Accessories,4,5338.74,21354.96,Net Banking,North
+TXN-10117,2024-04-10 19:03:01,P2002,Premium Headphones v82,Electronics,2,23300.55,46601.1,Debit Card,Central
+TXN-10714,2024-04-10 19:38:16,P100026,HP Pavilion,Electronics,4,20719.78,82879.12,Credit Card,East
+TXN-10643,2024-04-11 00:33:58,P2009,Premium Running Shoes v67,Footwear,4,3445.84,13783.36,UPI,Central
+TXN-10439,2024-04-11 00:40:04,P20021,Premium Travel Bag v85,Accessories,1,5197.41,5197.41,Credit Card,East
+TXN-10782,2024-04-11 09:38:01,P100007,Reebok Shoes,Footwear,2,1715.7,3431.4,Net Banking,West
+TXN-10763,2024-04-15 00:01:08,P100036,Samsung Galaxy S21,Electronics,1,16251.85,16251.85,Credit Card,North
+TXN-10923,2024-04-17 12:49:34,P100001,Zara Shirt,Fashion,1,1177.2,1177.2,UPI,Central
+TXN-10857,2024-04-17 18:34:22,P100127,Dell Laptop,Electronics,2,46702.04,93404.08,Credit Card,Central
+TXN-10871,2024-04-18 00:00:19,P100027,Boat Earbuds,Electronics,3,16488.24,49464.72,UPI,North
+TXN-10523,2024-04-18 02:58:47,P20016,Premium Jacket v77,Fashion,5,17755.36,88776.8,Credit Card,Central
+TXN-10138,2024-04-22 20:49:21,P100007,Reebok Shoes,Footwear,2,1715.7,3431.4,Debit Card,East
+TXN-10620,2024-04-23 03:30:22,P100036,Samsung Galaxy S21,Electronics,3,16251.85,48755.55,Debit Card,East
+TXN-10781,2024-04-23 12:33:51,P2001,Premium Jeans v4,Fashion,4,9515.2,38060.8,Debit Card,East
+TXN-10153,2024-04-24 03:58:05,P100001,Zara Shirt,Fashion,3,1177.2,3531.6,UPI,North
+TXN-11101,2024-04-25 00:27:38,P2001,Premium Jeans v4,Fashion,4,9515.2,38060.8,Credit Card,Central
+TXN-10774,2024-04-26 02:34:32,P100012,OnePlus 11,Electronics,4,11066.5,44266.0,Credit Card,West
+TXN-10632,2024-04-26 10:03:26,P2006,Premium Boots v22,Footwear,5,55880.0,279400.0,UPI,Central
+TXN-10549,2024-04-27 15:31:08,P100027,Boat Earbuds,Electronics,1,16488.24,16488.24,Net Banking,Central
+TXN-10577,2024-04-28 13:36:27,P100043,H&M Sweatshirt,Fashion,4,1639.44,6557.76,UPI,West
+TXN-10929,2024-04-29 12:14:47,P20017,Premium Jeans v100,Fashion,3,53091.7,159275.1,Net Banking,South
+TXN-10823,2024-05-03 10:34:43,P100127,Dell Laptop,Electronics,3,46702.04,140106.12,Net Banking,West
+TXN-10261,2024-05-05 22:02:34,P20010,Premium Travel Bag v67,Accessories,4,9009.6,36038.4,Debit Card,Central
+TXN-10688,2024-05-07 07:40:18,P20013,Premium Boots v82,Footwear,1,28106.26,28106.26,Debit Card,East
+TXN-10014,2024-05-08 22:16:02,P2000,Premium Sneakers v11,Footwear,1,59534.85,59534.85,Debit Card,South
+TXN-10126,2024-05-10 00:48:05,P100010,Adidas Hoodie,Fashion,1,1733.82,1733.82,Net Banking,Central
+TXN-10886,2024-05-11 04:15:26,P20019,Premium Wallet v96,Accessories,4,22615.67,90462.68,Net Banking,West
+TXN-10683,2024-05-11 05:45:49,P100032,Nike Air Max,Footwear,4,369.3,1477.2,UPI,North
+TXN-10725,2024-05-11 06:00:29,P20010,Premium Travel Bag v67,Accessories,4,9009.6,36038.4,UPI,South
+TXN-10566,2024-05-11 14:04:46,P20015,Premium Travel Bag v98,Accessories,4,25338.4,101353.6,Net Banking,East
+TXN-10717,2024-05-12 06:43:51,P100020,American Tourister Bag,Accessories,4,596.64,2386.56,Net Banking,South
+TXN-10963,2024-05-12 11:12:33,P100001,Zara Shirt,Fashion,1,1177.2,1177.2,Credit Card,West
+TXN-10457,2024-05-14 15:44:08,P100026,HP Pavilion,Electronics,2,20719.78,41439.56,Net Banking,Central
+TXN-10723,2024-05-15 02:10:44,P100034,Puma Jacket,Fashion,2,2772.0,5544.0,UPI,Central
+TXN-10570,2024-05-15 15:33:40,P100007,Reebok Shoes,Footwear,1,1715.7,1715.7,Credit Card,West
+TXN-10123,2024-05-16 11:50:45,P100002,RayBan Sunglasses,Accessories,3,548.1,1644.3,Net Banking,South
+TXN-10968,2024-05-21 18:48:22,P100020,American Tourister Bag,Accessories,1,596.64,596.64,Debit Card,Central
+TXN-10166,2024-05-25 16:08:44,P100020,American Tourister Bag,Accessories,3,596.64,1789.92,Net Banking,South
+TXN-10414,2024-05-26 18:34:46,P20023,Premium Wallet v49,Accessories,2,2613.16,5226.32,Debit Card,South
+TXN-10386,2024-05-27 23:39:22,P20020,Premium Shirt v42,Fashion,3,10216.92,30650.76,Credit Card,East
+TXN-10013,2024-05-30 01:09:55,P2009,Premium Running Shoes v67,Footwear,4,3445.84,13783.36,UPI,Central
+TXN-10882,2024-05-30 12:49:04,P20011,Premium Travel Bag v3,Accessories,1,8918.94,8918.94,UPI,West
+TXN-10818,2024-05-31 14:49:10,P100026,HP Pavilion,Electronics,4,20719.78,82879.12,Net Banking,South
+TXN-10935,2024-06-02 00:57:18,P20010,Premium Travel Bag v67,Accessories,3,9009.6,27028.8,UPI,South
+TXN-10163,2024-06-02 07:26:06,P100003,Puma Sneakers,Footwear,4,2988.4,11953.6,Debit Card,East
+TXN-10674,2024-06-03 12:22:08,P100026,HP Pavilion,Electronics,4,20719.78,82879.12,Debit Card,West
+TXN-10870,2024-06-03 23:42:31,P100001,Zara Shirt,Fashion,4,1177.2,4708.8,Net Banking,East
+TXN-10300,2024-06-04 17:48:03,P100032,Nike Air Max,Footwear,1,369.3,369.3,Net Banking,East
+TXN-10946,2024-06-08 09:01:57,P2001,Premium Jeans v4,Fashion,4,9515.2,38060.8,Net Banking,Central
+TXN-10455,2024-06-08 21:35:54,P2005,Premium Travel Bag v36,Accessories,1,3262.44,3262.44,UPI,North
+TXN-10822,2024-06-17 06:32:33,P100012,OnePlus 11,Electronics,3,11066.5,33199.5,Debit Card,East
+TXN-10544,2024-06-18 16:25:31,P20017,Premium Jeans v100,Fashion,4,53091.7,212366.8,UPI,North
+TXN-10547,2024-06-18 19:57:48,P100027,Boat Earbuds,Electronics,4,16488.24,65952.96,Net Banking,West
+TXN-10709,2024-06-20 01:58:39,P20011,Premium Travel Bag v3,Accessories,4,8918.94,35675.76,Debit Card,East
+TXN-10055,2024-06-20 11:44:59,P20023,Premium Wallet v49,Accessories,4,2613.16,10452.64,Net Banking,East
+TXN-10197,2024-06-20 21:20:42,P20015,Premium Travel Bag v98,Accessories,2,25338.4,50676.8,Credit Card,East
+TXN-10272,2024-06-22 05:10:41,P100012,OnePlus 11,Electronics,2,11066.5,22133.0,Credit Card,Central
+TXN-10557,2024-06-24 18:38:38,P20017,Premium Jeans v100,Fashion,4,53091.7,212366.8,UPI,West
+TXN-10471,2024-06-26 03:23:21,P2006,Premium Boots v22,Footwear,2,55880.0,111760.0,Debit Card,Central
+TXN-11002,2024-06-28 14:59:29,P100043,H&M Sweatshirt,Fashion,5,1639.44,8197.2,UPI,South
+TXN-10440,2024-06-29 21:26:33,P2004,Premium Travel Bag v87,Accessories,1,32520.95,32520.95,Credit Card,North
+TXN-10704,2024-07-01 15:26:12,P100016,Sony Headphones,Electronics,2,21524.32,43048.64,UPI,South
+TXN-10596,2024-07-02 09:43:48,P2007,Premium Sunglasses v59,Accessories,1,10099.76,10099.76,Net Banking,East
+TXN-10473,2024-07-02 15:18:50,P100020,American Tourister Bag,Accessories,3,596.64,1789.92,Debit Card,West
+TXN-10180,2024-07-03 07:17:42,P2003,Premium Running Shoes v27,Footwear,2,65156.0,130312.0,Net Banking,Central
+TXN-10421,2024-07-03 11:43:49,P20021,Premium Travel Bag v85,Accessories,2,5197.41,10394.82,Credit Card,North
+TXN-10169,2024-07-04 15:03:33,P100027,Boat Earbuds,Electronics,1,16488.24,16488.24,UPI,West
+TXN-10296,2024-07-06 07:07:57,P20014,Premium Travel Bag v68,Accessories,4,5338.74,21354.96,Debit Card,East
+TXN-10331,2024-07-06 16:28:45,P100012,OnePlus 11,Electronics,4,11066.5,44266.0,UPI,Central
+TXN-11005,2024-07-06 22:34:25,P100002,RayBan Sunglasses,Accessories,3,548.1,1644.3,UPI,West
+TXN-10258,2024-07-07 22:09:18,P20015,Premium Travel Bag v98,Accessories,1,25338.4,25338.4,UPI,Central
+TXN-10173,2024-07-09 08:49:00,P20010,Premium Travel Bag v67,Accessories,2,9009.6,18019.2,Credit Card,East
+TXN-10029,2024-07-09 21:32:46,P20022,Premium Sweatshirt v3,Fashion,1,36897.57,36897.57,UPI,West
+TXN-10638,2024-07-10 11:58:38,P20012,Premium Smartphone v3,Electronics,5,23016.96,115084.8,Debit Card,South
+TXN-10537,2024-07-12 02:28:11,P100026,HP Pavilion,Electronics,3,20719.78,62159.34,UPI,West
+TXN-10750,2024-07-12 15:50:03,P2008,Premium Headphones v48,Electronics,4,8780.67,35122.68,Credit Card,North
+TXN-10924,2024-07-13 02:27:48,P100016,Sony Headphones,Electronics,1,21524.32,21524.32,Debit Card,North
+TXN-10198,2024-07-14 01:24:55,P2000,Premium Sneakers v11,Footwear,2,59534.85,119069.7,UPI,East
+TXN-11035,2024-07-15 18:10:30,P2009,Premium Running Shoes v67,Footwear,2,3445.84,6891.68,Net Banking,North
+TXN-10768,2024-07-16 05:49:20,P2003,Premium Running Shoes v27,Footwear,5,65156.0,325780.0,UPI,East
+TXN-11086,2024-07-17 06:12:23,P20016,Premium Jacket v77,Fashion,1,17755.36,17755.36,Debit Card,West
+TXN-10071,2024-07-18 09:03:45,P100001,Zara Shirt,Fashion,1,1177.2,1177.2,Credit Card,North
+TXN-10067,2024-07-18 11:37:10,P2000,Premium Sneakers v11,Footwear,2,59534.85,119069.7,Credit Card,North
+TXN-10383,2024-07-19 05:40:11,P100001,Zara Shirt,Fashion,4,1177.2,4708.8,Credit Card,Central
+TXN-10808,2024-07-19 08:01:37,P100032,Nike Air Max,Footwear,2,369.3,738.6,Net Banking,East
+TXN-10933,2024-07-19 12:04:58,P20022,Premium Sweatshirt v3,Fashion,1,36897.57,36897.57,Credit Card,East
+TXN-10666,2024-07-21 02:26:19,P100016,Sony Headphones,Electronics,2,21524.32,43048.64,UPI,West
+TXN-10661,2024-07-24 10:53:42,P2003,Premium Running Shoes v27,Footwear,1,65156.0,65156.0,UPI,West
+TXN-10454,2024-07-26 21:04:25,P20018,Premium Smartwatch v14,Electronics,4,4781.5,19126.0,Credit Card,Central
+TXN-10932,2024-07-27 19:50:37,P2004,Premium Travel Bag v87,Accessories,4,32520.95,130083.8,UPI,West
+TXN-10889,2024-07-28 04:06:21,P100016,Sony Headphones,Electronics,2,21524.32,43048.64,UPI,Central
+TXN-10245,2024-07-30 12:55:33,P2008,Premium Headphones v48,Electronics,1,8780.67,8780.67,Credit Card,West
+TXN-11118,2024-08-02 18:29:46,P100036,Samsung Galaxy S21,Electronics,3,16251.85,48755.55,Credit Card,South
+TXN-11182,2024-08-04 00:55:09,P2005,Premium Travel Bag v36,Accessories,4,3262.44,13049.76,Credit Card,West
+TXN-10821,2024-08-05 02:17:10,P100127,Dell Laptop,Electronics,4,46702.04,186808.16,Debit Card,Central
+TXN-10956,2024-08-06 17:54:15,P100017,Levi's Jeans,Fashion,2,2131.42,4262.84,Debit Card,West
+TXN-10949,2024-08-08 02:57:38,P2009,Premium Running Shoes v67,Footwear,1,3445.84,3445.84,Credit Card,East
+TXN-11120,2024-08-08 11:46:20,P100016,Sony Headphones,Electronics,2,21524.32,43048.64,Credit Card,South
+TXN-11189,2024-08-08 13:41:21,P100003,Puma Sneakers,Footwear,1,2988.4,2988.4,Debit Card,South
+TXN-11171,2024-08-08 14:30:46,P100016,Sony Headphones,Electronics,1,21524.32,21524.32,UPI,North
+TXN-10183,2024-08-10 10:43:42,P2001,Premium Jeans v4,Fashion,5,9515.2,47576.0,Net Banking,Central
+TXN-11130,2024-08-11 03:30:01,P2008,Premium Headphones v48,Electronics,5,8780.67,43903.35,Net Banking,North
+TXN-10799,2024-08-12 19:17:48,P20017,Premium Jeans v100,Fashion,1,53091.7,53091.7,Debit Card,East
+TXN-11197,2024-08-14 04:02:27,P100010,Adidas Hoodie,Fashion,3,1733.82,5201.46,Net Banking,East
+TXN-10319,2024-08-17 10:29:05,P20013,Premium Boots v82,Footwear,4,28106.26,112425.04,Net Banking,Central
+TXN-10594,2024-08-17 19:33:40,P2007,Premium Sunglasses v59,Accessories,3,10099.76,30299.28,UPI,South
+TXN-10463,2024-08-19 09:56:19,P20013,Premium Boots v82,Footwear,4,28106.26,112425.04,Credit Card,West
+TXN-10514,2024-08-20 01:36:01,P2003,Premium Running Shoes v27,Footwear,3,65156.0,195468.0,Debit Card,South
+TXN-10904,2024-08-21 04:01:57,P100003,Puma Sneakers,Footwear,4,2988.4,11953.6,Credit Card,North
+TXN-10545,2024-08-22 02:27:38,P2005,Premium Travel Bag v36,Accessories,4,3262.44,13049.76,UPI,South
+TXN-10367,2024-08-23 21:13:52,P2001,Premium Jeans v4,Fashion,3,9515.2,28545.6,Credit Card,Central
+TXN-10118,2024-08-24 19:33:27,P100043,H&M Sweatshirt,Fashion,5,1639.44,8197.2,Debit Card,South
+TXN-10621,2024-08-25 00:26:24,P2006,Premium Boots v22,Footwear,2,55880.0,111760.0,Credit Card,North
+TXN-10164,2024-08-25 13:32:43,P2008,Premium Headphones v48,Electronics,1,8780.67,8780.67,Credit Card,South
+TXN-10941,2024-08-27 22:15:08,P100026,HP Pavilion,Electronics,3,20719.78,62159.34,UPI,North
+TXN-10116,2024-08-29 19:53:27,P2003,Premium Running Shoes v27,Footwear,4,65156.0,260624.0,UPI,North
+TXN-10640,2024-08-31 09:18:04,P20012,Premium Smartphone v3,Electronics,5,23016.96,115084.8,Credit Card,North
+TXN-10796,2024-09-02 03:03:19,P20018,Premium Smartwatch v14,Electronics,3,4781.5,14344.5,Debit Card,West
+TXN-10693,2024-09-03 05:30:57,P100026,HP Pavilion,Electronics,4,20719.78,82879.12,Credit Card,West
+TXN-10230,2024-09-04 11:11:00,P20011,Premium Travel Bag v3,Accessories,4,8918.94,35675.76,Debit Card,West
+TXN-10939,2024-09-04 22:26:00,P20012,Premium Smartphone v3,Electronics,3,23016.96,69050.88,UPI,West
+TXN-11097,2024-09-05 04:41:40,P20020,Premium Shirt v42,Fashion,4,10216.92,40867.68,UPI,South
+TXN-10345,2024-09-05 06:23:35,P100037,Adidas Ultraboost,Footwear,2,5873.12,11746.24,Credit Card,North
+TXN-10221,2024-09-06 20:29:57,P100009,Wildcraft Backpack,Accessories,1,1136.1,1136.1,Net Banking,West
+TXN-11048,2024-09-07 06:37:57,P100016,Sony Headphones,Electronics,4,21524.32,86097.28,Credit Card,North
+TXN-11052,2024-09-07 12:26:35,P20010,Premium Travel Bag v67,Accessories,4,9009.6,36038.4,Credit Card,West
+TXN-10039,2024-09-12 07:41:07,P100006,Fossil Watch,Accessories,3,1568.27,4704.81,Debit Card,North
+TXN-10151,2024-09-13 13:56:03,P2009,Premium Running Shoes v67,Footwear,3,3445.84,10337.52,Credit Card,Central
+TXN-10561,2024-09-17 07:32:38,P100000,iPhone 13,Electronics,3,28109.96,84329.88,Debit Card,South
+TXN-10431,2024-09-19 00:47:02,P20018,Premium Smartwatch v14,Electronics,4,4781.5,19126.0,Debit Card,North
+TXN-11054,2024-09-20 07:19:14,P100010,Adidas Hoodie,Fashion,2,1733.82,3467.64,Net Banking,North
+TXN-11034,2024-09-22 01:25:19,P20021,Premium Travel Bag v85,Accessories,3,5197.41,15592.23,Net Banking,North
+TXN-10211,2024-09-25 04:03:31,P100002,RayBan Sunglasses,Accessories,3,548.1,1644.3,UPI,North
+TXN-10809,2024-09-25 21:10:56,P100004,Nike T-shirt,Fashion,5,822.15,4110.75,Debit Card,South
+TXN-10522,2024-09-27 18:30:06,P2002,Premium Headphones v82,Electronics,1,23300.55,23300.55,Net Banking,North
+TXN-10045,2024-09-30 00:42:29,P2009,Premium Running Shoes v67,Footwear,2,3445.84,6891.68,Credit Card,North
+TXN-10827,2024-09-30 22:00:57,P2003,Premium Running Shoes v27,Footwear,4,65156.0,260624.0,UPI,South
+TXN-10380,2024-10-01 03:43:27,P100037,Adidas Ultraboost,Footwear,5,5873.12,29365.6,Net Banking,North
+TXN-11090,2024-10-08 01:27:17,P100010,Adidas Hoodie,Fashion,2,1733.82,3467.64,Debit Card,North
+TXN-10849,2024-10-10 13:45:51,P100020,American Tourister Bag,Accessories,3,596.64,1789.92,Credit Card,East
+TXN-10072,2024-10-10 22:19:21,P100127,Dell Laptop,Electronics,3,46702.04,140106.12,UPI,North
+TXN-10506,2024-10-11 19:12:19,P20021,Premium Travel Bag v85,Accessories,4,5197.41,20789.64,Net Banking,West
+TXN-11145,2024-10-11 20:23:28,P20016,Premium Jacket v77,Fashion,5,17755.36,88776.8,Net Banking,North
+TXN-10964,2024-10-12 13:18:33,P100007,Reebok Shoes,Footwear,1,1715.7,1715.7,Credit Card,West
+TXN-10952,2024-10-12 18:06:51,P2002,Premium Headphones v82,Electronics,5,23300.55,116502.75,UPI,North
+TXN-10356,2024-10-13 15:20:03,P100034,Puma Jacket,Fashion,1,2772.0,2772.0,Credit Card,Central
+TXN-11066,2024-10-14 02:11:44,P100001,Zara Shirt,Fashion,3,1177.2,3531.6,Net Banking,North
+TXN-11183,2024-10-14 10:48:51,P2002,Premium Headphones v82,Electronics,2,23300.55,46601.1,Credit Card,South
+TXN-10836,2024-10-16 09:13:35,P100007,Reebok Shoes,Footwear,4,1715.7,6862.8,Net Banking,North
+TXN-10847,2024-10-19 01:21:54,P100027,Boat Earbuds,Electronics,2,16488.24,32976.48,Credit Card,North
+TXN-11067,2024-10-20 16:39:06,P100007,Reebok Shoes,Footwear,3,1715.7,5147.1,UPI,North
+TXN-10119,2024-10-22 00:43:24,P2008,Premium Headphones v48,Electronics,3,8780.67,26342.01,UPI,Central
+TXN-10492,2024-10-22 10:57:59,P100037,Adidas Ultraboost,Footwear,4,5873.12,23492.48,Net Banking,West
+TXN-10800,2024-10-23 07:53:50,P100017,Levi's Jeans,Fashion,4,2131.42,8525.68,Debit Card,Central
+TXN-10068,2024-10-25 09:20:00,P20010,Premium Travel Bag v67,Accessories,1,9009.6,9009.6,UPI,North
+TXN-10790,2024-10-27 17:26:26,P100017,Levi's Jeans,Fashion,4,2131.42,8525.68,Net Banking,West
+TXN-10480,2024-10-28 23:29:45,P20023,Premium Wallet v49,Accessories,1,2613.16,2613.16,Credit Card,Central
+TXN-10015,2024-10-29 23:37:25,P20015,Premium Travel Bag v98,Accessories,5,25338.4,126692.0,Net Banking,East
+TXN-10456,2024-11-04 18:11:45,P100027,Boat Earbuds,Electronics,1,16488.24,16488.24,Net Banking,East
+TXN-10713,2024-11-04 20:56:57,P20014,Premium Travel Bag v68,Accessories,4,5338.74,21354.96,Net Banking,Central
+TXN-11032,2024-11-05 00:40:43,P20023,Premium Wallet v49,Accessories,3,2613.16,7839.48,UPI,Central
+TXN-11172,2024-11-05 16:29:46,P100037,Adidas Ultraboost,Footwear,5,5873.12,29365.6,UPI,North
+TXN-10853,2024-11-06 22:46:45,P100127,Dell Laptop,Electronics,1,46702.04,46702.04,Credit Card,Central
+TXN-10776,2024-11-07 17:19:59,P20014,Premium Travel Bag v68,Accessories,3,5338.74,16016.22,UPI,South
+TXN-10282,2024-11-08 11:21:56,P2001,Premium Jeans v4,Fashion,5,9515.2,47576.0,UPI,South
+TXN-10243,2024-11-09 02:19:13,P100026,HP Pavilion,Electronics,5,20719.78,103598.9,Net Banking,West
+TXN-10434,2024-11-09 02:28:29,P2002,Premium Headphones v82,Electronics,3,23300.55,69901.65,UPI,East
+TXN-10637,2024-11-09 17:49:32,P20017,Premium Jeans v100,Fashion,1,53091.7,53091.7,Credit Card,South
+TXN-10829,2024-11-10 13:24:09,P20012,Premium Smartphone v3,Electronics,5,23016.96,115084.8,Credit Card,East
+TXN-10603,2024-11-12 06:13:17,P100127,Dell Laptop,Electronics,1,46702.04,46702.04,Credit Card,Central
+TXN-10535,2024-11-13 22:58:56,P20018,Premium Smartwatch v14,Electronics,2,4781.5,9563.0,UPI,East
+TXN-10157,2024-11-18 06:00:50,P2009,Premium Running Shoes v67,Footwear,4,3445.84,13783.36,Credit Card,North
+TXN-10778,2024-11-19 18:14:30,P100036,Samsung Galaxy S21,Electronics,3,16251.85,48755.55,Credit Card,South
+TXN-10631,2024-11-21 11:35:12,P20014,Premium Travel Bag v68,Accessories,3,5338.74,16016.22,Debit Card,North
+TXN-11166,2024-11-21 15:32:19,P20018,Premium Smartwatch v14,Electronics,2,4781.5,9563.0,Net Banking,East
+TXN-11033,2024-11-23 12:12:53,P2004,Premium Travel Bag v87,Accessories,1,32520.95,32520.95,Credit Card,North
+TXN-10007,2024-11-23 18:34:36,P100127,Dell Laptop,Electronics,3,46702.04,140106.12,Debit Card,Central
+TXN-10349,2024-11-24 18:57:07,P20013,Premium Boots v82,Footwear,4,28106.26,112425.04,Net Banking,West
+TXN-10438,2024-11-25 09:23:45,P100034,Puma Jacket,Fashion,4,2772.0,11088.0,Debit Card,North
+TXN-10058,2024-11-26 02:27:25,P20012,Premium Smartphone v3,Electronics,2,23016.96,46033.92,UPI,Central
+TXN-11110,2024-11-30 03:14:17,P100009,Wildcraft Backpack,Accessories,3,1136.1,3408.3,Credit Card,Central
+TXN-10720,2024-12-04 05:04:36,P20020,Premium Shirt v42,Fashion,1,10216.92,10216.92,UPI,West
+TXN-10892,2024-12-06 22:12:48,P100009,Wildcraft Backpack,Accessories,4,1136.1,4544.4,Net Banking,West
+TXN-11111,2024-12-07 05:03:05,P20015,Premium Travel Bag v98,Accessories,5,25338.4,126692.0,Credit Card,Central
+TXN-10366,2024-12-11 04:02:45,P100009,Wildcraft Backpack,Accessories,2,1136.1,2272.2,Net Banking,South
+TXN-10755,2024-12-14 00:09:36,P100037,Adidas Ultraboost,Footwear,5,5873.12,29365.6,UPI,South
+TXN-11121,2024-12-14 12:31:59,P100037,Adidas Ultraboost,Footwear,1,5873.12,5873.12,Credit Card,East
+TXN-10174,2024-12-15 07:56:40,P2005,Premium Travel Bag v36,Accessories,4,3262.44,13049.76,UPI,North
+TXN-10915,2024-12-15 08:12:18,P20022,Premium Sweatshirt v3,Fashion,2,36897.57,73795.14,Debit Card,South
+TXN-10491,2024-12-16 06:12:37,P100020,American Tourister Bag,Accessories,2,596.64,1193.28,Credit Card,North
+TXN-10178,2024-12-16 09:37:33,P2009,Premium Running Shoes v67,Footwear,5,3445.84,17229.2,Net Banking,Central
+TXN-10486,2024-12-16 13:01:18,P100032,Nike Air Max,Footwear,5,369.3,1846.5,Debit Card,East
+TXN-10384,2024-12-16 18:39:29,P20020,Premium Shirt v42,Fashion,3,10216.92,30650.76,Credit Card,South
+TXN-10587,2024-12-20 11:02:10,P20017,Premium Jeans v100,Fashion,3,53091.7,159275.1,Net Banking,West
+TXN-10135,2024-12-21 13:51:05,P100020,American Tourister Bag,Accessories,1,596.64,596.64,UPI,North
+TXN-11188,2024-12-22 07:01:42,P100001,Zara Shirt,Fashion,3,1177.2,3531.6,Net Banking,East
+TXN-10250,2024-12-23 12:31:08,P20019,Premium Wallet v96,Accessories,2,22615.67,45231.34,Debit Card,South
+TXN-11143,2024-12-23 16:44:48,P20015,Premium Travel Bag v98,Accessories,1,25338.4,25338.4,UPI,North
+TXN-11155,2024-12-24 05:47:13,P20017,Premium Jeans v100,Fashion,3,53091.7,159275.1,Debit Card,Central
+TXN-10132,2024-12-25 02:33:05,P20016,Premium Jacket v77,Fashion,1,17755.36,17755.36,Net Banking,Central
+TXN-11060,2024-12-26 00:42:51,P100043,H&M Sweatshirt,Fashion,4,1639.44,6557.76,UPI,North
+TXN-10150,2024-12-26 23:40:46,P2003,Premium Running Shoes v27,Footwear,3,65156.0,195468.0,UPI,North
+TXN-10967,2024-12-28 04:22:11,P20020,Premium Shirt v42,Fashion,1,10216.92,10216.92,Credit Card,Central
+TXN-10265,2024-12-28 06:09:54,P100001,Zara Shirt,Fashion,1,1177.2,1177.2,UPI,North
+TXN-10423,2024-12-28 11:50:41,P2009,Premium Running Shoes v67,Footwear,4,3445.84,13783.36,UPI,West
+TXN-10532,2024-12-28 21:56:28,P100032,Nike Air Max,Footwear,4,369.3,1477.2,Credit Card,West
+TXN-10361,2024-12-30 18:12:00,P20021,Premium Travel Bag v85,Accessories,2,5197.41,10394.82,Credit Card,South
+TXN-10875,2025-01-01 02:31:46,P100003,Puma Sneakers,Footwear,2,2988.4,5976.8,Debit Card,West
+TXN-10468,2025-01-02 17:07:56,P2007,Premium Sunglasses v59,Accessories,4,10099.76,40399.04,Debit Card,West
+TXN-10105,2025-01-03 09:31:58,P100004,Nike T-shirt,Fashion,4,822.15,3288.6,Net Banking,South
+TXN-10189,2025-01-03 20:49:46,P20017,Premium Jeans v100,Fashion,1,53091.7,53091.7,Debit Card,Central
+TXN-10984,2025-01-04 01:48:03,P100009,Wildcraft Backpack,Accessories,5,1136.1,5680.5,Credit Card,East
+TXN-10807,2025-01-04 16:27:03,P20016,Premium Jacket v77,Fashion,1,17755.36,17755.36,Debit Card,East
+TXN-10190,2025-01-07 00:07:44,P100000,iPhone 13,Electronics,3,28109.96,84329.88,Net Banking,North
+TXN-10658,2025-01-07 06:57:07,P100034,Puma Jacket,Fashion,5,2772.0,13860.0,Debit Card,West
+TXN-11187,2025-01-11 13:12:11,P20016,Premium Jacket v77,Fashion,3,17755.36,53266.08,Debit Card,East
+TXN-10095,2025-01-12 02:46:56,P100001,Zara Shirt,Fashion,4,1177.2,4708.8,Debit Card,Central
+TXN-11080,2025-01-12 03:06:29,P2004,Premium Travel Bag v87,Accessories,5,32520.95,162604.75,Debit Card,Central
+TXN-10942,2025-01-12 19:29:18,P20022,Premium Sweatshirt v3,Fashion,5,36897.57,184487.85,Credit Card,West
+TXN-10726,2025-01-13 13:49:12,P100004,Nike T-shirt,Fashion,4,822.15,3288.6,Credit Card,East
+TXN-10465,2025-01-14 17:31:34,P20015,Premium Travel Bag v98,Accessories,4,25338.4,101353.6,Net Banking,East
+TXN-10835,2025-01-18 13:27:34,P20013,Premium Boots v82,Footwear,5,28106.26,140531.3,UPI,Central
+TXN-10253,2025-01-18 13:38:59,P100020,American Tourister Bag,Accessories,3,596.64,1789.92,Net Banking,Central
+TXN-10406,2025-01-18 17:57:53,P2004,Premium Travel Bag v87,Accessories,3,32520.95,97562.85,UPI,Central
+TXN-10143,2025-01-18 18:23:31,P20020,Premium Shirt v42,Fashion,1,10216.92,10216.92,Credit Card,East
+TXN-11018,2025-01-20 22:03:04,P2000,Premium Sneakers v11,Footwear,3,59534.85,178604.55,UPI,North
+TXN-11159,2025-01-21 05:14:06,P100001,Zara Shirt,Fashion,4,1177.2,4708.8,Credit Card,North
+TXN-10403,2025-01-21 18:22:06,P20023,Premium Wallet v49,Accessories,5,2613.16,13065.8,Net Banking,East
+TXN-11075,2025-01-23 07:51:48,P20023,Premium Wallet v49,Accessories,5,2613.16,13065.8,Net Banking,West
+TXN-10137,2025-01-24 10:21:30,P100010,Adidas Hoodie,Fashion,2,1733.82,3467.64,Net Banking,East
+TXN-11006,2025-01-25 16:51:02,P100020,American Tourister Bag,Accessories,3,596.64,1789.92,Credit Card,South
+TXN-10703,2025-01-25 19:39:41,P2009,Premium Running Shoes v67,Footwear,5,3445.84,17229.2,UPI,South
+TXN-10231,2025-01-26 04:22:55,P20015,Premium Travel Bag v98,Accessories,4,25338.4,101353.6,Credit Card,East
+TXN-10214,2025-01-29 02:20:23,P20020,Premium Shirt v42,Fashion,1,10216.92,10216.92,Credit Card,North
+TXN-10920,2025-01-29 12:59:36,P2003,Premium Running Shoes v27,Footwear,4,65156.0,260624.0,Net Banking,South
+TXN-10293,2025-01-31 14:26:25,P20011,Premium Travel Bag v3,Accessories,3,8918.94,26756.82,Net Banking,West
+TXN-10179,2025-02-01 20:21:55,P20020,Premium Shirt v42,Fashion,3,10216.92,30650.76,Net Banking,West
+TXN-10006,2025-02-02 10:27:31,P100017,Levi's Jeans,Fashion,4,2131.42,8525.68,Credit Card,Central
+TXN-10706,2025-02-02 20:46:22,P20018,Premium Smartwatch v14,Electronics,4,4781.5,19126.0,Debit Card,South
+TXN-10738,2025-02-03 07:19:11,P2002,Premium Headphones v82,Electronics,1,23300.55,23300.55,Debit Card,West
+TXN-10682,2025-02-03 16:45:39,P20010,Premium Travel Bag v67,Accessories,1,9009.6,9009.6,Credit Card,Central
+TXN-10390,2025-02-05 02:18:32,P2005,Premium Travel Bag v36,Accessories,3,3262.44,9787.32,Net Banking,East
+TXN-10311,2025-02-06 20:01:43,P20018,Premium Smartwatch v14,Electronics,3,4781.5,14344.5,Net Banking,Central
+TXN-10312,2025-02-08 07:51:55,P20020,Premium Shirt v42,Fashion,5,10216.92,51084.6,Credit Card,East
+TXN-10788,2025-02-08 09:18:50,P20015,Premium Travel Bag v98,Accessories,1,25338.4,25338.4,Credit Card,North
+TXN-11173,2025-02-08 09:38:34,P2009,Premium Running Shoes v67,Footwear,1,3445.84,3445.84,Net Banking,South
+TXN-10360,2025-02-09 05:40:09,P20022,Premium Sweatshirt v3,Fashion,2,36897.57,73795.14,UPI,East
+TXN-10797,2025-02-09 14:37:02,P2008,Premium Headphones v48,Electronics,1,8780.67,8780.67,Net Banking,Central
+TXN-10477,2025-02-11 04:37:47,P2004,Premium Travel Bag v87,Accessories,5,32520.95,162604.75,Credit Card,West
+TXN-11161,2025-02-11 19:13:55,P20019,Premium Wallet v96,Accessories,5,22615.67,113078.35,UPI,East
+TXN-10887,2025-02-15 23:16:20,P2003,Premium Running Shoes v27,Footwear,2,65156.0,130312.0,Credit Card,West
+TXN-10377,2025-02-18 21:54:04,P20016,Premium Jacket v77,Fashion,5,17755.36,88776.8,UPI,West
+TXN-11026,2025-02-19 13:16:37,P20015,Premium Travel Bag v98,Accessories,4,25338.4,101353.6,Credit Card,South
+TXN-10428,2025-02-21 02:38:55,P20013,Premium Boots v82,Footwear,1,28106.26,28106.26,Net Banking,Central
+TXN-10148,2025-02-21 09:32:53,P2003,Premium Running Shoes v27,Footwear,1,65156.0,65156.0,UPI,North
+TXN-10546,2025-02-22 01:34:14,P2004,Premium Travel Bag v87,Accessories,2,32520.95,65041.9,Net Banking,East
+TXN-11013,2025-02-22 13:41:55,P20022,Premium Sweatshirt v3,Fashion,1,36897.57,36897.57,Credit Card,West
+TXN-11113,2025-02-26 18:03:04,P100004,Nike T-shirt,Fashion,1,822.15,822.15,UPI,North
+TXN-10087,2025-02-27 13:42:47,P20020,Premium Shirt v42,Fashion,3,10216.92,30650.76,UPI,South
+TXN-10202,2025-02-28 02:53:24,P2005,Premium Travel Bag v36,Accessories,3,3262.44,9787.32,Net Banking,South
+TXN-10804,2025-02-28 06:30:57,P100002,RayBan Sunglasses,Accessories,2,548.1,1096.2,UPI,North
+TXN-10278,2025-02-28 08:31:48,P100037,Adidas Ultraboost,Footwear,1,5873.12,5873.12,Credit Card,East
+TXN-10885,2025-02-28 10:45:08,P100043,H&M Sweatshirt,Fashion,2,1639.44,3278.88,Credit Card,North
+TXN-10751,2025-02-28 16:15:21,P2008,Premium Headphones v48,Electronics,5,8780.67,43903.35,UPI,Central
+TXN-10567,2025-03-01 04:32:15,P20011,Premium Travel Bag v3,Accessories,1,8918.94,8918.94,UPI,West
+TXN-11053,2025-03-03 13:56:18,P20014,Premium Travel Bag v68,Accessories,4,5338.74,21354.96,Credit Card,East
+TXN-10204,2025-03-08 22:33:09,P2007,Premium Sunglasses v59,Accessories,5,10099.76,50498.8,Net Banking,East
+TXN-10902,2025-03-11 22:13:47,P20021,Premium Travel Bag v85,Accessories,3,5197.41,15592.23,Credit Card,East
+TXN-10803,2025-03-12 18:45:18,P2006,Premium Boots v22,Footwear,4,55880.0,223520.0,Net Banking,West
+TXN-10542,2025-03-15 18:19:20,P2000,Premium Sneakers v11,Footwear,1,59534.85,59534.85,Net Banking,West
+TXN-10090,2025-03-15 23:47:51,P20023,Premium Wallet v49,Accessories,3,2613.16,7839.48,Net Banking,North
+TXN-10762,2025-03-17 06:19:41,P100007,Reebok Shoes,Footwear,3,1715.7,5147.1,Net Banking,Central
+TXN-10109,2025-03-17 19:18:33,P20022,Premium Sweatshirt v3,Fashion,1,36897.57,36897.57,UPI,South
+TXN-10034,2025-03-18 17:58:56,P20021,Premium Travel Bag v85,Accessories,2,5197.41,10394.82,Credit Card,East
+TXN-10274,2025-03-19 09:10:53,P2005,Premium Travel Bag v36,Accessories,1,3262.44,3262.44,Debit Card,North
+TXN-10255,2025-03-19 19:06:31,P100027,Boat Earbuds,Electronics,4,16488.24,65952.96,Credit Card,South
+TXN-10446,2025-03-21 23:15:35,P100027,Boat Earbuds,Electronics,4,16488.24,65952.96,UPI,Central
+TXN-10947,2025-03-22 09:47:07,P100002,RayBan Sunglasses,Accessories,1,548.1,548.1,Net Banking,South
+TXN-10692,2025-03-23 06:45:49,P20014,Premium Travel Bag v68,Accessories,4,5338.74,21354.96,Net Banking,East
+TXN-10208,2025-03-25 20:21:25,P100002,RayBan Sunglasses,Accessories,3,548.1,1644.3,Net Banking,Central
+TXN-10912,2025-03-26 20:41:31,P2001,Premium Jeans v4,Fashion,3,9515.2,28545.6,Debit Card,Central
+TXN-10628,2025-03-27 10:46:00,P20019,Premium Wallet v96,Accessories,5,22615.67,113078.35,Debit Card,West
+TXN-10437,2025-03-28 02:13:16,P2003,Premium Running Shoes v27,Footwear,2,65156.0,130312.0,Credit Card,West
+TXN-10106,2025-03-28 14:42:22,P100034,Puma Jacket,Fashion,5,2772.0,13860.0,UPI,Central
+TXN-10708,2025-03-29 04:08:40,P2001,Premium Jeans v4,Fashion,1,9515.2,9515.2,Net Banking,South
+TXN-10922,2025-03-30 00:41:59,P100012,OnePlus 11,Electronics,2,11066.5,22133.0,Credit Card,Central
+TXN-10024,2025-04-03 17:25:39,P20018,Premium Smartwatch v14,Electronics,5,4781.5,23907.5,UPI,Central
+TXN-10669,2025-04-05 00:46:32,P20010,Premium Travel Bag v67,Accessories,1,9009.6,9009.6,Net Banking,North
+TXN-10715,2025-04-05 05:29:58,P2003,Premium Running Shoes v27,Footwear,2,65156.0,130312.0,Debit Card,Central
+TXN-11190,2025-04-05 15:03:28,P100009,Wildcraft Backpack,Accessories,5,1136.1,5680.5,Net Banking,North
+TXN-10433,2025-04-08 00:59:38,P20019,Premium Wallet v96,Accessories,2,22615.67,45231.34,UPI,South
+TXN-11020,2025-04-08 15:45:48,P20017,Premium Jeans v100,Fashion,5,53091.7,265458.5,Credit Card,West
+TXN-11058,2025-04-09 01:33:56,P20018,Premium Smartwatch v14,Electronics,4,4781.5,19126.0,UPI,North
+TXN-10400,2025-04-09 11:47:40,P100027,Boat Earbuds,Electronics,5,16488.24,82441.2,Credit Card,East
+TXN-10017,2025-04-10 03:19:39,P20014,Premium Travel Bag v68,Accessories,5,5338.74,26693.7,Credit Card,South
+TXN-10598,2025-04-10 22:55:01,P100001,Zara Shirt,Fashion,4,1177.2,4708.8,Debit Card,South
+TXN-10387,2025-04-11 16:44:05,P100009,Wildcraft Backpack,Accessories,2,1136.1,2272.2,Credit Card,West
+TXN-10246,2025-04-12 19:36:53,P20016,Premium Jacket v77,Fashion,2,17755.36,35510.72,Credit Card,Central
+TXN-10096,2025-04-13 06:16:37,P20010,Premium Travel Bag v67,Accessories,4,9009.6,36038.4,Debit Card,West
+TXN-10175,2025-04-15 16:48:11,P100032,Nike Air Max,Footwear,2,369.3,738.6,UPI,East
+TXN-10003,2025-04-22 03:45:53,P20021,Premium Travel Bag v85,Accessories,2,5197.41,10394.82,UPI,Central
+TXN-10636,2025-04-23 14:02:40,P20016,Premium Jacket v77,Fashion,3,17755.36,53266.08,Debit Card,Central
+TXN-10327,2025-04-24 08:25:33,P100037,Adidas Ultraboost,Footwear,1,5873.12,5873.12,Net Banking,West
+TXN-10401,2025-04-26 14:22:16,P100010,Adidas Hoodie,Fashion,4,1733.82,6935.28,UPI,West
+TXN-10046,2025-04-27 14:50:18,P20011,Premium Travel Bag v3,Accessories,2,8918.94,17837.88,Credit Card,West
+TXN-10840,2025-04-28 08:43:49,P20012,Premium Smartphone v3,Electronics,5,23016.96,115084.8,Net Banking,South
+TXN-10394,2025-04-29 03:49:31,P2000,Premium Sneakers v11,Footwear,5,59534.85,297674.25,UPI,North
+TXN-11074,2025-05-01 05:24:28,P100002,RayBan Sunglasses,Accessories,3,548.1,1644.3,UPI,West
+TXN-10242,2025-05-01 07:07:16,P2005,Premium Travel Bag v36,Accessories,3,3262.44,9787.32,Debit Card,North
+TXN-10131,2025-05-01 15:41:33,P100016,Sony Headphones,Electronics,1,21524.32,21524.32,Net Banking,East
+TXN-10893,2025-05-01 16:08:46,P20017,Premium Jeans v100,Fashion,5,53091.7,265458.5,Net Banking,West
+TXN-10086,2025-05-02 21:02:39,P2001,Premium Jeans v4,Fashion,4,9515.2,38060.8,UPI,South
+TXN-10525,2025-05-03 17:32:01,P100003,Puma Sneakers,Footwear,3,2988.4,8965.2,Credit Card,East
+TXN-10795,2025-05-04 12:21:16,P20012,Premium Smartphone v3,Electronics,1,23016.96,23016.96,Debit Card,East
+TXN-10448,2025-05-05 00:14:19,P100020,American Tourister Bag,Accessories,4,596.64,2386.56,Debit Card,West
+TXN-10073,2025-05-06 09:30:23,P100010,Adidas Hoodie,Fashion,2,1733.82,3467.64,Credit Card,South
+TXN-11177,2025-05-06 17:11:26,P2003,Premium Running Shoes v27,Footwear,5,65156.0,325780.0,Credit Card,Central
+TXN-11126,2025-05-07 04:48:40,P2001,Premium Jeans v4,Fashion,4,9515.2,38060.8,Debit Card,North
+TXN-10339,2025-05-08 03:30:24,P100032,Nike Air Max,Footwear,2,369.3,738.6,Credit Card,Central
+TXN-11027,2025-05-09 16:08:28,P100016,Sony Headphones,Electronics,3,21524.32,64572.96,Credit Card,West
+TXN-10201,2025-05-10 05:07:15,P100007,Reebok Shoes,Footwear,5,1715.7,8578.5,Debit Card,South
+TXN-11029,2025-05-15 08:43:04,P100010,Adidas Hoodie,Fashion,2,1733.82,3467.64,Debit Card,North
+TXN-10317,2025-05-15 23:33:28,P100001,Zara Shirt,Fashion,4,1177.2,4708.8,Net Banking,Central
+TXN-11070,2025-05-16 12:09:55,P20013,Premium Boots v82,Footwear,5,28106.26,140531.3,Net Banking,North
+TXN-10777,2025-05-18 02:23:25,P100036,Samsung Galaxy S21,Electronics,4,16251.85,65007.4,Debit Card,North
+TXN-10680,2025-05-18 07:51:22,P100003,Puma Sneakers,Footwear,3,2988.4,8965.2,Net Banking,East
+TXN-11095,2025-05-19 23:44:35,P100000,iPhone 13,Electronics,1,28109.96,28109.96,Debit Card,North
+TXN-10378,2025-05-21 19:39:21,P20021,Premium Travel Bag v85,Accessories,2,5197.41,10394.82,UPI,West
+TXN-10639,2025-05-23 11:01:15,P100002,RayBan Sunglasses,Accessories,1,548.1,548.1,UPI,West
+TXN-10651,2025-05-24 00:52:23,P100010,Adidas Hoodie,Fashion,3,1733.82,5201.46,Credit Card,South
+TXN-10443,2025-05-25 12:30:04,P20017,Premium Jeans v100,Fashion,3,53091.7,159275.1,Debit Card,East
+TXN-10176,2025-05-25 13:38:35,P20023,Premium Wallet v49,Accessories,2,2613.16,5226.32,UPI,West
+TXN-10670,2025-05-26 16:04:59,P2007,Premium Sunglasses v59,Accessories,5,10099.76,50498.8,UPI,North
+TXN-10429,2025-05-29 05:43:43,P20020,Premium Shirt v42,Fashion,1,10216.92,10216.92,Credit Card,West
+TXN-10100,2025-05-30 04:46:03,P100127,Dell Laptop,Electronics,2,46702.04,93404.08,Credit Card,West
+TXN-11162,2025-05-31 09:47:59,P100032,Nike Air Max,Footwear,5,369.3,1846.5,Debit Card,East
+TXN-10863,2025-06-01 17:40:10,P100037,Adidas Ultraboost,Footwear,4,5873.12,23492.48,Net Banking,South
+TXN-10877,2025-06-02 23:21:03,P20017,Premium Jeans v100,Fashion,1,53091.7,53091.7,Credit Card,South
+TXN-10953,2025-06-03 14:28:51,P100016,Sony Headphones,Electronics,2,21524.32,43048.64,Credit Card,East
+TXN-10700,2025-06-03 17:18:04,P20020,Premium Shirt v42,Fashion,3,10216.92,30650.76,Net Banking,Central
+TXN-10526,2025-06-04 01:09:56,P100032,Nike Air Max,Footwear,1,369.3,369.3,Net Banking,East
+TXN-10338,2025-06-04 04:27:14,P20010,Premium Travel Bag v67,Accessories,1,9009.6,9009.6,Debit Card,South
+TXN-10550,2025-06-04 11:43:34,P100020,American Tourister Bag,Accessories,5,596.64,2983.2,Debit Card,North
+TXN-10031,2025-06-04 14:37:51,P20018,Premium Smartwatch v14,Electronics,3,4781.5,14344.5,UPI,South
+TXN-10830,2025-06-05 12:26:08,P100000,iPhone 13,Electronics,4,28109.96,112439.84,Debit Card,West
+TXN-10513,2025-06-07 00:39:46,P100003,Puma Sneakers,Footwear,3,2988.4,8965.2,UPI,North
+TXN-11091,2025-06-07 15:13:37,P100020,American Tourister Bag,Accessories,2,596.64,1193.28,UPI,South
+TXN-10686,2025-06-08 04:26:49,P100127,Dell Laptop,Electronics,3,46702.04,140106.12,UPI,North
+TXN-10997,2025-06-08 07:13:09,P100032,Nike Air Max,Footwear,2,369.3,738.6,Credit Card,Central
+TXN-10489,2025-06-11 00:45:34,P100037,Adidas Ultraboost,Footwear,4,5873.12,23492.48,UPI,Central
+TXN-10323,2025-06-12 04:22:04,P2004,Premium Travel Bag v87,Accessories,3,32520.95,97562.85,Debit Card,West
+TXN-10000,2025-06-12 15:48:38,P20016,Premium Jacket v77,Fashion,1,17755.36,17755.36,Debit Card,North
+TXN-10115,2025-06-13 20:43:33,P100020,American Tourister Bag,Accessories,4,596.64,2386.56,Net Banking,Central
+TXN-10227,2025-06-14 17:36:29,P100034,Puma Jacket,Fashion,4,2772.0,11088.0,Net Banking,West
+TXN-10614,2025-06-16 11:35:31,P100127,Dell Laptop,Electronics,2,46702.04,93404.08,UPI,South
+TXN-10994,2025-06-18 13:57:54,P2003,Premium Running Shoes v27,Footwear,3,65156.0,195468.0,UPI,East
+TXN-10888,2025-06-24 08:18:34,P20018,Premium Smartwatch v14,Electronics,1,4781.5,4781.5,Net Banking,North
+TXN-10579,2025-06-26 09:45:33,P20015,Premium Travel Bag v98,Accessories,2,25338.4,50676.8,Net Banking,North
+TXN-10294,2025-06-26 10:52:07,P100016,Sony Headphones,Electronics,4,21524.32,86097.28,Debit Card,West
+TXN-10048,2025-06-27 03:01:16,P20016,Premium Jacket v77,Fashion,1,17755.36,17755.36,UPI,West
+TXN-10583,2025-06-27 06:31:01,P2008,Premium Headphones v48,Electronics,4,8780.67,35122.68,UPI,North
+TXN-10453,2025-06-28 12:45:46,P2003,Premium Running Shoes v27,Footwear,4,65156.0,260624.0,Credit Card,South
+TXN-10861,2025-06-29 14:36:17,P100012,OnePlus 11,Electronics,1,11066.5,11066.5,UPI,North
+TXN-11088,2025-06-30 19:30:24,P100007,Reebok Shoes,Footwear,2,1715.7,3431.4,Debit Card,Central
+TXN-10392,2025-07-01 00:35:33,P2007,Premium Sunglasses v59,Accessories,4,10099.76,40399.04,Credit Card,North
+TXN-10859,2025-07-01 04:09:46,P100017,Levi's Jeans,Fashion,5,2131.42,10657.1,Net Banking,East
+TXN-10608,2025-07-02 10:40:16,P2002,Premium Headphones v82,Electronics,3,23300.55,69901.65,UPI,South
+TXN-10824,2025-07-02 11:21:21,P20022,Premium Sweatshirt v3,Fashion,4,36897.57,147590.28,Net Banking,Central
+TXN-10831,2025-07-02 12:21:41,P100007,Reebok Shoes,Footwear,1,1715.7,1715.7,Credit Card,Central
+TXN-10779,2025-07-04 11:38:31,P100034,Puma Jacket,Fashion,2,2772.0,5544.0,UPI,West
+TXN-10027,2025-07-04 13:42:52,P100020,American Tourister Bag,Accessories,5,596.64,2983.2,Debit Card,East
+TXN-10290,2025-07-07 05:49:22,P2000,Premium Sneakers v11,Footwear,1,59534.85,59534.85,Debit Card,East
+TXN-10813,2025-07-08 00:22:18,P20013,Premium Boots v82,Footwear,3,28106.26,84318.78,Net Banking,West
+TXN-10740,2025-07-09 16:02:20,P2002,Premium Headphones v82,Electronics,3,23300.55,69901.65,Net Banking,Central
+TXN-10564,2025-07-10 15:24:10,P100027,Boat Earbuds,Electronics,3,16488.24,49464.72,Net Banking,North
+TXN-11040,2025-07-10 23:42:50,P2005,Premium Travel Bag v36,Accessories,1,3262.44,3262.44,Credit Card,South
+TXN-11038,2025-07-11 15:59:40,P100037,Adidas Ultraboost,Footwear,5,5873.12,29365.6,Net Banking,South
+TXN-10652,2025-07-12 14:58:13,P20019,Premium Wallet v96,Accessories,1,22615.67,22615.67,Credit Card,North
+TXN-10605,2025-07-14 11:33:26,P2008,Premium Headphones v48,Electronics,2,8780.67,17561.34,Debit Card,South
+TXN-10667,2025-07-16 16:17:28,P100000,iPhone 13,Electronics,3,28109.96,84329.88,Debit Card,East
+TXN-10601,2025-07-16 20:52:26,P100010,Adidas Hoodie,Fashion,3,1733.82,5201.46,Debit Card,South
+TXN-10510,2025-07-18 10:00:44,P100001,Zara Shirt,Fashion,3,1177.2,3531.6,Net Banking,Central
+TXN-10771,2025-07-19 04:41:58,P20010,Premium Travel Bag v67,Accessories,1,9009.6,9009.6,UPI,Central
+TXN-10155,2025-07-19 20:04:45,P100016,Sony Headphones,Electronics,3,21524.32,64572.96,Net Banking,North
+TXN-11077,2025-07-24 07:17:33,P100006,Fossil Watch,Accessories,1,1568.27,1568.27,Net Banking,South
+TXN-11063,2025-07-24 11:30:49,P100032,Nike Air Max,Footwear,5,369.3,1846.5,Debit Card,West
+TXN-11017,2025-07-24 21:28:19,P20015,Premium Travel Bag v98,Accessories,4,25338.4,101353.6,Net Banking,East
+TXN-10502,2025-07-24 21:50:43,P2000,Premium Sneakers v11,Footwear,3,59534.85,178604.55,UPI,South
+TXN-10973,2025-07-25 09:35:09,P2001,Premium Jeans v4,Fashion,5,9515.2,47576.0,Debit Card,West
+TXN-10365,2025-07-25 14:54:14,P100012,OnePlus 11,Electronics,1,11066.5,11066.5,Net Banking,South
+TXN-10084,2025-07-26 12:43:07,P100036,Samsung Galaxy S21,Electronics,1,16251.85,16251.85,UPI,North
+TXN-10452,2025-07-26 15:38:30,P2007,Premium Sunglasses v59,Accessories,3,10099.76,30299.28,Debit Card,Central
+TXN-10375,2025-07-27 02:55:20,P2003,Premium Running Shoes v27,Footwear,5,65156.0,325780.0,UPI,West
+TXN-10784,2025-07-29 06:23:25,P100037,Adidas Ultraboost,Footwear,3,5873.12,17619.36,Credit Card,West
+TXN-10418,2025-07-29 20:56:34,P100036,Samsung Galaxy S21,Electronics,3,16251.85,48755.55,Credit Card,North
+TXN-10219,2025-07-31 04:26:05,P100026,HP Pavilion,Electronics,4,20719.78,82879.12,Credit Card,North
+TXN-10254,2025-08-01 04:52:42,P2002,Premium Headphones v82,Electronics,5,23300.55,116502.75,Net Banking,West
+TXN-10590,2025-08-02 08:34:25,P100017,Levi's Jeans,Fashion,4,2131.42,8525.68,Credit Card,South
+TXN-11008,2025-08-04 08:49:56,P2007,Premium Sunglasses v59,Accessories,3,10099.76,30299.28,UPI,North
+TXN-10986,2025-08-04 15:51:10,P100001,Zara Shirt,Fashion,5,1177.2,5886.0,Debit Card,West
+TXN-10585,2025-08-05 08:37:38,P20020,Premium Shirt v42,Fashion,2,10216.92,20433.84,Credit Card,East
+TXN-10760,2025-08-09 22:48:32,P100009,Wildcraft Backpack,Accessories,4,1136.1,4544.4,Credit Card,Central
+TXN-10247,2025-08-11 14:00:29,P20015,Premium Travel Bag v98,Accessories,3,25338.4,76015.2,Net Banking,East
+TXN-10223,2025-08-13 10:21:48,P100012,OnePlus 11,Electronics,3,11066.5,33199.5,Credit Card,East
+TXN-10344,2025-08-14 15:35:17,P20020,Premium Shirt v42,Fashion,1,10216.92,10216.92,Credit Card,South
+TXN-11136,2025-08-14 16:28:40,P100010,Adidas Hoodie,Fashion,2,1733.82,3467.64,Net Banking,West
+TXN-11096,2025-08-15 08:12:01,P100034,Puma Jacket,Fashion,3,2772.0,8316.0,Net Banking,North
+TXN-10552,2025-08-20 15:42:17,P100034,Puma Jacket,Fashion,4,2772.0,11088.0,Credit Card,Central
+TXN-10901,2025-08-22 00:25:59,P100020,American Tourister Bag,Accessories,3,596.64,1789.92,UPI,South
+TXN-10234,2025-08-24 14:02:48,P20011,Premium Travel Bag v3,Accessories,1,8918.94,8918.94,Net Banking,West
+TXN-10363,2025-08-30 12:51:18,P100001,Zara Shirt,Fashion,2,1177.2,2354.4,Credit Card,Central
+TXN-11127,2025-08-30 19:17:56,P100037,Adidas Ultraboost,Footwear,5,5873.12,29365.6,Debit Card,West
+TXN-10053,2025-09-04 06:28:51,P100017,Levi's Jeans,Fashion,1,2131.42,2131.42,Net Banking,South
+TXN-11163,2025-09-04 22:56:18,P20020,Premium Shirt v42,Fashion,4,10216.92,40867.68,UPI,Central
+TXN-10794,2025-09-06 07:54:53,P20012,Premium Smartphone v3,Electronics,4,23016.96,92067.84,Credit Card,South
+TXN-10701,2025-09-06 08:38:51,P100026,HP Pavilion,Electronics,1,20719.78,20719.78,UPI,Central
+TXN-10757,2025-09-06 21:02:23,P100034,Puma Jacket,Fashion,3,2772.0,8316.0,Debit Card,West
+TXN-10918,2025-09-09 18:58:32,P100016,Sony Headphones,Electronics,5,21524.32,107621.6,Credit Card,Central
+TXN-10611,2025-09-10 07:57:44,P20016,Premium Jacket v77,Fashion,2,17755.36,35510.72,Net Banking,South
+TXN-10773,2025-09-10 13:48:52,P2004,Premium Travel Bag v87,Accessories,1,32520.95,32520.95,Net Banking,Central
+TXN-10318,2025-09-10 17:52:52,P20014,Premium Travel Bag v68,Accessories,1,5338.74,5338.74,Debit Card,East
+TXN-11131,2025-09-15 17:23:34,P2006,Premium Boots v22,Footwear,1,55880.0,55880.0,Credit Card,North
+TXN-10065,2025-09-16 00:46:11,P100009,Wildcraft Backpack,Accessories,5,1136.1,5680.5,UPI,Central
+TXN-10876,2025-09-17 07:09:16,P20020,Premium Shirt v42,Fashion,3,10216.92,30650.76,Net Banking,Central
+TXN-11094,2025-09-18 15:48:13,P20017,Premium Jeans v100,Fashion,5,53091.7,265458.5,Credit Card,Central
+TXN-10931,2025-09-18 20:54:30,P20019,Premium Wallet v96,Accessories,3,22615.67,67847.01,Credit Card,East
+TXN-10883,2025-09-19 22:12:04,P20014,Premium Travel Bag v68,Accessories,4,5338.74,21354.96,Net Banking,Central
+TXN-11103,2025-09-22 00:20:53,P20014,Premium Travel Bag v68,Accessories,3,5338.74,16016.22,Credit Card,West
+TXN-10530,2025-09-25 14:15:30,P20021,Premium Travel Bag v85,Accessories,3,5197.41,15592.23,Debit Card,South
+TXN-10216,2025-09-26 08:20:47,P100037,Adidas Ultraboost,Footwear,3,5873.12,17619.36,Debit Card,North
+TXN-10077,2025-09-27 02:19:30,P20021,Premium Travel Bag v85,Accessories,3,5197.41,15592.23,Net Banking,East
+TXN-10322,2025-09-27 05:55:14,P100004,Nike T-shirt,Fashion,3,822.15,2466.45,Credit Card,North
+TXN-11157,2025-09-27 11:16:27,P100020,American Tourister Bag,Accessories,2,596.64,1193.28,UPI,West
+TXN-10287,2025-09-28 00:37:00,P20012,Premium Smartphone v3,Electronics,4,23016.96,92067.84,Net Banking,Central
+TXN-11184,2025-09-28 02:49:05,P100034,Puma Jacket,Fashion,5,2772.0,13860.0,Credit Card,Central
+TXN-10961,2025-09-28 17:50:40,P20021,Premium Travel Bag v85,Accessories,1,5197.41,5197.41,Credit Card,East
+TXN-11119,2025-09-29 13:20:55,P2004,Premium Travel Bag v87,Accessories,3,32520.95,97562.85,Credit Card,West
+TXN-10478,2025-09-30 01:52:35,P20021,Premium Travel Bag v85,Accessories,3,5197.41,15592.23,Credit Card,East
+TXN-10419,2025-09-30 08:26:59,P100002,RayBan Sunglasses,Accessories,3,548.1,1644.3,Net Banking,East
+TXN-11194,2025-09-30 11:11:30,P20016,Premium Jacket v77,Fashion,3,17755.36,53266.08,Net Banking,North
+TXN-10761,2025-09-30 17:53:01,P2004,Premium Travel Bag v87,Accessories,4,32520.95,130083.8,Net Banking,Central
+TXN-11037,2025-10-01 09:31:50,P2002,Premium Headphones v82,Electronics,5,23300.55,116502.75,UPI,East
+TXN-10805,2025-10-04 06:03:47,P100002,RayBan Sunglasses,Accessories,1,548.1,548.1,Debit Card,South
+TXN-11147,2025-10-05 11:22:53,P20011,Premium Travel Bag v3,Accessories,1,8918.94,8918.94,UPI,South
+TXN-10092,2025-10-09 02:40:21,P100036,Samsung Galaxy S21,Electronics,2,16251.85,32503.7,UPI,West
+TXN-10965,2025-10-09 15:18:19,P100012,OnePlus 11,Electronics,1,11066.5,11066.5,Credit Card,South
+TXN-10244,2025-10-10 09:35:20,P100004,Nike T-shirt,Fashion,2,822.15,1644.3,UPI,East
+TXN-10373,2025-10-10 21:32:52,P100012,OnePlus 11,Electronics,3,11066.5,33199.5,Credit Card,West
+TXN-11084,2025-10-12 01:03:28,P100016,Sony Headphones,Electronics,3,21524.32,64572.96,Net Banking,East
+TXN-10407,2025-10-12 14:40:12,P20018,Premium Smartwatch v14,Electronics,3,4781.5,14344.5,Credit Card,Central
+TXN-10335,2025-10-13 00:14:40,P100009,Wildcraft Backpack,Accessories,4,1136.1,4544.4,Credit Card,East
+TXN-10152,2025-10-13 05:19:54,P2003,Premium Running Shoes v27,Footwear,1,65156.0,65156.0,Debit Card,North
+TXN-10391,2025-10-14 14:24:59,P2007,Premium Sunglasses v59,Accessories,3,10099.76,30299.28,Net Banking,East
+TXN-11092,2025-10-15 06:39:08,P2002,Premium Headphones v82,Electronics,5,23300.55,116502.75,Credit Card,North
+TXN-10606,2025-10-16 08:55:38,P20013,Premium Boots v82,Footwear,5,28106.26,140531.3,UPI,West
+TXN-11044,2025-10-16 10:08:30,P20023,Premium Wallet v49,Accessories,2,2613.16,5226.32,Credit Card,Central
+TXN-10593,2025-10-17 20:36:57,P2008,Premium Headphones v48,Electronics,4,8780.67,35122.68,Net Banking,West
+TXN-11112,2025-10-18 03:26:41,P20014,Premium Travel Bag v68,Accessories,4,5338.74,21354.96,UPI,East
+TXN-10559,2025-10-21 15:11:38,P100012,OnePlus 11,Electronics,2,11066.5,22133.0,Net Banking,West
+TXN-10321,2025-10-22 20:22:22,P20020,Premium Shirt v42,Fashion,1,10216.92,10216.92,UPI,East
+TXN-10655,2025-10-23 01:21:28,P100127,Dell Laptop,Electronics,4,46702.04,186808.16,Net Banking,Central
+TXN-10696,2025-10-25 11:13:12,P20013,Premium Boots v82,Footwear,4,28106.26,112425.04,UPI,South
+TXN-10925,2025-10-25 14:40:50,P20023,Premium Wallet v49,Accessories,2,2613.16,5226.32,Credit Card,East
+TXN-10962,2025-10-25 22:16:27,P100009,Wildcraft Backpack,Accessories,2,1136.1,2272.2,Credit Card,East
+TXN-10408,2025-10-26 05:14:01,P20013,Premium Boots v82,Footwear,1,28106.26,28106.26,Credit Card,South
+TXN-10825,2025-10-26 15:26:37,P20020,Premium Shirt v42,Fashion,2,10216.92,20433.84,Debit Card,Central
+TXN-10879,2025-10-27 10:30:37,P100006,Fossil Watch,Accessories,2,1568.27,3136.54,UPI,Central
+TXN-10951,2025-10-28 08:16:48,P100020,American Tourister Bag,Accessories,4,596.64,2386.56,Debit Card,Central
+TXN-10343,2025-10-28 14:46:44,P2004,Premium Travel Bag v87,Accessories,1,32520.95,32520.95,Debit Card,Central
+TXN-10447,2025-10-28 22:59:26,P100036,Samsung Galaxy S21,Electronics,5,16251.85,81259.25,UPI,West
+TXN-10721,2025-10-29 13:19:17,P100016,Sony Headphones,Electronics,2,21524.32,43048.64,Debit Card,South
+TXN-10565,2025-10-31 08:40:40,P20017,Premium Jeans v100,Fashion,4,53091.7,212366.8,Net Banking,North
+TXN-10114,2025-11-03 04:22:55,P100037,Adidas Ultraboost,Footwear,5,5873.12,29365.6,Net Banking,South
+TXN-10099,2025-11-04 00:37:42,P100012,OnePlus 11,Electronics,2,11066.5,22133.0,UPI,West
+TXN-10911,2025-11-04 01:32:40,P20013,Premium Boots v82,Footwear,4,28106.26,112425.04,Debit Card,South
+TXN-10494,2025-11-04 05:11:23,P20021,Premium Travel Bag v85,Accessories,4,5197.41,20789.64,Credit Card,Central
+TXN-10903,2025-11-05 03:14:16,P20012,Premium Smartphone v3,Electronics,1,23016.96,23016.96,UPI,Central
+TXN-10938,2025-11-05 10:05:47,P2008,Premium Headphones v48,Electronics,4,8780.67,35122.68,Debit Card,Central
+TXN-10775,2025-11-09 14:44:25,P2001,Premium Jeans v4,Fashion,2,9515.2,19030.4,Net Banking,North
+TXN-10235,2025-11-10 17:49:55,P20021,Premium Travel Bag v85,Accessories,3,5197.41,15592.23,Net Banking,South
+TXN-11049,2025-11-11 13:21:24,P100004,Nike T-shirt,Fashion,5,822.15,4110.75,Credit Card,East
+TXN-10999,2025-11-12 04:08:03,P2003,Premium Running Shoes v27,Footwear,4,65156.0,260624.0,Debit Card,East
+TXN-10727,2025-11-12 11:30:26,P100017,Levi's Jeans,Fashion,1,2131.42,2131.42,Net Banking,West
+TXN-10604,2025-11-13 05:42:38,P100027,Boat Earbuds,Electronics,5,16488.24,82441.2,UPI,West
+TXN-10592,2025-11-15 10:37:41,P20019,Premium Wallet v96,Accessories,3,22615.67,67847.01,UPI,West
+TXN-10980,2025-11-16 07:35:19,P20022,Premium Sweatshirt v3,Fashion,3,36897.57,110692.71,UPI,Central
+TXN-11142,2025-11-17 01:56:54,P20013,Premium Boots v82,Footwear,5,28106.26,140531.3,UPI,North
+TXN-10286,2025-11-18 01:32:28,P20022,Premium Sweatshirt v3,Fashion,2,36897.57,73795.14,Net Banking,North
+TXN-10057,2025-11-19 03:30:50,P100034,Puma Jacket,Fashion,3,2772.0,8316.0,Net Banking,West
+TXN-10426,2025-11-19 04:11:33,P20023,Premium Wallet v49,Accessories,4,2613.16,10452.64,Debit Card,West
+TXN-10277,2025-11-19 17:00:37,P100026,HP Pavilion,Electronics,1,20719.78,20719.78,Credit Card,North
+TXN-10348,2025-11-24 16:58:03,P20023,Premium Wallet v49,Accessories,5,2613.16,13065.8,Debit Card,West
+TXN-11078,2025-11-30 05:19:17,P100012,OnePlus 11,Electronics,1,11066.5,11066.5,Credit Card,West
+TXN-10215,2025-12-01 06:16:50,P2008,Premium Headphones v48,Electronics,1,8780.67,8780.67,Net Banking,South
+TXN-10880,2025-12-03 19:30:23,P100037,Adidas Ultraboost,Footwear,2,5873.12,11746.24,Debit Card,East
+TXN-10539,2025-12-04 07:03:55,P2003,Premium Running Shoes v27,Footwear,3,65156.0,195468.0,Credit Card,South
+TXN-10041,2025-12-04 10:21:35,P2009,Premium Running Shoes v67,Footwear,4,3445.84,13783.36,UPI,West
+TXN-10184,2025-12-04 23:29:06,P20023,Premium Wallet v49,Accessories,5,2613.16,13065.8,Net Banking,East
+TXN-10199,2025-12-06 04:16:37,P2004,Premium Travel Bag v87,Accessories,2,32520.95,65041.9,Net Banking,East
+TXN-11123,2025-12-06 09:11:41,P2002,Premium Headphones v82,Electronics,3,23300.55,69901.65,Credit Card,East
+TXN-10978,2025-12-06 18:42:52,P100010,Adidas Hoodie,Fashion,4,1733.82,6935.28,Credit Card,North
+TXN-10707,2025-12-07 23:53:00,P100036,Samsung Galaxy S21,Electronics,1,16251.85,16251.85,Net Banking,West
+TXN-10748,2025-12-08 06:03:24,P2009,Premium Running Shoes v67,Footwear,3,3445.84,10337.52,Credit Card,West
+TXN-10249,2025-12-08 13:30:32,P100016,Sony Headphones,Electronics,4,21524.32,86097.28,UPI,East
+TXN-10411,2025-12-09 04:19:57,P20010,Premium Travel Bag v67,Accessories,1,9009.6,9009.6,Net Banking,East
+TXN-10982,2025-12-09 20:48:25,P100026,HP Pavilion,Electronics,3,20719.78,62159.34,Debit Card,East
+TXN-11164,2025-12-09 21:27:40,P20010,Premium Travel Bag v67,Accessories,5,9009.6,45048.0,Credit Card,South
+TXN-10113,2025-12-11 04:18:51,P100037,Adidas Ultraboost,Footwear,1,5873.12,5873.12,UPI,Central
+TXN-10641,2025-12-11 14:23:39,P100003,Puma Sneakers,Footwear,5,2988.4,14942.0,Net Banking,South
+TXN-10743,2025-12-11 17:00:46,P100001,Zara Shirt,Fashion,5,1177.2,5886.0,UPI,South
+TXN-10022,2025-12-13 03:46:34,P20015,Premium Travel Bag v98,Accessories,4,25338.4,101353.6,UPI,South
+TXN-10874,2025-12-13 19:46:50,P20023,Premium Wallet v49,Accessories,5,2613.16,13065.8,Credit Card,South
+TXN-11071,2025-12-14 04:14:15,P20020,Premium Shirt v42,Fashion,5,10216.92,51084.6,Credit Card,Central
+TXN-10615,2025-12-14 21:00:26,P100016,Sony Headphones,Electronics,5,21524.32,107621.6,UPI,North
+TXN-10909,2025-12-16 02:03:18,P100020,American Tourister Bag,Accessories,5,596.64,2983.2,UPI,South
+TXN-10597,2025-12-16 23:16:55,P100016,Sony Headphones,Electronics,4,21524.32,86097.28,Credit Card,West
+TXN-10881,2025-12-17 20:53:55,P20014,Premium Travel Bag v68,Accessories,2,5338.74,10677.48,Debit Card,South
+TXN-10001,2025-12-18 21:47:14,P2003,Premium Running Shoes v27,Footwear,1,65156.0,65156.0,Net Banking,North
+TXN-11043,2025-12-19 11:14:56,P2002,Premium Headphones v82,Electronics,4,23300.55,93202.2,UPI,West
+TXN-10275,2025-12-20 21:52:18,P20010,Premium Travel Bag v67,Accessories,1,9009.6,9009.6,UPI,North
+TXN-10656,2025-12-22 11:15:19,P20012,Premium Smartphone v3,Electronics,4,23016.96,92067.84,Credit Card,Central
+TXN-11134,2025-12-23 06:57:07,P100026,HP Pavilion,Electronics,4,20719.78,82879.12,Debit Card,Central
+TXN-10032,2025-12-25 23:34:21,P20016,Premium Jacket v77,Fashion,1,17755.36,17755.36,Debit Card,East
+TXN-10028,2025-12-26 17:07:05,P20015,Premium Travel Bag v98,Accessories,2,25338.4,50676.8,UPI,North
+TXN-10785,2025-12-27 03:30:34,P20017,Premium Jeans v100,Fashion,3,53091.7,159275.1,Debit Card,North
+TXN-10534,2025-12-28 08:45:59,P100006,Fossil Watch,Accessories,2,1568.27,3136.54,UPI,South
+TXN-10731,2025-12-28 14:18:03,P2004,Premium Travel Bag v87,Accessories,5,32520.95,162604.75,Net Banking,Central
+TXN-11150,2025-12-28 18:21:54,P100017,Levi's Jeans,Fashion,5,2131.42,10657.1,Credit Card,East

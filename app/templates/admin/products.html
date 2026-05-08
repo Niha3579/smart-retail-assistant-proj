@@ -1,0 +1,233 @@
+{% extends "admin/base.html" %}
+{% block title %}Products{% endblock %}
+{% block breadcrumb %}Products{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <h1 class="page-title">Products</h1>
+    <p class="page-subtitle">{{ products | length }} products in catalog</p>
+  </div>
+  <button class="btn-luxury" data-bs-toggle="modal" data-bs-target="#addProductModal">
+    <i class="bi bi-plus-lg"></i> Add Product
+  </button>
+</div>
+
+<!-- FILTERS -->
+<div class="lux-card mb-4">
+  <form method="GET" class="d-flex gap-3 flex-wrap align-items-end">
+    <div>
+      <label class="lux-label">Search</label>
+      <input type="text" name="search" class="lux-input" style="width:200px" value="{{ search }}" placeholder="Product name…">
+    </div>
+    <div>
+      <label class="lux-label">Category</label>
+      <select name="category" class="lux-select">
+        <option value="">All Categories</option>
+        {% for c in categories %}
+        <option value="{{ c }}" {{ 'selected' if selected_category == c }}>{{ c }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label class="lux-label">Stock</label>
+      <select name="stock" class="lux-select">
+        <option value="">All Status</option>
+        <option value="In Stock" {{ 'selected' if selected_stock == 'In Stock' }}>In Stock</option>
+        <option value="Limited Stock" {{ 'selected' if selected_stock == 'Limited Stock' }}>Limited Stock</option>
+        <option value="Out of Stock" {{ 'selected' if selected_stock == 'Out of Stock' }}>Out of Stock</option>
+      </select>
+    </div>
+    <button type="submit" class="btn-luxury">Filter</button>
+    <a href="{{ url_for('admin.products') }}" class="btn-ghost">Reset</a>
+  </form>
+</div>
+
+<!-- PRODUCT TABLE -->
+<div class="lux-card">
+  <div class="table-responsive">
+    <table class="lux-table">
+      <thead><tr>
+        <th>Product</th><th>Brand</th><th>Category</th>
+        <th>Price</th><th>Discount</th><th>Rating</th><th>Stock</th><th>Actions</th>
+      </tr></thead>
+      <tbody>
+        {% for p in products %}
+        <tr>
+          <td>
+            <div style="display:flex;align-items:center;gap:10px">
+              <img src="{{ p.image_url }}" alt="{{ p.name }}" style="width:42px;height:42px;object-fit:cover;border-radius:8px">
+              <div>
+                <div style="font-weight:600;font-size:13.5px">{{ p.name }}</div>
+                <div style="font-size:11px;color:var(--secondary-text)">{{ p.product_id }}</div>
+              </div>
+            </div>
+          </td>
+          <td>{{ p.brand }}</td>
+          <td>{{ p.category }}</td>
+          <td>
+            <div style="font-weight:600">₹{{ "{:,.0f}".format(p.discounted_price or p.price) }}</div>
+            {% if p.discount_percent %}
+            <div style="font-size:11px;color:var(--secondary-text);text-decoration:line-through">₹{{ "{:,.0f}".format(p.price) }}</div>
+            {% endif %}
+          </td>
+          <td>
+            {% if p.discount_percent %}
+            <span class="pill pill-gold">{{ p.discount_percent | int }}% off</span>
+            {% else %}—{% endif %}
+          </td>
+          <td><span style="color:var(--accent)">★</span> {{ p.rating }}</td>
+          <td>
+            {% if p.stock_status == 'In Stock' %}
+              <span class="pill pill-success">In Stock</span>
+            {% elif p.stock_status == 'Limited Stock' %}
+              <span class="pill pill-warning">Limited</span>
+            {% else %}
+              <span class="pill pill-danger">Out of Stock</span>
+            {% endif %}
+          </td>
+          <td>
+            <div class="d-flex gap-2">
+              <button class="btn-ghost" style="padding:5px 12px;font-size:12px"
+                data-bs-toggle="modal" data-bs-target="#editModal{{ p.id }}">Edit</button>
+              <form method="POST" action="{{ url_for('admin.delete_product', pid=p.id) }}"
+                onsubmit="return confirm('Remove this product?')">
+                <button type="submit" class="btn-ghost" style="padding:5px 12px;font-size:12px;color:var(--danger)">Delete</button>
+              </form>
+            </div>
+          </td>
+        </tr>
+
+        <!-- EDIT MODAL -->
+        <div class="modal fade lux-modal" id="editModal{{ p.id }}" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <form method="POST" action="{{ url_for('admin.edit_product', pid=p.id) }}">
+                <div class="modal-header">
+                  <h5 class="modal-title">Edit Product</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="lux-label">Product Name</label>
+                      <input name="name" class="lux-input" value="{{ p.name }}" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="lux-label">Brand</label>
+                      <input name="brand" class="lux-input" value="{{ p.brand }}">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="lux-label">Category</label>
+                      <input name="category" class="lux-input" value="{{ p.category }}">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="lux-label">Stock Status</label>
+                      <select name="stock_status" class="lux-select" style="width:100%">
+                        <option {{ 'selected' if p.stock_status == 'In Stock' }}>In Stock</option>
+                        <option {{ 'selected' if p.stock_status == 'Limited Stock' }}>Limited Stock</option>
+                        <option {{ 'selected' if p.stock_status == 'Out of Stock' }}>Out of Stock</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <label class="lux-label">Price (₹)</label>
+                      <input name="price" type="number" class="lux-input" value="{{ p.price }}" step="0.01">
+                    </div>
+                    <div class="col-md-4">
+                      <label class="lux-label">Discounted Price (₹)</label>
+                      <input name="discounted_price" type="number" class="lux-input" value="{{ p.discounted_price }}" step="0.01">
+                    </div>
+                    <div class="col-md-4">
+                      <label class="lux-label">Stock Quantity</label>
+                      <input name="stock_quantity" type="number" class="lux-input" value="{{ p.stock_quantity }}">
+                    </div>
+                    <div class="col-12">
+                      <label class="lux-label">Image URL</label>
+                      <input name="image_url" class="lux-input" value="{{ p.image_url }}">
+                    </div>
+                    <div class="col-12">
+                      <label class="lux-label">Description</label>
+                      <textarea name="description" class="lux-input" rows="3">{{ p.description }}</textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-ghost" data-bs-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn-luxury">Save Changes</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        {% else %}
+        <tr><td colspan="8" style="text-align:center;padding:48px;color:var(--secondary-text)">
+          No products found. <a href="{{ url_for('admin.sales') }}">Ingest data</a> to populate catalog.
+        </td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ADD PRODUCT MODAL -->
+<div class="modal fade lux-modal" id="addProductModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <form method="POST" action="{{ url_for('admin.add_product') }}">
+        <div class="modal-header">
+          <h5 class="modal-title">Add New Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="lux-label">Product Name *</label>
+              <input name="name" class="lux-input" required placeholder="e.g. Nike Air Max">
+            </div>
+            <div class="col-md-6">
+              <label class="lux-label">Brand</label>
+              <input name="brand" class="lux-input" placeholder="e.g. Nike">
+            </div>
+            <div class="col-md-6">
+              <label class="lux-label">Category</label>
+              <input name="category" class="lux-input" placeholder="e.g. Footwear">
+            </div>
+            <div class="col-md-6">
+              <label class="lux-label">Subcategory</label>
+              <input name="subcategory" class="lux-input" placeholder="e.g. Sneakers">
+            </div>
+            <div class="col-md-4">
+              <label class="lux-label">Price (₹) *</label>
+              <input name="price" type="number" class="lux-input" required step="0.01" placeholder="5000">
+            </div>
+            <div class="col-md-4">
+              <label class="lux-label">Discount %</label>
+              <input name="discount_percent" type="number" class="lux-input" placeholder="0" min="0" max="100">
+            </div>
+            <div class="col-md-4">
+              <label class="lux-label">Stock Status</label>
+              <select name="stock_status" class="lux-select" style="width:100%">
+                <option>In Stock</option>
+                <option>Limited Stock</option>
+                <option>Out of Stock</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="lux-label">Image URL</label>
+              <input name="image_url" class="lux-input" placeholder="https://images.unsplash.com/…">
+            </div>
+            <div class="col-12">
+              <label class="lux-label">Description</label>
+              <textarea name="description" class="lux-input" rows="3" placeholder="Product description…"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-ghost" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn-luxury"><i class="bi bi-plus-lg"></i> Add Product</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

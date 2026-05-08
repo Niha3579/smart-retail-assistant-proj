@@ -1,0 +1,127 @@
+{% extends "user/base.html" %}
+{% block title %}{{ product.name }} — Smart Retail{% endblock %}
+
+{% block content %}
+<div style="max-width:1200px;margin:0 auto;padding:48px 24px">
+  <nav style="font-size:12px;color:var(--secondary-text);margin-bottom:32px">
+    <a href="{{ url_for('user.home') }}" style="color:var(--secondary-text);text-decoration:none">Home</a>
+    <span style="margin:0 8px;opacity:.4">/</span>
+    <a href="{{ url_for('user.products') }}?category={{ product.category }}" style="color:var(--secondary-text);text-decoration:none">{{ product.category }}</a>
+    <span style="margin:0 8px;opacity:.4">/</span>
+    <span>{{ product.name }}</span>
+  </nav>
+
+  <div class="row g-5">
+    <!-- IMAGE -->
+    <div class="col-md-6">
+      <img src="{{ product.image_url }}" alt="{{ product.name }}" class="product-detail-img"
+        onerror="this.src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800'">
+      {% if product.discount_percent %}
+      <div style="margin-top:12px">
+        <span class="pill pill-gold" style="padding:6px 16px">{{ product.discount_percent | int }}% Discount Applied</span>
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- DETAILS -->
+    <div class="col-md-6">
+      <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-bottom:6px">{{ product.brand }}</div>
+      <h1 style="font-family:'Playfair Display',serif;font-size:34px;font-weight:700;line-height:1.15;margin-bottom:12px">{{ product.name }}</h1>
+
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+        <div style="color:var(--accent);font-size:14px">
+          {% for i in range(product.rating | int) %}★{% endfor %}{% if product.rating % 1 >= 0.5 %}½{% endif %}
+        </div>
+        <span style="font-size:13px;color:var(--secondary-text)">{{ product.rating }} · {{ product.reviews_count }} reviews</span>
+      </div>
+
+      <div style="margin-bottom:20px">
+        <span style="font-family:'Playfair Display',serif;font-size:36px;font-weight:700">₹{{ "{:,.0f}".format(product.discounted_price or product.price) }}</span>
+        {% if product.discount_percent %}
+        <span style="font-size:16px;color:var(--secondary-text);text-decoration:line-through;margin-left:10px">₹{{ "{:,.0f}".format(product.price) }}</span>
+        <span class="pill pill-success" style="margin-left:6px">Save ₹{{ "{:,.0f}".format(product.price - product.discounted_price) }}</span>
+        {% endif %}
+      </div>
+
+      <p style="font-size:14px;color:var(--secondary-text);line-height:1.7;margin-bottom:24px">{{ product.description }}</p>
+
+      <div style="margin-bottom:24px">
+        <div style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--secondary-text);margin-bottom:8px">Availability</div>
+        {% if product.stock_status == 'In Stock' %}<span class="pill pill-success">✓ In Stock</span>
+        {% elif product.stock_status == 'Limited Stock' %}<span class="pill pill-warning">⚡ Limited Stock — Order soon</span>
+        {% else %}<span class="pill pill-danger">✗ Out of Stock</span>{% endif %}
+      </div>
+
+      {% if product.stock_status != 'Out of Stock' %}
+      <form action="{{ url_for('user.add_to_cart') }}" method="POST">
+        <input type="hidden" name="product_id" value="{{ product.id }}">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
+          <label style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--secondary-text)">Quantity</label>
+          <div style="display:flex;align-items:center;border:1.5px solid var(--surface);border-radius:var(--radius-sm);overflow:hidden">
+            <button type="button" onclick="changeQty(-1)" style="width:36px;height:36px;border:none;background:var(--surface);cursor:pointer;font-size:16px">−</button>
+            <input type="number" name="quantity" id="qtyInput" value="1" min="1" max="10"
+              style="width:48px;height:36px;border:none;text-align:center;font-size:14px;outline:none">
+            <button type="button" onclick="changeQty(1)" style="width:36px;height:36px;border:none;background:var(--surface);cursor:pointer;font-size:16px">+</button>
+          </div>
+        </div>
+        <div class="d-flex gap-3 flex-wrap">
+          <button type="submit" class="btn-luxury" style="padding:13px 36px;font-size:15px;flex:1">
+            <i class="bi bi-bag-plus"></i> Add to Cart
+          </button>
+          <a href="{{ url_for('user.cart') }}" class="btn-outline-luxury" style="padding:13px 24px;font-size:15px">
+            View Cart
+          </a>
+        </div>
+      </form>
+      {% else %}
+      <button class="btn-luxury" disabled style="padding:13px 36px;font-size:15px;opacity:.5;cursor:not-allowed">
+        Out of Stock
+      </button>
+      {% endif %}
+
+      <!-- META -->
+      <div style="margin-top:28px;padding-top:20px;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:8px">
+        {% if product.category %}
+        <div style="font-size:13px;color:var(--secondary-text)"><strong>Category:</strong> {{ product.category }} › {{ product.subcategory }}</div>
+        {% endif %}
+        {% if product.popularity_score %}
+        <div style="font-size:13px;color:var(--secondary-text)"><strong>Popularity Score:</strong> {{ "{:,.0f}".format(product.popularity_score) }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <!-- RELATED PRODUCTS -->
+  {% if related %}
+  <div style="margin-top:72px">
+    <div class="section-heading">You May Also Like</div>
+    <div class="section-subheading">More from {{ product.category }}</div>
+    <div class="products-grid" style="grid-template-columns:repeat(auto-fill,minmax(220px,1fr))">
+      {% for r in related %}
+      <a href="{{ url_for('user.product_detail', pid=r.id) }}" class="product-card">
+        <div class="product-card-img-wrap">
+          <img src="{{ r.image_url }}" alt="{{ r.name }}" class="product-card-img"
+            onerror="this.src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'">
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-brand">{{ r.brand }}</div>
+          <div class="product-card-name">{{ r.name }}</div>
+          <div class="product-card-price">₹{{ "{:,.0f}".format(r.discounted_price or r.price) }}</div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function changeQty(delta) {
+  const inp = document.getElementById('qtyInput');
+  const val = Math.max(1, Math.min(10, parseInt(inp.value) + delta));
+  inp.value = val;
+}
+</script>
+{% endblock %}

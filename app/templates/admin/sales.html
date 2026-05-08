@@ -1,0 +1,272 @@
+{% extends "admin/base.html" %}
+{% block title %}Sales & Ingestion{% endblock %}
+{% block breadcrumb %}Sales / Data Ingestion{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <h1 class="page-title">Sales & Data Ingestion</h1>
+    <p class="page-subtitle">Upload, validate and pipeline your retail data</p>
+  </div>
+</div>
+
+<!-- PIPELINE STEPS -->
+<div class="lux-card mb-4">
+  <div class="chart-title mb-3">Ingestion Pipeline</div>
+  <div class="pipeline-steps">
+    <div class="pipeline-step" id="stepUpload"><i class="bi bi-upload"></i> Upload</div>
+    <div class="pipeline-step" id="stepValidate"><i class="bi bi-check-square"></i> Validate</div>
+    <div class="pipeline-step" id="stepLoad"><i class="bi bi-database"></i> Load to DB</div>
+    <div class="pipeline-step" id="stepTrain"><i class="bi bi-robot"></i> ML Train</div>
+    <div class="pipeline-step" id="stepAnalytics"><i class="bi bi-graph-up"></i> Analytics</div>
+  </div>
+</div>
+
+<div class="row g-3 mb-4">
+  <!-- UPLOAD AREA -->
+  <div class="col-md-6">
+    <div class="lux-card h-100">
+      <div class="chart-title">Upload Data Files</div>
+      <form id="ingestForm" enctype="multipart/form-data">
+        <div class="upload-area mb-3" id="productsDropzone" onclick="document.getElementById('productsFile').click()">
+          <div class="upload-icon"><i class="bi bi-box-seam"></i></div>
+          <div style="font-weight:600;margin-bottom:6px">Products CSV</div>
+          <div style="font-size:12px;color:var(--secondary-text)">Drag & drop or click to browse</div>
+          <input type="file" id="productsFile" name="products_file" accept=".csv" hidden>
+          <div id="productsFileName" style="margin-top:10px;font-size:12px;color:var(--accent)"></div>
+        </div>
+        <div class="upload-area mb-3" id="salesDropzone" onclick="document.getElementById('salesFile').click()">
+          <div class="upload-icon"><i class="bi bi-bar-chart-line"></i></div>
+          <div style="font-weight:600;margin-bottom:6px">Sales Data CSV</div>
+          <div style="font-size:12px;color:var(--secondary-text)">Drag & drop or click to browse</div>
+          <input type="file" id="salesFile" name="sales_file" accept=".csv" hidden>
+          <div id="salesFileName" style="margin-top:10px;font-size:12px;color:var(--accent)"></div>
+        </div>
+        <button type="submit" class="btn-luxury w-100">
+          <i class="bi bi-cloud-upload"></i> Ingest Data
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- VALIDATION LOG -->
+  <div class="col-md-6">
+    <div class="lux-card h-100">
+      <div class="chart-title">Validation Log</div>
+      <div id="validationLog" style="height:280px;overflow-y:auto;background:var(--bg);border-radius:8px;padding:14px;font-size:12.5px;font-family:monospace;color:var(--secondary-text)">
+        <div style="color:var(--success)">✓ System ready for ingestion</div>
+        <div>─ Upload a CSV file to begin</div>
+        <div>─ Products CSV required columns: product_id, product_name, category, price, discounted_price</div>
+        <div>─ Sales CSV required columns: order_id, date, product_id, product_name, category, units_sold, revenue</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HISTORICAL RECORDS -->
+<div class="lux-card">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <div class="chart-title mb-0">Historical Sales Records</div>
+    <span class="pill pill-muted">{{ records | length }} records shown</span>
+  </div>
+  {% if records %}
+  <div class="table-responsive">
+    <table class="lux-table">
+      <thead><tr>
+        <th>Date</th><th>Product</th><th>Category</th><th>Units Sold</th><th>Revenue</th><th>Region</th>
+      </tr></thead>
+      <tbody>
+        {% for r in records %}
+        <tr>
+          <td>{{ r.date }}</td>
+          <td>{{ r.product_name or r.product_id }}</td>
+          <td>{{ r.category }}</td>
+          <td>{{ r.units_sold }}</td>
+          <td>₹{{ "{:,.2f}".format(r.revenue) }}</td>
+          <td>{{ r.region or '—' }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div style="text-align:center;padding:48px;color:var(--secondary-text)">
+    <i class="bi bi-cloud-upload" style="font-size:36px;opacity:.4"></i>
+    <p class="mt-3">No sales records yet. Upload the sales CSV to populate.</p>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function logLine(message, color = 'var(--secondary-text)') {
+  const log = document.getElementById('validationLog');
+  log.innerHTML += `<div style="color:${color}">${message}</div>`;
+  log.scrollTop = log.scrollHeight;
+}
+
+function setStep(stepId, state) {
+  const el = document.getElementById(stepId);
+  if (!el) return;
+  el.classList.remove('active', 'done');
+  if (state === 'active') el.classList.add('active');
+  if (state === 'done') el.classList.add('done');
+}
+
+document.getElementById('productsFile').addEventListener('change', function() {
+  document.getElementById('productsFileName').textContent = this.files[0]?.name || '';
+  if (this.files[0]) logLine(`• Products file selected: ${this.files[0].name}`);
+});
+document.getElementById('salesFile').addEventListener('change', function() {
+  document.getElementById('salesFileName').textContent = this.files[0]?.name || '';
+  if (this.files[0]) logLine(`• Sales file selected: ${this.files[0].name}`);
+});
+
+document.getElementById('ingestForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const fd = new FormData(this);
+
+  const hasProducts = fd.get('products_file')?.size > 0;
+  const hasSales = fd.get('sales_file')?.size > 0;
+
+  if (!hasProducts && !hasSales) {
+    logLine('✗ Please select at least one file', 'var(--danger)');
+    return;
+  }
+
+  setStep('stepUpload', 'active');
+  logLine('⏳ Step 1/4 Uploading CSV files…', 'var(--accent)');
+
+  try {
+    let uploadRes = await fetch('/api/upload-csv', { method: 'POST', body: fd });
+    let uploadData = await uploadRes.json();
+    if (uploadRes.status === 404) {
+      // Fallback for older server instances that only expose /api/data-ingest
+      logLine('• New upload API not available, using compatibility mode…');
+      const legacyRes = await fetch('/api/data-ingest', { method: 'POST', body: fd });
+      const legacyData = await legacyRes.json();
+      if (!legacyRes.ok || legacyData.status === 'error') {
+        logLine(`✗ Upload failed: ${legacyData.error || 'Unknown error'}`, 'var(--danger)');
+        return;
+      }
+      if (legacyData.products_loaded !== undefined) logLine(`✓ Products loaded: ${legacyData.products_loaded}`, 'var(--success)');
+      if (legacyData.sales_loaded !== undefined) logLine(`✓ Sales loaded: ${legacyData.sales_loaded}`, 'var(--success)');
+      setStep('stepUpload', 'done');
+      setStep('stepValidate', 'done');
+      setStep('stepLoad', 'done');
+      setStep('stepTrain', 'active');
+      const trainRes = await fetch('/api/train-ml', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({})
+      });
+      const trainData = await trainRes.json();
+      if (!trainRes.ok || trainData.status !== 'ok') {
+        logLine(`✗ ML training failed: ${trainData.error || 'Unknown error'}`, 'var(--danger)');
+        return;
+      }
+      logLine(`✓ Forecast model: ${trainData.forecast?.message || 'done'}`, 'var(--success)');
+      logLine(`✓ Anomaly model: ${trainData.anomaly?.message || 'done'}`, 'var(--success)');
+      setStep('stepTrain', 'done');
+      setStep('stepAnalytics', 'done');
+      logLine('✓ Pipeline complete. Refreshing…', 'var(--success)');
+      setTimeout(() => location.reload(), 1800);
+      return;
+    }
+    if (!uploadRes.ok || uploadData.status !== 'ok') {
+      logLine(`✗ Upload failed: ${uploadData.error || 'Unknown error'}`, 'var(--danger)');
+      return;
+    }
+    const sessionId = uploadData.session_id;
+    setStep('stepUpload', 'done');
+    logLine('✓ Upload completed', 'var(--success)');
+
+    setStep('stepValidate', 'active');
+    logLine('⏳ Step 2/4 Validating columns and quality checks…', 'var(--accent)');
+    const validateRes = await fetch('/api/validate-csv', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({session_id: sessionId})
+    });
+    const validateData = await validateRes.json();
+
+    if (validateData.validation?.products) {
+      const v = validateData.validation.products;
+      if (v.valid) logLine(`✓ Products valid (${v.row_count} rows)`, 'var(--success)');
+      else logLine(`✗ Products invalid: missing columns ${v.missing_columns.join(', ')}`, 'var(--danger)');
+      logLine(`• Products duplicates: ${v.duplicate_rows}`);
+    }
+    if (validateData.validation?.sales) {
+      const v = validateData.validation.sales;
+      if (v.valid) logLine(`✓ Sales valid (${v.row_count} rows)`, 'var(--success)');
+      else logLine(`✗ Sales invalid: missing columns ${v.missing_columns.join(', ')}`, 'var(--danger)');
+      logLine(`• Sales duplicates: ${v.duplicate_rows}`);
+    }
+    if (!validateRes.ok || validateData.status !== 'ok') {
+      logLine('✗ Validation failed. Please fix the CSV and retry.', 'var(--danger)');
+      return;
+    }
+    setStep('stepValidate', 'done');
+
+    setStep('stepLoad', 'active');
+    logLine('⏳ Step 3/4 Loading cleaned data into database…', 'var(--accent)');
+    const loadRes = await fetch('/api/load-data', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({session_id: sessionId})
+    });
+    const loadData = await loadRes.json();
+    if (loadData.products_error) logLine(`✗ Products load error: ${loadData.products_error}`, 'var(--danger)');
+    if (loadData.sales_error) logLine(`✗ Sales load error: ${loadData.sales_error}`, 'var(--danger)');
+    logLine(`✓ Products loaded: ${loadData.products_loaded || 0}`, 'var(--success)');
+    logLine(`✓ Sales loaded: ${loadData.sales_loaded || 0}`, 'var(--success)');
+    if (!loadRes.ok || loadData.status !== 'ok') {
+      logLine('✗ Load step failed.', 'var(--danger)');
+      return;
+    }
+    setStep('stepLoad', 'done');
+
+    setStep('stepTrain', 'active');
+    logLine('⏳ Step 4/4 Training ML models…', 'var(--accent)');
+    const trainRes = await fetch('/api/train-ml', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({session_id: sessionId})
+    });
+    const trainData = await trainRes.json();
+    if (!trainRes.ok || trainData.status !== 'ok') {
+      logLine(`✗ ML training failed: ${trainData.error || 'Unknown error'}`, 'var(--danger)');
+      return;
+    }
+    logLine(`✓ Forecast model: ${trainData.forecast?.message || 'done'}`, 'var(--success)');
+    logLine(`✓ Anomaly model: ${trainData.anomaly?.message || 'done'}`, 'var(--success)');
+    setStep('stepTrain', 'done');
+
+    setStep('stepAnalytics', 'done');
+    logLine('✓ Analytics enabled. Pipeline complete. Refreshing…', 'var(--success)');
+    setTimeout(() => location.reload(), 1800);
+  } catch(err) {
+    logLine(`✗ Error: ${err.message}`, 'var(--danger)');
+  }
+});
+
+// Drag & drop support
+['productsDropzone','salesDropzone'].forEach(id => {
+  const el = document.getElementById(id);
+  el.addEventListener('dragover', e => { e.preventDefault(); el.style.borderColor = 'var(--accent)'; });
+  el.addEventListener('dragleave', () => { el.style.borderColor = ''; });
+  el.addEventListener('drop', e => {
+    e.preventDefault();
+    el.style.borderColor = '';
+    const fileInput = el.querySelector('input[type=file]');
+    if (e.dataTransfer.files[0]) {
+      const dt = new DataTransfer();
+      dt.items.add(e.dataTransfer.files[0]);
+      fileInput.files = dt.files;
+      el.querySelector('[id$="FileName"]').textContent = e.dataTransfer.files[0].name;
+    }
+  });
+});
+</script>
+{% endblock %}

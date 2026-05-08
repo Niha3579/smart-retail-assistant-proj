@@ -1,0 +1,93 @@
+{% extends "admin/base.html" %}
+{% block title %}Orders{% endblock %}
+{% block breadcrumb %}Orders{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <h1 class="page-title">Orders</h1>
+    <p class="page-subtitle">All orders from sales records (one row per order)</p>
+  </div>
+  <div class="d-flex gap-2">
+    <form method="GET" action="{{ url_for('admin.orders') }}" class="d-flex gap-2">
+      <input type="text" name="search" class="lux-input" placeholder="Search by order ID, email, or product..." value="{{ search }}">
+      <button type="submit" class="btn-luxury">Search</button>
+    </form>
+  </div>
+</div>
+
+<div class="row g-3 mb-3">
+  <div class="col-md-3">
+    <div class="kpi-card">
+      <span class="kpi-icon" style="color:var(--accent)"><i class="bi bi-database"></i></span>
+      <div class="kpi-label">Sales Orders</div>
+      <div class="kpi-value" style="color:var(--accent)">{{ summary.sales_total }}</div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="kpi-card" style="border-top:3px solid var(--warning)">
+      <span class="kpi-icon" style="color:var(--warning)"><i class="bi bi-hourglass-split"></i></span>
+      <div class="kpi-label">Pending</div>
+      <div class="kpi-value" style="color:var(--warning)">{{ summary.pending }}</div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="kpi-card" style="border-top:3px solid var(--success)">
+      <span class="kpi-icon" style="color:var(--success)"><i class="bi bi-check-circle"></i></span>
+      <div class="kpi-label">Completed</div>
+      <div class="kpi-value" style="color:var(--success)">{{ summary.completed }}</div>
+    </div>
+  </div>
+</div>
+
+<div class="lux-card">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+      <div class="chart-title mb-0">Orders from Sales Records</div>
+      <div style="font-size:12.5px;color:var(--secondary-text)">Only required columns shown, one line per order</div>
+    </div>
+    <span class="pill pill-muted">{{ sales_orders | length }} orders</span>
+  </div>
+
+  <div class="table-responsive">
+    <table class="lux-table">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Customer Email</th>
+          <th>Total</th>
+          <th>Status</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for order in sales_orders %}
+        <tr>
+          <td><strong>{{ order['id'] }}</strong></td>
+          <td>{{ order['customer_email'] or 'N/A' }}</td>
+          <td><strong>Rs. {{ "{:,.2f}".format(order['total_amount']) }}</strong></td>
+          <td>
+            {% if order['status'] == 'Completed' %}<span class="pill pill-success">Completed</span>
+            {% elif order['status'] == 'Pending' %}<span class="pill pill-warning">Pending</span>
+            {% elif order['status'] == 'Cancelled' %}<span class="pill pill-danger">Cancelled</span>
+            {% else %}<span class="pill pill-muted">{{ order['status'] or 'Imported' }}</span>{% endif %}
+          </td>
+          <td>{{ order['created_at'].strftime('%d %b %Y, %H:%M') if order['created_at'] else 'N/A' }}</td>
+        </tr>
+        {% else %}
+        <tr>
+          <td colspan="5" style="text-align:center;padding:48px;color:var(--secondary-text)">
+            No orders found in sales_records.
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+</script>
+{% endblock %}

@@ -1,0 +1,188 @@
+{% extends "admin/base.html" %}
+{% block title %}AI Assistant{% endblock %}
+{% block breadcrumb %}AI Assistant{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <h1 class="page-title">AI Assistant</h1>
+    <p class="page-subtitle">Multi-agent intelligence for retail analytics</p>
+  </div>
+</div>
+
+<div class="row g-3">
+  <div class="col-md-8">
+    <div class="lux-card" style="display:flex;flex-direction:column;height:calc(100vh - 260px);min-height:500px">
+      <!-- AGENT BADGES -->
+      <div style="display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap">
+        <div class="pill pill-gold" style="padding:6px 14px">
+          <i class="bi bi-bar-chart-line"></i> Data Analyst
+        </div>
+        <div class="pill pill-info" style="padding:6px 14px">
+          <i class="bi bi-graph-up-arrow"></i> ML Expert
+        </div>
+        <div class="pill pill-muted" style="padding:6px 14px">
+          <i class="bi bi-file-text"></i> Document Assistant
+        </div>
+      </div>
+
+      <!-- SUGGESTED QUERIES -->
+      <div class="suggested-queries" id="suggestionsRow">
+        <span class="sug-chip" onclick="sendSuggestion(this)">What are the top selling products?</span>
+        <span class="sug-chip" onclick="sendSuggestion(this)">Forecast demand for Electronics</span>
+        <span class="sug-chip" onclick="sendSuggestion(this)">Show revenue by category</span>
+        <span class="sug-chip" onclick="sendSuggestion(this)">Which products are low on stock?</span>
+        <span class="sug-chip" onclick="sendSuggestion(this)">Explain the anomaly detection model</span>
+        <span class="sug-chip" onclick="sendSuggestion(this)">What is the return policy?</span>
+      </div>
+
+      <!-- MESSAGES -->
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-bubble bot">
+          <div class="agent-label"><i class="bi bi-robot"></i> Smart Retail AI</div>
+          Hello! I'm your multi-agent retail assistant. I can help you analyze sales data, generate demand forecasts, and answer questions about your product catalog. What would you like to explore?
+        </div>
+      </div>
+
+      <!-- INPUT -->
+      <div class="chat-input-row">
+        <input type="text" class="lux-input" id="chatInput" placeholder="Ask about sales, forecasts, products…" onkeydown="if(event.key==='Enter') sendMessage()">
+        <button class="btn-luxury" onclick="sendMessage()" style="flex-shrink:0">
+          <i class="bi bi-send"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOURCE / INFO PANEL -->
+  <div class="col-md-4">
+    <div class="lux-card mb-3">
+      <div class="chart-title">Active Agents</div>
+      <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+        <div style="display:flex;align-items:center;gap:10px;padding:10px;background:var(--bg);border-radius:10px">
+          <div style="width:8px;height:8px;background:var(--success);border-radius:50%;flex-shrink:0"></div>
+          <div>
+            <div style="font-weight:600;font-size:13px">Data Analyst</div>
+            <div style="font-size:11px;color:var(--secondary-text)">Revenue, KPIs, inventory</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;padding:10px;background:var(--bg);border-radius:10px">
+          <div style="width:8px;height:8px;background:var(--success);border-radius:50%;flex-shrink:0"></div>
+          <div>
+            <div style="font-weight:600;font-size:13px">ML Expert</div>
+            <div style="font-size:11px;color:var(--secondary-text)">Forecasts, anomalies, models</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;padding:10px;background:var(--bg);border-radius:10px">
+          <div style="width:8px;height:8px;background:var(--warning);border-radius:50%;flex-shrink:0"></div>
+          <div>
+            <div style="font-weight:600;font-size:13px">Document Assistant</div>
+            <div style="font-size:11px;color:var(--secondary-text)">RAG placeholder · Connect vector DB</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lux-card mb-3">
+      <div class="chart-title">Document Upload (RAG)</div>
+      <form action="{{ url_for('admin.assistant_upload') }}" method="POST" enctype="multipart/form-data" class="mt-2">
+        <input type="file" name="document" class="lux-input mb-2" accept=".txt,.pdf,.csv" style="font-size:12px;padding:8px">
+        <button type="submit" class="btn-luxury w-100" style="font-size:12px;padding:8px">Upload Document</button>
+      </form>
+    </div>
+
+    <div class="lux-card">
+      <div class="chart-title">Source Panel</div>
+      <div id="sourcePanel" style="font-size:12.5px;color:var(--secondary-text);margin-top:8px">
+        <div style="background:var(--bg);border-radius:8px;padding:12px;margin-bottom:8px">
+          <div style="font-weight:600;color:var(--primary-text);margin-bottom:3px">📊 ecommerce_products.csv</div>
+          <div>46 products · 5 categories · Last updated: today</div>
+        </div>
+        <div style="background:var(--bg);border-radius:8px;padding:12px;margin-bottom:8px">
+          <div style="font-weight:600;color:var(--primary-text);margin-bottom:3px">📈 sales_data_2022–2025</div>
+          <div>Sales records · Multiple regions and channels</div>
+        </div>
+        {% for doc in documents %}
+        <div style="background:var(--bg);border-radius:8px;padding:12px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;">
+          <div>
+            <div style="font-weight:600;color:var(--primary-text);margin-bottom:3px">📄 {{ doc.filename }}</div>
+            <div>Uploaded: {{ doc.created_at.strftime('%Y-%m-%d') }}</div>
+          </div>
+          <form action="{{ url_for('admin.assistant_delete_doc', doc_id=doc.id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this document?');">
+            <button type="submit" class="btn-ghost" style="color:var(--danger);padding:4px 8px;font-size:14px;"><i class="bi bi-trash"></i></button>
+          </form>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+let typing = false;
+
+function sendSuggestion(el) {
+  document.getElementById('chatInput').value = el.textContent;
+  sendMessage();
+}
+
+async function sendMessage() {
+  if (typing) return;
+  const input = document.getElementById('chatInput');
+  const msg = input.value.trim();
+  if (!msg) return;
+  input.value = '';
+
+  appendBubble(msg, 'user');
+  typing = true;
+
+  const typingEl = document.createElement('div');
+  typingEl.className = 'chat-bubble bot';
+  typingEl.innerHTML = '<div style="display:flex;gap:6px;align-items:center"><span style="width:6px;height:6px;background:var(--accent);border-radius:50%;animation:pulse 1s infinite"></span><span style="width:6px;height:6px;background:var(--accent);border-radius:50%;animation:pulse 1s .2s infinite"></span><span style="width:6px;height:6px;background:var(--accent);border-radius:50%;animation:pulse 1s .4s infinite"></span></div>';
+  document.getElementById('chatMessages').appendChild(typingEl);
+  scrollChat();
+
+  try {
+    const res = await fetch('/api/agent-chat', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({message: msg})
+    });
+    const d = await res.json();
+    typingEl.remove();
+    if (!res.ok) {
+      appendBubble(d.error || 'Unable to process your question right now.', 'bot', 'System');
+    } else {
+      appendBubble(d.response || 'I could not generate a response.', 'bot', d.agent || 'System', d.confidence);
+    }
+  } catch(e) {
+    typingEl.remove();
+    appendBubble('Sorry, I encountered an error. Please try again.', 'bot', 'System');
+  }
+  typing = false;
+}
+
+function appendBubble(text, type, agent='', confidence=null) {
+  const msgs = document.getElementById('chatMessages');
+  const div = document.createElement('div');
+  div.className = 'chat-bubble ' + type;
+  let inner = '';
+  if (type === 'bot' && agent) {
+    inner += `<div class="agent-label"><i class="bi bi-cpu"></i> ${agent}`;
+    if (confidence) inner += ` · ${(confidence*100).toFixed(0)}% confidence`;
+    inner += '</div>';
+  }
+  inner += `<div>${text}</div>`;
+  div.innerHTML = inner;
+  msgs.appendChild(div);
+  scrollChat();
+}
+
+function scrollChat() {
+  const msgs = document.getElementById('chatMessages');
+  msgs.scrollTop = msgs.scrollHeight;
+}
+</script>
+{% endblock %}

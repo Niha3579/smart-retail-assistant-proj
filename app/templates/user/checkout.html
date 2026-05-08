@@ -1,0 +1,85 @@
+{% extends "user/base.html" %}
+{% block title %}Checkout — Smart Retail{% endblock %}
+
+{% block content %}
+<div style="max-width:1000px;margin:0 auto;padding:48px 24px">
+  <h1 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;margin-bottom:8px">Checkout</h1>
+  <p style="color:var(--secondary-text);margin-bottom:36px">Review your order and complete your purchase</p>
+
+  <div class="row g-4">
+    <!-- SHIPPING FORM -->
+    <div class="col-md-7">
+      <div class="lux-card">
+        <h5 style="font-family:'Playfair Display',serif;font-size:18px;margin-bottom:20px">Shipping Information</h5>
+        <form method="POST">
+          <div class="mb-3">
+            <label class="lux-label">Full Name</label>
+            <input type="text" class="lux-input" value="{{ current_user.name }}" readonly
+              style="background:var(--surface)">
+          </div>
+          <div class="mb-3">
+            <label class="lux-label">Email</label>
+            <input type="email" class="lux-input" value="{{ current_user.email }}" readonly
+              style="background:var(--surface)">
+          </div>
+          <div class="mb-4">
+            <label class="lux-label">Shipping Address *</label>
+            <textarea name="address" class="lux-input" rows="4" required
+              placeholder="House no., Street, City, State, PIN Code"></textarea>
+          </div>
+
+          <div style="background:rgba(197,162,77,0.08);border:1.5px solid var(--accent-light);border-radius:var(--radius-sm);padding:16px;margin-bottom:24px">
+            <div style="font-weight:600;font-size:13px;margin-bottom:4px"><i class="bi bi-credit-card" style="color:var(--accent)"></i> Payment</div>
+            <div style="font-size:13px;color:var(--secondary-text)">Payment is <strong>mocked</strong> for demonstration. No real charges will be made. Click "Place Order" to proceed.</div>
+          </div>
+
+          <button type="submit" class="btn-luxury" style="width:100%;padding:15px;font-size:16px;justify-content:center">
+            <i class="bi bi-bag-check"></i> Place Order
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ORDER SUMMARY -->
+    <div class="col-md-5">
+      <div class="order-summary-card">
+        <div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;margin-bottom:16px">Order Summary</div>
+
+        {% for item in items %}
+        <div class="order-summary-line">
+          <div style="display:flex;align-items:center;gap:10px">
+            <img src="{{ item.product.image_url }}" alt="{{ item.product.name }}"
+              style="width:36px;height:36px;object-fit:cover;border-radius:6px"
+              onerror="this.src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=100'">
+            <span style="font-size:13px">{{ item.product.name }} ×{{ item.quantity }}</span>
+          </div>
+          <span style="font-size:13px;white-space:nowrap">₹{{ "{:,.0f}".format((item.product.discounted_price or item.product.price) * item.quantity) }}</span>
+        </div>
+        {% endfor %}
+
+        <div class="order-summary-line">
+          <span>Subtotal</span>
+          <span>₹{{ "{:,.2f}".format(total) }}</span>
+        </div>
+        <div class="order-summary-line">
+          <span>Shipping</span>
+          <span style="color:var(--success)">Free</span>
+        </div>
+        <div class="order-summary-line">
+          <span>Tax (GST 18%)</span>
+          <span>₹{{ "{:,.2f}".format(total * 0.18) }}</span>
+        </div>
+        <div class="order-summary-total">
+          <span>Total</span>
+          <span>₹{{ "{:,.2f}".format(total * 1.18) }}</span>
+        </div>
+
+        <div style="margin-top:20px;font-size:11.5px;color:var(--secondary-text);text-align:center;line-height:1.6">
+          <i class="bi bi-shield-check" style="color:var(--success)"></i>
+          Secure · 30-day returns · Free shipping on all orders
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

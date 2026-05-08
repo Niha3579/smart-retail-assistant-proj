@@ -1,0 +1,105 @@
+{% extends "user/base.html" %}
+{% block title %}Smart Retail — Premium Fashion & Lifestyle{% endblock %}
+
+{% block content %}
+<!-- HERO -->
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-eyebrow">New Collection 2025</div>
+    <h1 class="hero-title">Where Style<br>Meets Intelligence</h1>
+    <p class="hero-subtitle">Discover curated fashion, electronics, and lifestyle products — powered by AI recommendations tailored to you.</p>
+    <div class="d-flex gap-3 flex-wrap">
+      <a href="{{ url_for('user.products') }}" class="btn-luxury" style="padding:13px 32px;font-size:15px">
+        Shop Now
+      </a>
+      <a href="{{ url_for('user.products') }}?category=Electronics" class="btn-outline-luxury" style="padding:13px 32px;font-size:15px">
+        Electronics
+      </a>
+    </div>
+  </div>
+  <div class="d-none d-lg-block" style="flex:1;text-align:right;padding-left:40px">
+    <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=600&q=80" alt="Fashion hero"
+      style="width:100%;max-width:480px;height:480px;object-fit:cover;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,0.15)">
+  </div>
+</section>
+
+<!-- CATEGORY CHIPS -->
+<section class="section-pad" style="padding-top:48px;padding-bottom:48px">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="section-heading">Shop by Category</div>
+    <div class="section-subheading">Find exactly what you're looking for</div>
+    <div class="category-scroll">
+      {% set cat_icons = {'Electronics': '💻', 'Fashion': '👗', 'Footwear': '👟', 'Accessories': '👜', 'Other': '✨'} %}
+      {% for c in categories %}
+      <a href="{{ url_for('user.products') }}?category={{ c }}" class="category-chip">
+        <div class="category-chip-icon">{{ cat_icons.get(c, '🛍️') }}</div>
+        <div class="category-chip-name">{{ c }}</div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section-pad" style="background:var(--surface);padding-top:48px;padding-bottom:64px">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="d-flex justify-content-between align-items-end mb-2">
+      <div>
+        <div class="section-heading">Featured Products</div>
+        <div class="section-subheading">Handpicked top-rated items from our catalog</div>
+      </div>
+      <a href="{{ url_for('user.products') }}" class="btn-outline-luxury" style="flex-shrink:0">View All</a>
+    </div>
+
+    <div class="products-grid">
+      {% for p in featured %}
+      <a href="{{ url_for('user.product_detail', pid=p.id) }}" class="product-card">
+        <div class="product-card-img-wrap">
+          <img src="{{ p.image_url }}" alt="{{ p.name }}" class="product-card-img"
+            onerror="this.src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'">
+          {% if p.discount_percent %}
+          <span class="product-card-badge">{{ p.discount_percent | int }}% OFF</span>
+          {% endif %}
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-brand">{{ p.brand }}</div>
+          <div class="product-card-name">{{ p.name }}</div>
+          <div class="product-card-rating">
+            <span>★</span> {{ p.rating }} <span style="color:var(--secondary-text)">({{ p.reviews_count }})</span>
+          </div>
+          <div style="margin-top:8px;display:flex;align-items:baseline;gap:6px">
+            <span class="product-card-price">₹{{ "{:,.0f}".format(p.discounted_price or p.price) }}</span>
+            {% if p.discount_percent %}
+            <span class="product-card-original">₹{{ "{:,.0f}".format(p.price) }}</span>
+            {% endif %}
+          </div>
+          <div style="margin-top:8px">
+            {% if p.stock_status == 'In Stock' %}<span class="pill pill-success" style="font-size:10.5px">In Stock</span>
+            {% elif p.stock_status == 'Limited Stock' %}<span class="pill pill-warning" style="font-size:10.5px">Limited</span>
+            {% else %}<span class="pill pill-danger" style="font-size:10.5px">Out of Stock</span>{% endif %}
+          </div>
+        </div>
+      </a>
+      {% else %}
+      <div style="grid-column:1/-1;text-align:center;padding:48px;color:var(--secondary-text)">
+        <p>No products loaded yet. Please <a href="{{ url_for('admin.sales') }}">ingest your dataset</a>.</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- AI BANNER -->
+<section class="section-pad" style="background:linear-gradient(135deg,#121212 0%,#2a1a0e 100%);padding-top:64px;padding-bottom:64px">
+  <div style="max-width:800px;margin:0 auto;text-align:center">
+    <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:16px">AI-Powered</div>
+    <h2 style="font-family:'Playfair Display',serif;font-size:36px;color:white;font-weight:700;margin-bottom:16px">Your Personal Shopping Intelligence</h2>
+    <p style="color:rgba(255,255,255,0.55);font-size:15px;line-height:1.7;margin-bottom:32px">
+      Our AI assistant analyzes trends, forecasts demand, and helps you find the best products at the right price. Ask anything.
+    </p>
+    <button class="btn-luxury" onclick="toggleChatbot()" style="padding:13px 36px;font-size:15px">
+      <i class="bi bi-chat-dots"></i> Chat with AI
+    </button>
+  </div>
+</section>
+{% endblock %}

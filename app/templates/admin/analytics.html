@@ -1,0 +1,272 @@
+{% extends "admin/base.html" %}
+{% block title %}Analytics{% endblock %}
+{% block breadcrumb %}Analytics{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <h1 class="page-title">Analytics</h1>
+    <p class="page-subtitle">Real-time sales analytics from database</p>
+  </div>
+  <div class="d-flex gap-2">
+    <select class="lux-select" id="periodFilter" onchange="applyFilter()">
+      <option value="30">Last 30 Days</option>
+      <option value="60">Last 60 Days</option>
+      <option value="90" selected>Last 90 Days</option>
+    </select>
+  </div>
+</div>
+
+{% if power_bi_url %}
+<div class="row g-3 mb-4">
+  <div class="col-12">
+    <div class="chart-card p-0" style="height:600px;overflow:hidden;">
+      <iframe src="{{ power_bi_url }}" width="100%" height="100%" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+  </div>
+</div>
+{% else %}
+<div class="row g-3 mb-3">
+  <div class="col-md-4">
+    <div class="kpi-card">
+      <span class="kpi-icon"><i class="bi bi-currency-rupee"></i></span>
+      <div class="kpi-label">Total Revenue</div>
+      <div class="kpi-value" id="kpiRevenue">Rs. 0.00</div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="kpi-card" style="border-top:3px solid var(--accent)">
+      <span class="kpi-icon" style="color:var(--accent)"><i class="bi bi-bag-check"></i></span>
+      <div class="kpi-label">Total Orders</div>
+      <div class="kpi-value" style="color:var(--accent)" id="kpiOrders">0</div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="kpi-card" style="border-top:3px solid var(--success)">
+      <span class="kpi-icon" style="color:var(--success)"><i class="bi bi-graph-up"></i></span>
+      <div class="kpi-label">Avg Order Value</div>
+      <div class="kpi-value" style="color:var(--success)" id="kpiAov">Rs. 0.00</div>
+    </div>
+  </div>
+</div>
+
+<div class="row g-3 mb-4">
+  <div class="col-md-7">
+    <div class="chart-card">
+      <div class="chart-title">Revenue Over Time</div>
+      <canvas id="trendChart" height="100"></canvas>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <div class="chart-card h-100">
+      <div class="chart-title">Top Products</div>
+      <canvas id="topProductsChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<div class="row g-3 mb-4">
+  <div class="col-md-5">
+    <div class="chart-card h-100">
+      <div class="chart-title">Sales by Category</div>
+      <canvas id="categoryChart"></canvas>
+    </div>
+  </div>
+  <div class="col-md-7">
+    <div class="chart-card">
+      <div class="chart-title">Revenue by Region</div>
+      <canvas id="regionChart" height="100"></canvas>
+    </div>
+  </div>
+</div>
+
+<div class="row g-3">
+  <div class="col-12">
+    <div class="chart-card">
+      <div class="chart-title">Orders Over Time + Avg Order Value</div>
+      <canvas id="ordersAovChart" height="90"></canvas>
+    </div>
+  </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+{% if not power_bi_url %}
+<script>
+const trendChart = new Chart(document.getElementById('trendChart'), {
+  type: 'line',
+  data: {
+    labels: [],
+    datasets: [{
+      label: 'Revenue (₹)',
+      data: [],
+      borderColor: '#C5A24D',
+      backgroundColor: 'rgba(197,162,77,0.08)',
+      borderWidth: 2,
+      fill: true,
+      tension: 0.4,
+      pointRadius: 2
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { display: false }, ticks: { font: { size: 10 }, maxTicksLimit: 8 } },
+      y: { grid: { color: 'rgba(0,0,0,0.04)' }, ticks: { callback: v => '₹' + (v/1000).toFixed(0)+'k' } }
+    }
+  }
+});
+
+const categoryChart = new Chart(document.getElementById('categoryChart'), {
+  type: 'doughnut',
+  data: {
+    labels: [],
+    datasets: [{
+      data: [],
+      backgroundColor: ['rgba(197,162,77,.85)','rgba(249,203,214,.9)','rgba(74,124,89,.7)','rgba(58,107,138,.7)','rgba(139,38,53,.6)','rgba(91,90,87,.5)'],
+      borderWidth: 0,
+      hoverOffset: 6
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'bottom', labels: { font: { size: 11 }, boxWidth: 12, padding: 12 } }
+    },
+    cutout: '62%'
+  }
+});
+
+const topProductsChart = new Chart(document.getElementById('topProductsChart'), {
+  type: 'bar',
+  data: {
+    labels: [],
+    datasets: [{
+      label: 'Revenue (₹)',
+      data: [],
+      backgroundColor: 'rgba(58,107,138,0.75)',
+      borderRadius: 6
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { ticks: { font: { size: 10 } }, grid: { display: false } },
+      y: { ticks: { callback: v => '₹' + (v/1000).toFixed(0) + 'k' } }
+    }
+  }
+});
+
+const regionChart = new Chart(document.getElementById('regionChart'), {
+  type: 'bar',
+  data: {
+    labels: [],
+    datasets: [{
+      label: 'Revenue (₹)',
+      data: [],
+      backgroundColor: 'rgba(74,124,89,0.75)',
+      borderRadius: 6
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { display: false } },
+      y: { ticks: { callback: v => '₹' + (v/1000).toFixed(0) + 'k' } }
+    }
+  }
+});
+
+const ordersAovChart = new Chart(document.getElementById('ordersAovChart'), {
+  type: 'line',
+  data: {
+    labels: [],
+    datasets: [
+      {
+        label: 'Orders',
+        data: [],
+        yAxisID: 'yOrders',
+        borderColor: '#C5A24D',
+        backgroundColor: 'rgba(197,162,77,0.08)',
+        tension: 0.35,
+        fill: true
+      },
+      {
+        label: 'AOV (₹)',
+        data: [],
+        yAxisID: 'yAov',
+        borderColor: '#8B2635',
+        tension: 0.35
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    scales: {
+      yOrders: { type: 'linear', position: 'left', title: { display: true, text: 'Orders' } },
+      yAov: {
+        type: 'linear',
+        position: 'right',
+        grid: { drawOnChartArea: false },
+        ticks: { callback: v => '₹' + Number(v).toLocaleString('en-IN') },
+        title: { display: true, text: 'AOV' }
+      }
+    }
+  }
+});
+
+async function applyFilter() {
+  const days = document.getElementById('periodFilter').value || '90';
+  try {
+    const [revenueRes, topRes, categoryRes, regionRes, ordersRes] = await Promise.all([
+      fetch(`/api/analytics/revenue?days=${encodeURIComponent(days)}`),
+      fetch('/api/analytics/top-products'),
+      fetch('/api/analytics/category'),
+      fetch('/api/analytics/region'),
+      fetch('/api/analytics/orders')
+    ]);
+    if (![revenueRes, topRes, categoryRes, regionRes, ordersRes].every(r => r.ok)) return;
+
+    const revenueData = await revenueRes.json();
+    const topData = await topRes.json();
+    const categoryData = await categoryRes.json();
+    const regionData = await regionRes.json();
+    const ordersData = await ordersRes.json();
+
+    trendChart.data.labels = revenueData.labels || [];
+    trendChart.data.datasets[0].data = revenueData.values || [];
+    trendChart.update();
+
+    topProductsChart.data.labels = topData.labels || [];
+    topProductsChart.data.datasets[0].data = topData.values || [];
+    topProductsChart.update();
+
+    categoryChart.data.labels = categoryData.labels || [];
+    categoryChart.data.datasets[0].data = categoryData.values || [];
+    categoryChart.update();
+
+    regionChart.data.labels = regionData.labels || [];
+    regionChart.data.datasets[0].data = regionData.values || [];
+    regionChart.update();
+
+    ordersAovChart.data.labels = ordersData.labels || [];
+    ordersAovChart.data.datasets[0].data = ordersData.orders || [];
+    ordersAovChart.data.datasets[1].data = ordersData.aov || [];
+    ordersAovChart.update();
+
+    const k = ordersData.kpis || {};
+    document.getElementById('kpiRevenue').textContent = `Rs. ${Number(k.total_revenue || 0).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    document.getElementById('kpiOrders').textContent = Number(k.total_orders || 0).toLocaleString('en-IN');
+    document.getElementById('kpiAov').textContent = `Rs. ${Number(k.avg_order_value || 0).toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+  } catch (_) {}
+}
+
+applyFilter();
+</script>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,136 @@
+{% extends "admin/base.html" %}
+{% block title %}Anomalies{% endblock %}
+{% block breadcrumb %}Anomalies{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <h1 class="page-title">Anomaly Detection</h1>
+    <p class="page-subtitle">AI-flagged unusual patterns in your sales data</p>
+  </div>
+  <div class="d-flex gap-2">
+    <span class="pill pill-danger" style="padding:8px 16px">{{ anomalies | selectattr('severity','equalto','High') | list | length }} High</span>
+    <span class="pill pill-warning" style="padding:8px 16px">{{ anomalies | selectattr('severity','equalto','Medium') | list | length }} Medium</span>
+  </div>
+</div>
+
+<div class="row g-3 mb-4">
+  <div class="col-md-8">
+    <div class="chart-card">
+      <div class="chart-title">Revenue Anomaly Visualization</div>
+      <canvas id="anomalyChart" height="90"></canvas>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="lux-card h-100">
+      <div class="chart-title">Detection Method</div>
+      <div style="font-size:13px;color:var(--secondary-text);line-height:1.7;margin-top:8px">
+        <p><strong>Algorithm:</strong> IQR-based statistical outlier detection with 2σ threshold.</p>
+        <p><strong>Trigger:</strong> Revenue values exceeding 2× the historical moving average are flagged as anomalies.</p>
+        <p><strong>Severity:</strong><br>
+          <span class="pill pill-danger" style="margin-bottom:4px">High</span> &gt; 3× avg<br>
+          <span class="pill pill-warning" style="margin-top:4px">Medium</span> 2–3× avg
+        </p>
+        <p><strong>Recommendation:</strong> Investigate promotions, bulk orders, or data entry errors.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ANOMALY CARDS + TABLE -->
+<div class="row g-3">
+  <div class="col-md-6">
+    <div class="lux-card">
+      <div class="chart-title mb-3">Alert Cards</div>
+      {% for a in anomalies %}
+      <div class="anomaly-card anomaly-{{ a.severity | lower }}">
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <div class="anomaly-title">{{ a.product_name }}</div>
+            <div class="anomaly-meta">{{ a.note }} · {{ a.date }}</div>
+          </div>
+          <span class="pill {{ 'pill-danger' if a.severity == 'High' else 'pill-warning' }}">{{ a.severity }}</span>
+        </div>
+        <div style="margin-top:10px;display:flex;gap:16px;font-size:12px;color:var(--secondary-text)">
+          <span><strong>Revenue:</strong> ₹{{ "{:,.0f}".format(a.revenue) }}</span>
+          <span><strong>Units:</strong> {{ a.units_sold }}</span>
+          <span><strong>Category:</strong> {{ a.category }}</span>
+        </div>
+      </div>
+      {% else %}
+      <div style="text-align:center;padding:40px;color:var(--secondary-text)">
+        <i class="bi bi-check-circle-fill" style="font-size:36px;color:var(--success)"></i>
+        <p class="mt-2">No anomalies detected in current data.</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="lux-card">
+      <div class="chart-title mb-3">Anomaly Table</div>
+      <div class="table-responsive">
+        <table class="lux-table">
+          <thead><tr><th>Date</th><th>Product</th><th>Revenue</th><th>Severity</th></tr></thead>
+          <tbody>
+            {% for a in anomalies %}
+            <tr>
+              <td>{{ a.date }}</td>
+              <td>{{ a.product_name }}</td>
+              <td>₹{{ "{:,.0f}".format(a.revenue) }}</td>
+              <td><span class="pill {{ 'pill-danger' if a.severity == 'High' else 'pill-warning' }}">{{ a.severity }}</span></td>
+            </tr>
+            {% else %}
+            <tr><td colspan="4" style="text-align:center;padding:24px;color:var(--secondary-text)">No anomalies</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const aLabels = {{ anomalies | map(attribute='date') | list | safe_json }};
+const aRevenue = {{ anomalies | map(attribute='revenue') | list | safe_json }};
+const aSeverity = {{ anomalies | map(attribute='severity') | list | safe_json }};
+
+const baseLabels = aLabels.length ? aLabels : ['2024-10','2024-11','2024-12','2025-01','2025-02'];
+const baseData = [45000, 52000, 48000, 61000, 49000];
+const anomalyData = aRevenue.length ? aRevenue : [];
+const pointColors = baseData.map((v, i) => {
+  const r = anomalyData[i];
+  if (!r) return '#C5A24D';
+  return aSeverity[i] === 'High' ? '#8B2635' : '#C5843A';
+});
+
+new Chart(document.getElementById('anomalyChart'), {
+  type: 'bar',
+  data: {
+    labels: baseLabels.length ? baseLabels : ['Oct','Nov','Dec','Jan','Feb'],
+    datasets: [
+      {
+        label: 'Revenue (₹)',
+        data: aRevenue.length ? aRevenue : [45000, 985000, 48000, 420000, 49000],
+        backgroundColor: (aSeverity.length ? aSeverity : ['Medium','High','Medium','Medium','Low']).map(s =>
+          s === 'High' ? 'rgba(139,38,53,0.7)' : s === 'Medium' ? 'rgba(197,132,58,0.7)' : 'rgba(197,162,77,0.6)'
+        ),
+        borderRadius: 6
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => '₹' + ctx.raw.toLocaleString('en-IN') } }
+    },
+    scales: {
+      x: { grid: { display: false } },
+      y: { grid: { color: 'rgba(0,0,0,0.04)' }, ticks: { callback: v => '₹' + (v/1000).toFixed(0) + 'k' } }
+    }
+  }
+});
+</script>
+{% endblock %}

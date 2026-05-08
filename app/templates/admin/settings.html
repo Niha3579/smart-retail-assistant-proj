@@ -1,0 +1,87 @@
+{% extends "admin/base.html" %}
+{% block title %}Settings{% endblock %}
+{% block breadcrumb %}Settings{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <h1 class="page-title">Settings</h1>
+    <p class="page-subtitle">System configuration and deployment info</p>
+  </div>
+</div>
+
+<div class="row g-3">
+  <div class="col-md-6">
+    <div class="lux-card mb-3">
+      <div class="chart-title mb-3">Environment Configuration</div>
+      {% for key, val in env_vars.items() %}
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--border)">
+        <div style="font-size:12.5px;font-weight:600;color:var(--secondary-text)">{{ key }}</div>
+        <div style="font-size:13px;color:var(--primary-text);font-family:monospace;background:var(--surface);padding:4px 12px;border-radius:6px">{{ val }}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="lux-card">
+      <div class="chart-title mb-3">API Keys</div>
+      <div class="mb-3">
+        <label class="lux-label">OpenAI API Key</label>
+        <input class="lux-input" type="password" value="sk-••••••••••••••••" readonly
+          style="background:var(--surface);cursor:not-allowed">
+        <div style="font-size:11px;color:var(--secondary-text);margin-top:4px">Set in .env file — never expose in UI</div>
+      </div>
+      <div class="mb-3">
+        <label class="lux-label">Azure SQL Connection</label>
+        <input class="lux-input" type="password" value="Server=••••;Database=••••" readonly
+          style="background:var(--surface);cursor:not-allowed">
+      </div>
+      <div>
+        <label class="lux-label">ML Model Path</label>
+        <input class="lux-input" type="text" value="app/ml/demand_model.pkl" readonly
+          style="background:var(--surface);cursor:not-allowed">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="lux-card mb-3">
+      <div class="chart-title mb-3">Model Configuration</div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="background:var(--bg);border-radius:10px;padding:14px 16px">
+          <div class="lux-label">Demand Forecast Model</div>
+          <div style="font-weight:600;margin-top:4px">RandomForestRegressor</div>
+          <div style="font-size:12px;color:var(--secondary-text)">n_estimators=100 · random_state=42</div>
+        </div>
+        <div style="background:var(--bg);border-radius:10px;padding:14px 16px">
+          <div class="lux-label">Anomaly Detection</div>
+          <div style="font-weight:600;margin-top:4px">IQR-based · 2σ threshold</div>
+          <div style="font-size:12px;color:var(--secondary-text)">Statistical outlier detection</div>
+        </div>
+        <div style="background:var(--bg);border-radius:10px;padding:14px 16px">
+          <div class="lux-label">Agent Routing</div>
+          <div style="font-weight:600;margin-top:4px">Keyword-based Multi-Agent</div>
+          <div style="font-size:12px;color:var(--secondary-text)">Data Analyst · ML Expert · Document Assistant</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lux-card">
+      <div class="chart-title mb-3">Deployment Logs</div>
+      <div style="height:240px;overflow-y:auto;background:var(--primary-text);border-radius:10px;padding:16px;font-family:monospace;font-size:11.5px;color:#a0d4a0">
+        <div>[INFO] Flask app started — development mode</div>
+        <div>[INFO] SQLAlchemy connected to: sqlite:///retail.db</div>
+        <div>[INFO] Flask-Migrate initialized</div>
+        <div>[INFO] Products table: active</div>
+        <div>[INFO] Orders table: active</div>
+        <div>[INFO] SalesRecords table: active</div>
+        <div>[INFO] ML model path: app/ml/demand_model.pkl</div>
+        <div style="color:#ffd700">[WARN] No OpenAI key set — AI features use local agents</div>
+        <div>[INFO] Admin blueprint registered at /admin</div>
+        <div>[INFO] User blueprint registered at /</div>
+        <div>[INFO] API blueprint registered at /api</div>
+        <div style="color:#7fb3d3">[READY] Smart Retail Assistant running on http://127.0.0.1:5000</div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

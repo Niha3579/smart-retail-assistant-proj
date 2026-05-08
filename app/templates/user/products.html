@@ -1,0 +1,89 @@
+{% extends "user/base.html" %}
+{% block title %}Products — Smart Retail{% endblock %}
+
+{% block content %}
+<div style="max-width:1300px;margin:0 auto;padding:36px 24px">
+  <div class="d-flex align-items-end justify-content-between mb-4 flex-wrap gap-2">
+    <div>
+      <h1 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;margin:0">
+        {% if selected_category %}{{ selected_category }}{% else %}All Products{% endif %}
+      </h1>
+      <p style="color:var(--secondary-text);margin:4px 0 0;font-size:13px">{{ products | length }} products found</p>
+    </div>
+    <form method="GET" class="d-flex gap-2 flex-wrap">
+      {% if selected_category %}<input type="hidden" name="category" value="{{ selected_category }}">{% endif %}
+      <input type="text" name="search" class="lux-input" style="width:180px" value="{{ search }}" placeholder="Search…">
+      <select name="sort" class="lux-select" onchange="this.form.submit()">
+        <option value="">Sort: Popular</option>
+        <option value="price_asc" {{ 'selected' if sort == 'price_asc' }}>Price: Low → High</option>
+        <option value="price_desc" {{ 'selected' if sort == 'price_desc' }}>Price: High → Low</option>
+        <option value="rating" {{ 'selected' if sort == 'rating' }}>Highest Rated</option>
+      </select>
+      <button type="submit" class="btn-luxury">Go</button>
+    </form>
+  </div>
+
+  <!-- CATEGORY FILTER PILLS -->
+  <div class="filter-pills mb-4">
+    <a href="{{ url_for('user.products') }}" class="filter-pill {{ 'active' if not selected_category }}">All</a>
+    {% for c in categories %}
+    <a href="{{ url_for('user.products') }}?category={{ c }}" class="filter-pill {{ 'active' if selected_category == c }}">{{ c }}</a>
+    {% endfor %}
+  </div>
+
+  <!-- PRICE RANGE -->
+  <div class="lux-card mb-4" style="padding:14px 20px">
+    <form method="GET" class="d-flex align-items-center gap-3 flex-wrap">
+      {% if selected_category %}<input type="hidden" name="category" value="{{ selected_category }}">{% endif %}
+      {% if search %}<input type="hidden" name="search" value="{{ search }}">{% endif %}
+      {% if sort %}<input type="hidden" name="sort" value="{{ sort }}">{% endif %}
+      <label class="lux-label mb-0">Price Range (₹)</label>
+      <input type="number" name="min_price" class="lux-input" style="width:110px" placeholder="Min" value="{{ request.args.get('min_price','') }}">
+      <span style="color:var(--secondary-text)">—</span>
+      <input type="number" name="max_price" class="lux-input" style="width:110px" placeholder="Max" value="{{ request.args.get('max_price','') }}">
+      <button type="submit" class="btn-ghost">Apply</button>
+    </form>
+  </div>
+
+  <!-- PRODUCT GRID -->
+  {% if products %}
+  <div class="products-grid">
+    {% for p in products %}
+    <a href="{{ url_for('user.product_detail', pid=p.id) }}" class="product-card">
+      <div class="product-card-img-wrap">
+        <img src="{{ p.image_url }}" alt="{{ p.name }}" class="product-card-img"
+          onerror="this.src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400'">
+        {% if p.discount_percent %}
+        <span class="product-card-badge">{{ p.discount_percent | int }}% OFF</span>
+        {% endif %}
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-brand">{{ p.brand }}</div>
+        <div class="product-card-name">{{ p.name }}</div>
+        <div class="product-card-rating">
+          <span>★</span> {{ p.rating }} <span style="color:var(--secondary-text);font-size:11px">({{ p.reviews_count }})</span>
+        </div>
+        <div style="margin-top:8px;display:flex;align-items:baseline;gap:6px">
+          <span class="product-card-price">₹{{ "{:,.0f}".format(p.discounted_price or p.price) }}</span>
+          {% if p.discount_percent %}
+          <span class="product-card-original">₹{{ "{:,.0f}".format(p.price) }}</span>
+          {% endif %}
+        </div>
+        <div style="margin-top:8px">
+          {% if p.stock_status == 'In Stock' %}<span class="pill pill-success" style="font-size:10.5px">In Stock</span>
+          {% elif p.stock_status == 'Limited Stock' %}<span class="pill pill-warning" style="font-size:10.5px">Limited</span>
+          {% else %}<span class="pill pill-danger" style="font-size:10.5px">Out of Stock</span>{% endif %}
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div style="text-align:center;padding:80px;color:var(--secondary-text)">
+    <i class="bi bi-box-seam" style="font-size:48px;opacity:.3"></i>
+    <h4 style="margin-top:20px;font-family:'Playfair Display',serif">No products found</h4>
+    <p>Try adjusting your filters or <a href="{{ url_for('user.products') }}">view all products</a>.</p>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
