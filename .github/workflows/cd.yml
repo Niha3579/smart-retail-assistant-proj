@@ -28,7 +28,7 @@ jobs:
 
       - name: Package app
         # This zips everything in the root so run.py is at the top level
-        run: zip -r release.zip . -x "*.git*" -x "*venv*" -x "__pycache__/*"
+        run: zip -r release.zip . -x "*.git*" -x "*venv*" -x "*__pycache__*" -x "*.env" -x "*instance*"
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
