@@ -1,5 +1,5 @@
 name: CD
-#
+
 on:
   workflow_dispatch:
     inputs:
@@ -22,17 +22,17 @@ jobs:
           cache: 'pip'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Zip artifact for deployment
-        # We zip the contents so run.py is at the root of the zip
-        run: zip -r release.zip . -x '*.git*' -x '*venv*'
+      - name: Package app
+        # This zips everything in the root so run.py is at the top level
+        run: zip -r release.zip . -x "*.git*" -x "*venv*"
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'smart-retail-niha' # Replace with your actual app name
+          app-name: 'smart-retail-niha'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: release.zip
-
-          #

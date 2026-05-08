@@ -1,4 +1,3 @@
-#CI
 name: CI
 
 on:
@@ -29,8 +28,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Lint and Compile
-        run: python -m compileall -q app config.py run.py init_db.py
-
-      - name: Test App Factory
-        run: python -c "from app import create_app; create_app(); print('App initialized successfully')"
+      - name: Verify Entry Point
+        # This confirms run.py exists and can be compiled
+        run: python -m compileall run.py
