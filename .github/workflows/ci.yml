@@ -12,7 +12,10 @@ jobs:
     env:
       SECRET_KEY: ci-secret
       AI_MODE: mock
-      DATABASE_URL: sqlite:///:memory:
+      #db
+      DATABASE_URL: sqlite:///retail.db:
+      SQLALCHEMY_DATABASE_URI = "sqlite:///tmp.db"
+      
       FLASK_ENV: development
     steps:
       - uses: actions/checkout@v4
